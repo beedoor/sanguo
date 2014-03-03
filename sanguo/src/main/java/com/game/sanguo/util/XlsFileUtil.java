@@ -54,23 +54,27 @@ public class XlsFileUtil {
 		sort(cityInfoPair.second, sortType);
 		logger.info("排序后：" +cityInfoPair.second.size());
 		for (CityInfo cityInfo : cityInfoPair.second) {
-			HSSFRow row = sheet.createRow(i++);
-			HSSFCell cityId = row.createCell(0);
-			HSSFCell occupierName = row.createCell(1);
-			HSSFCell occupierVipLv = row.createCell(2);
-			HSSFCell occupierTime = row.createCell(3);
-			HSSFCell occupierEndTime = row.createCell(4);
-			cityId.setCellValue(cityInfo.getId());
-			if (cityInfo.getOccupierName() == null || cityInfo.getOccupierName().equals("") || cityInfo.getOccupierName().equals("null")) {
-				occupierName.setCellValue("空资源");
-				occupierVipLv.setCellValue("");
-				occupierTime.setCellValue("");
-				occupierEndTime.setCellValue("");
-			} else {
-				occupierName.setCellValue(GameUtil.parseUnicode(cityInfo.getOccupierName()));
-				occupierVipLv.setCellValue(cityInfo.getOccupierVipLv());
-				occupierTime.setCellValue(GameUtil.parseDate(new Date(Long.parseLong(cityInfo.getOccupyTime()))));
-				occupierEndTime.setCellValue(GameUtil.parseDate(generateEndTime(new Date(Long.parseLong(cityInfo.getOccupyTime())), cityInfo.getOccupierVipLv())));
+			try {
+				HSSFRow row = sheet.createRow(i++);
+				HSSFCell cityId = row.createCell(0);
+				HSSFCell occupierName = row.createCell(1);
+				HSSFCell occupierVipLv = row.createCell(2);
+				HSSFCell occupierTime = row.createCell(3);
+				HSSFCell occupierEndTime = row.createCell(4);
+				cityId.setCellValue(cityInfo.getId());
+				if (cityInfo.getOccupierName() == null || cityInfo.getOccupierName().equals("") || cityInfo.getOccupierName().equals("null")) {
+					occupierName.setCellValue("空资源");
+					occupierVipLv.setCellValue("");
+					occupierTime.setCellValue("");
+					occupierEndTime.setCellValue("");
+				} else {
+					occupierName.setCellValue(GameUtil.parseUnicode(cityInfo.getOccupierName()));
+					occupierVipLv.setCellValue(cityInfo.getOccupierVipLv());
+					occupierTime.setCellValue(GameUtil.parseDate(new Date(Long.parseLong(cityInfo.getOccupyTime()))));
+					occupierEndTime.setCellValue(GameUtil.parseDate(generateEndTime(new Date(Long.parseLong(cityInfo.getOccupyTime())), cityInfo.getOccupierVipLv())));
+				}
+			} catch (Exception e) {
+				logger.error("生成单元格数据异常",e);
 			}
 		}
 	}

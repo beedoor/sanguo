@@ -2,8 +2,6 @@ package com.game.sanguo.util;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.StringReader;
-import java.net.URL;
 
 import org.apache.commons.digester.Digester;
 import org.xml.sax.SAXException;
