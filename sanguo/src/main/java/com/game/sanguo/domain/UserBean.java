@@ -14,16 +14,48 @@ public class UserBean {
 	private long userID;
 	private String checkId;
 	private String areaId;
+	private ClientUpdateInfo clientInfo;
 
+	private boolean isSuspend=false;
 	private Map<String,GameAreaInfo> gameAreaInfoMap = new HashMap<String,GameAreaInfo>();
+	
+	private Configure configure;
+	public UserBean() {
+		super();
+	}
+
 	public UserBean(String userName, String password) {
 		super();
 		this.userName = userName;
 		this.password = password;
 	}
-	
+
+	public Configure getConfigure() {
+		return configure;
+	}
+
+	public void setConfigure(Configure configure) {
+		this.configure = configure;
+	}
+
+	public boolean isSuspend() {
+		return isSuspend;
+	}
+
+	public void setSuspend(boolean isSuspend) {
+		this.isSuspend = isSuspend;
+	}
+
 	public GameAreaInfo getGameAreaInfo(String areaId) {
 		return gameAreaInfoMap.get(areaId);
+	}
+
+	public ClientUpdateInfo getClientInfo() {
+		return clientInfo;
+	}
+
+	public void setClientInfo(ClientUpdateInfo clientInfo) {
+		this.clientInfo = clientInfo;
 	}
 
 	public String getUrlPrx()
@@ -107,8 +139,8 @@ public class UserBean {
 	@Override
 	public String toString() {
 		return "UserBean [numberId=" + numberId + ", batchId=" + batchId + ", sessionId=" + sessionId + ", chatSessionId=" + chatSessionId + ", userName=" + userName + ", password=" + password
-				+ ", userID=" + userID + ", checkId=" + checkId + ", areaId=" + areaId + ", gameAreaInfoMap=" + gameAreaInfoMap + "]";
+				+ ", userID=" + userID + ", checkId=" + checkId + ", areaId=" + areaId + ", clientInfo=" + clientInfo + ", gameAreaInfoMap=" + gameAreaInfoMap + ", configure=" + configure + "]";
 	}
-	
-	
+
+
 }

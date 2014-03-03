@@ -10,6 +10,7 @@ import org.apache.commons.httpclient.HeaderElement;
 import org.apache.commons.httpclient.NameValuePair;
 import org.apache.commons.httpclient.methods.PostMethod;
 
+import com.game.sanguo.domain.ClientUpdateInfo;
 import com.game.sanguo.domain.GameAreaInfo;
 import com.game.sanguo.domain.LoginByEmailInfo;
 import com.game.sanguo.domain.UserBean;
@@ -84,8 +85,10 @@ public class LoginTask extends GameTask {
 		
 		try {
 			LoginByEmailInfo beanInfo = initBeanInfo(LoginByEmailInfo.class,postMethod.getResponseBodyAsStream(),"dwr");
+			logger.info(beanInfo.toString());
 			userBean.setCheckId(beanInfo.getCheckId());
 			userBean.setAreaId(beanInfo.getServerId());
+			userBean.setUserID(beanInfo.getUserId());
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -93,7 +96,7 @@ public class LoginTask extends GameTask {
 	}
 	
 	private void loginGame() {
-		PostMethod postMethod = new PostMethod("http://g8.ol.ko.cn:8080/hero/dwr/call/plaincall/DwrGame.loginGame.dwr;jsessionid=");
+		PostMethod postMethod = new PostMethod(String.format("%s/hero/dwr/call/plaincall/DwrGame.loginGame.dwr;jsessionid=",userBean.getUrlPrx()));
 		postMethod.addRequestHeader("Content-type", "application/octet-stream");
 		postMethod.addRequestHeader("Cache-Control", "no-cache");
 		postMethod.addRequestHeader("Pragma", "no-cache");
@@ -108,9 +111,9 @@ public class LoginTask extends GameTask {
 		postMethod.addParameter(new NameValuePair("c0-scriptName", "DwrGame"));
 		postMethod.addParameter(new NameValuePair("c0-methodName", "loginGame"));
 		postMethod.addParameter(new NameValuePair("c0-id", "0"));
-		postMethod.addParameter(new NameValuePair("c0-param0", "number:1439814"));
+		postMethod.addParameter(new NameValuePair("c0-param0", "number:"+userBean.getUserID()));
 		postMethod.addParameter(new NameValuePair("c0-param1", "string:ANDK"));
-		postMethod.addParameter(new NameValuePair("c0-param2", "number:8" ));
+		postMethod.addParameter(new NameValuePair("c0-param2", "number:"+userBean.getAreaId() ));
 		postMethod.addParameter(new NameValuePair("c0-param3", "string:" + userBean.getCheckId()));
 		postMethod.addParameter(new NameValuePair("c0-param4", "string:602102200"));
 		postMethod.addParameter(new NameValuePair("c0-param5", "string:"));
@@ -161,7 +164,6 @@ public class LoginTask extends GameTask {
 					//游戏服务器了
 					int prex = s1.indexOf(".");
 					String areaIdStr = s1.substring(0,prex);
-					logger.info(areaIdStr);
 					//进行替换咯
 					s1 = s1.replaceAll(areaIdStr+"[.]", "");
 					s1 = s1.replaceAll("[:]", "#");
@@ -196,11 +198,20 @@ public class LoginTask extends GameTask {
 		postMethod.addParameter(new NameValuePair("c0-scriptName", "DwrEntry"));
 		postMethod.addParameter(new NameValuePair("c0-methodName", "clientUpdate"));
 		postMethod.addParameter(new NameValuePair("c0-id", "0"));
-		postMethod.addParameter(new NameValuePair("c0-param0", "string:8"));
+		postMethod.addParameter(new NameValuePair("c0-param0", "string:SC"));
 		postMethod.addParameter(new NameValuePair("c0-param1", "string:2"));
-		postMethod.addParameter(new NameValuePair("c0-param2", "string:449"));
+		postMethod.addParameter(new NameValuePair("c0-param2", "string:460"));
 		postMethod.addParameter(new NameValuePair("batchId", "" + userBean.getBatchId()));
 		doRequest(postMethod);
+		
+		try {
+			ClientUpdateInfo clientInfo=initBeanInfo(ClientUpdateInfo.class, postMethod.getResponseBodyAsStream(), "dwr");
+			userBean.setClientInfo(clientInfo);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 	}
 	
 	public void startChat() {
@@ -219,7 +230,7 @@ public class LoginTask extends GameTask {
 		postMethod.addParameter(new NameValuePair("c0-scriptName", "DwrChat"));
 		postMethod.addParameter(new NameValuePair("c0-methodName", "startChat"));
 		postMethod.addParameter(new NameValuePair("c0-id", "0"));
-		postMethod.addParameter(new NameValuePair("c0-param0", "number:8"));
+		postMethod.addParameter(new NameValuePair("c0-param0", "number:"+userBean.getAreaId()));
 		postMethod.addParameter(new NameValuePair("c0-param1", "number:1"));
 		postMethod.addParameter(new NameValuePair("batchId", "" + userBean.getBatchId()));
 		doRequest(postMethod);

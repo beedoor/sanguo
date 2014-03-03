@@ -1,7 +1,11 @@
 package com.game.sanguo.util;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class GameUtil {
 
+	private static SimpleDateFormat sdf = new SimpleDateFormat("YYYY-MM-dd HH:mm:ss");
 	public static String parseUnicode(String line) {
 		if(line == null)
 		{
@@ -76,5 +80,17 @@ public class GameUtil {
 			return "";
 		}
 		return s;
+	}
+	
+	public static String parseDate(Date date)
+	{
+		if(null == date){
+			return "";
+		}
+		return sdf.format(date);
+	}
+	public static void main(String args[])
+	{	
+		System.out.println(parseDate(new Date(System.currentTimeMillis())));
 	}
 }

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<users>
+		<user>
+			<userName>564195410@qq.com</userName>
+			<password>h156788</password>
+			<areaId>8</areaId>
+			<configure>
+				<scanResource desc='自动扫描资源'>
+					<gold>0</gold>
+					<treasure>1</treasure>
+					<market>0</market>
+				</scanResource>
+				<searchResource desc='自动收资源，需要VIP1以上'>1</searchResource>
+			</configure>
+		</user>
+	</users>
+<!-- 	<users> -->
+<!-- 		<user> -->
+<!-- 			<userName>564195410@qq.com</userName> -->
+<!-- 			<password>h156788</password> -->
+<!-- 			<areaId>8</areaId> -->
+<!-- 			<configure> -->
+<!-- 			</configure> -->
+<!-- 		</user> -->
+<!-- 	</users> -->
+</configuration>
