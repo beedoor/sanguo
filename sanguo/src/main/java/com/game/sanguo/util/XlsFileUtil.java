@@ -50,7 +50,9 @@ public class XlsFileUtil {
 	}
 
 	private static void geneteSheetData(Pair<String, List<CityInfo>> cityInfoPair, String sortType, HSSFSheet sheet, int i) {
+		logger.info("总记资源数：" +cityInfoPair.second.size());
 		sort(cityInfoPair.second, sortType);
+		logger.info("排序后：" +cityInfoPair.second.size());
 		for (CityInfo cityInfo : cityInfoPair.second) {
 			HSSFRow row = sheet.createRow(i++);
 			HSSFCell cityId = row.createCell(0);
@@ -59,7 +61,7 @@ public class XlsFileUtil {
 			HSSFCell occupierTime = row.createCell(3);
 			HSSFCell occupierEndTime = row.createCell(4);
 			cityId.setCellValue(cityInfo.getId());
-			if (cityInfo.getOccupierName() == null || cityInfo.getOccupierName().equals("")) {
+			if (cityInfo.getOccupierName() == null || cityInfo.getOccupierName().equals("") || cityInfo.getOccupierName().equals("null")) {
 				occupierName.setCellValue("空资源");
 				occupierVipLv.setCellValue("");
 				occupierTime.setCellValue("");
