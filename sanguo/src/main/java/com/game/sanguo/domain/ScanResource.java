@@ -5,6 +5,7 @@ public class ScanResource {
 	Long gold=0L;
 	Long treasure=0L;
 	Long market=0L;
+	Long solider=0L;
 	Long waitTime=0L;
 	String 	sortType;
 	public Long getGold() {
@@ -38,8 +39,15 @@ public class ScanResource {
 	public void setSortType(String sortType) {
 		this.sortType = sortType;
 	}
+	
+	public Long getSolider() {
+		return solider;
+	}
+	public void setSolider(Long solider) {
+		this.solider = solider;
+	}
 	@Override
 	public String toString() {
-		return "ScanResource [gold=" + gold + ", treasure=" + treasure + ", market=" + market + ", waitTime=" + waitTime + ", sortType=" + sortType + "]";
+		return "ScanResource [gold=" + gold + ", treasure=" + treasure + ", market=" + market + ", solider=" + solider + ", waitTime=" + waitTime + ", sortType=" + sortType + "]";
 	}
 }

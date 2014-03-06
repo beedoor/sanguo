@@ -75,6 +75,7 @@ public class UserConfig {
 		digester.addCallMethod("configuration/users/user/configure/scanResource/gold","setGold",0,new Class[]{Long.class});
 		digester.addCallMethod("configuration/users/user/configure/scanResource/treasure","setTreasure",0,new Class[]{Long.class});
 		digester.addCallMethod("configuration/users/user/configure/scanResource/market","setMarket",0,new Class[]{Long.class});
+		digester.addCallMethod("configuration/users/user/configure/scanResource/solider","setSolider",0,new Class[]{Long.class});
 		
 		digester.addCallMethod("configuration/users/user/configure/searchResource","setSearchResource",0,new Class[]{Long.class});
 		

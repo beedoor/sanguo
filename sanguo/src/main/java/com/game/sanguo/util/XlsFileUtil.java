@@ -50,26 +50,27 @@ public class XlsFileUtil {
 	}
 
 	private static void geneteSheetData(Pair<String, List<CityInfo>> cityInfoPair, String sortType, HSSFSheet sheet, int i) {
-		logger.info("总记资源数：" +cityInfoPair.second.size());
 		sort(cityInfoPair.second, sortType);
-		logger.info("排序后：" +cityInfoPair.second.size());
 		for (CityInfo cityInfo : cityInfoPair.second) {
 			try {
 				HSSFRow row = sheet.createRow(i++);
 				HSSFCell cityId = row.createCell(0);
 				HSSFCell occupierName = row.createCell(1);
 				HSSFCell occupierVipLv = row.createCell(2);
-				HSSFCell occupierTime = row.createCell(3);
-				HSSFCell occupierEndTime = row.createCell(4);
+				HSSFCell unionName = row.createCell(3);
+				HSSFCell occupierTime = row.createCell(4);
+				HSSFCell occupierEndTime = row.createCell(5);
 				cityId.setCellValue(cityInfo.getId());
 				if (cityInfo.getOccupierName() == null || cityInfo.getOccupierName().equals("") || cityInfo.getOccupierName().equals("null")) {
 					occupierName.setCellValue("空资源");
 					occupierVipLv.setCellValue("");
+					unionName.setCellValue("");
 					occupierTime.setCellValue("");
 					occupierEndTime.setCellValue("");
 				} else {
 					occupierName.setCellValue(GameUtil.parseUnicode(cityInfo.getOccupierName()));
 					occupierVipLv.setCellValue(cityInfo.getOccupierVipLv());
+					unionName.setCellValue(GameUtil.parseUnicode(cityInfo.getUnionName()));
 					occupierTime.setCellValue(GameUtil.parseDate(new Date(Long.parseLong(cityInfo.getOccupyTime()))));
 					occupierEndTime.setCellValue(GameUtil.parseDate(generateEndTime(new Date(Long.parseLong(cityInfo.getOccupyTime())), cityInfo.getOccupierVipLv())));
 				}
@@ -130,11 +131,13 @@ public class XlsFileUtil {
 		HSSFCell cityId = row.createCell(0);
 		HSSFCell occupierName = row.createCell(1);
 		HSSFCell occupierVipLv = row.createCell(2);
-		HSSFCell occupierTime = row.createCell(3);
-		HSSFCell occupierEndTime = row.createCell(4);
+		HSSFCell unionName = row.createCell(3);
+		HSSFCell occupierTime = row.createCell(4);
+		HSSFCell occupierEndTime = row.createCell(5);
 		cityId.setCellValue("资源ID");
 		occupierName.setCellValue("占领者");
 		occupierVipLv.setCellValue("占领者VIP级别");
+		unionName.setCellValue("所属联盟");
 		occupierTime.setCellValue("占领时间");
 		occupierEndTime.setCellValue("到期时间");
 	}

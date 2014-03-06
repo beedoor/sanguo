@@ -14,7 +14,7 @@
     <appender name="file.debug" class="ch.qos.logback.core.rolling.RollingFileAppender"><!-- All Log Info -->
         <File>${log.base}/bd_debug.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <FileNamePattern>${log.base}/syfbs_%d{yyyy-MM-dd}.%i.log</FileNamePattern>
+            <FileNamePattern>${log.base}/bd_debug_%d{yyyy-MM-dd}.%i.log</FileNamePattern>
             <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
                  <maxFileSize>${max.size}</maxFileSize>
             </timeBasedFileNamingAndTriggeringPolicy>

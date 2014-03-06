@@ -57,7 +57,13 @@ public class GetWordCityInfoTask extends GameTask {
 			} else {
 				logger.info("配置禁止扫描金矿资源");
 			}
-			
+			if (scan.getSolider() == 1) {
+				logger.info("开始计算兵营资源信息");
+				List<CityInfo> resultList = getResourceDetailInfo(resourceConfig.getSoliderAreaIdList());
+				createDataList.add(Pair.makePair("兵营",resultList));
+			} else {
+				logger.info("配置禁止扫描兵营资源");
+			}
 			XlsFileUtil.createSearchResultFile(createDataList,userBean.getConfigure().getScanResource().getSortType());
 		} catch (Exception e) {
 			logger.error("获取资源信息异常", e);
@@ -147,9 +153,9 @@ public class GetWordCityInfoTask extends GameTask {
 	private Object decodeResourceType(String typeAsInt) {
 
 		if (typeAsInt.equals("6")) {
-			return "点将";
-		} else if (typeAsInt.equals("5")) {
 			return "兵营";
+		} else if (typeAsInt.equals("5")) {
+			return "点将";
 		} else if (typeAsInt.equals("4")) {
 			return "黑市";
 		} else if (typeAsInt.equals("3")) {

@@ -21,7 +21,6 @@ public class CityInfo {
 	String typeAsInt;
 	String unionName;
 	String zoneId;
-
 	public String getAreaId() {
 		return areaId;
 	}

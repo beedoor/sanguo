@@ -20,7 +20,7 @@ public class ResourceConfig {
 	private List<String> barrackAreaIdList = new ArrayList<String>();
 	private List<String> marketAreaIdList = new ArrayList<String>();
 	private List<String> treasureAreaIdList = new ArrayList<String>();
-	
+	private List<String> soliderAreaIdList = new ArrayList<String>(); 
 	
 	List<ResourceItem> resourceItemList= new ArrayList<ResourceItem>();
 
@@ -68,6 +68,14 @@ public class ResourceConfig {
 		this.resourceItemList = resourceItemList;
 	}
 
+	public List<String> getSoliderAreaIdList() {
+		return soliderAreaIdList;
+	}
+
+	public void setSoliderAreaIdList(List<String> soliderAreaIdList) {
+		this.soliderAreaIdList = soliderAreaIdList;
+	}
+
 	public void addItem(ResourceItem ri)
 	{
 		if(ri.getType().equals("gold"))
@@ -82,6 +90,9 @@ public class ResourceConfig {
 		}else if(ri.getType().equals("treasure"))
 		{
 			treasureAreaIdList.add(ri.getAreaId());
+		}else if(ri.getType().equals("solider"))
+		{
+			soliderAreaIdList.add(ri.getAreaId());
 		}
 		resourceItemList.add(ri);
 	}

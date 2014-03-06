@@ -32,7 +32,7 @@ public class Main {
 		//登录
 		exec.submit(new LoginTask(userBean));
 		//维持会话的获取通知信息惹任务
-		exec.scheduleAtFixedRate(new GameNotifyTask(userBean), 0, 10, TimeUnit.SECONDS);
+//		exec.scheduleAtFixedRate(new GameNotifyTask(userBean), 0, 10, TimeUnit.SECONDS);
 		//扫描全图信息
 //		exec.submit(new GetTimeZoneTask(userBean));
 		//获取资源点信息

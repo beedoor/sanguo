@@ -19,10 +19,22 @@ public class GetTimeZoneTask extends GameTask {
 	}
 
 	public void run() {
-		msgIdGetZoneInfo();
+		for(int i=0; i < 34;i++)
+		{
+			for(int j = 0;j < 34;j++)
+			{
+				try {
+					msgIdGetZoneInfo(i,j);
+					sleep(1);
+				} catch (Throwable e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		}
 	}
 
-	private void msgIdGetZoneInfo() {
+	private void msgIdGetZoneInfo(int areaX,int areaY) {
 		PostMethod postMethod = new PostMethod(String.format("%s/hero/dwr/call/plaincall/Multiple.2.dwr;jsessionid=%s;mid=%s",userBean.getUrlPrx(),userBean.getSessionId(),userBean.getSessionId()));
 		postMethod.addRequestHeader("Content-type", "application/octet-stream");
 		postMethod.addRequestHeader("Cache-Control", "no-cache");
@@ -43,7 +55,7 @@ public class GetTimeZoneTask extends GameTask {
 		postMethod.addParameter(new NameValuePair("c0-e1", "number:0"));
 		postMethod.addParameter(new NameValuePair("c0-e2", "string:msgTypeWorld"));
 		postMethod.addParameter(new NameValuePair("c0-e3", "string:msgIdGetZoneInfo"));
-		postMethod.addParameter(new NameValuePair("c0-e4", "string:" + (4 + "," + 23)));
+		postMethod.addParameter(new NameValuePair("c0-e4", "string:" + (areaX + "," + areaY)));
 		postMethod.addParameter(new NameValuePair("c0-param1", "Object_Object:{instanceId:reference:c0-e1, messageType:reference:c0-e2, messageId:reference:c0-e3, message:reference:c0-e4}"));
 		postMethod.addParameter(new NameValuePair("batchId", "" + userBean.getBatchId()));
 		doRequest(postMethod);
