@@ -24,11 +24,14 @@ public class CitySearchAndGoldTask extends GameTask {
 		this.userBean = userBean;
 	}
 
-	public void run() {
+	public void doAction() {
 		try {
 			if (userBean.getConfigure().getSearchResource() == 1) {
 				msgIdGetGold();
 				msgIdCitySearch();
+			}else
+			{
+				logger.info("禁止自动收资源");
 			}
 		} catch (Throwable e) {
 			logger.error("定时搜索资源任务异常", e);

@@ -18,7 +18,7 @@ public class GetTimeZoneTask extends GameTask {
 		System.out.println(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date(System.currentTimeMillis())));
 	}
 
-	public void run() {
+	public void doAction() {
 		for(int i=0; i < 34;i++)
 		{
 			for(int j = 0;j < 34;j++)

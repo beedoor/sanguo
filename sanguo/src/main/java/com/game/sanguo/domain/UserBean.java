@@ -3,6 +3,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import com.game.sanguo.util.LoginGameInfo;
+
 public class UserBean {
 
 	private AtomicInteger numberId = new AtomicInteger(0);
@@ -16,6 +18,8 @@ public class UserBean {
 	private String areaId;
 	private ClientUpdateInfo clientInfo;
 
+	private LoginGameInfo loginGameInfo;
+	
 	private boolean isSuspend=false;
 	private Map<String,GameAreaInfo> gameAreaInfoMap = new HashMap<String,GameAreaInfo>();
 	
@@ -30,6 +34,19 @@ public class UserBean {
 		this.password = password;
 	}
 
+	public LoginGameInfo getLoginGameInfo() {
+		return loginGameInfo;
+	}
+
+	public void setLoginGameInfo(LoginGameInfo loginGameInfo) {
+		this.loginGameInfo = loginGameInfo;
+	}
+
+	public void reSetNumberIdAndBatchId()
+	{
+		numberId.set(0);
+//		batchId.set(0);
+	}
 	public Configure getConfigure() {
 		return configure;
 	}
@@ -98,7 +115,9 @@ public class UserBean {
 	public int getNumberIdNoIncrement() {
 		return numberId.get();
 	}
-
+	public int getBatchIdNoIncrement() {
+		return batchId.get();
+	}
 
 	public int getBatchId() {
 		return batchId.getAndIncrement();

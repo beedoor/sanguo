@@ -25,7 +25,7 @@ public class GameNotifyTask extends GameTask {
 		System.out.println(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date(System.currentTimeMillis())));
 	}
 
-	public void run() {
+	public void doAction() {
 		try {
 			msgTypeGameWorld();
 		} catch (Throwable e) {

@@ -32,7 +32,7 @@ public class GetWordCityInfoTask extends GameTask {
 		this.resourceConfig = resourceConfig;
 	}
 
-	public void run() {
+	public void doAction() {
 		try {
 			ScanResource scan = userBean.getConfigure().getScanResource();
 			List<Pair<String,List<CityInfo>>> createDataList = new ArrayList<Pair<String,List<CityInfo>>>();

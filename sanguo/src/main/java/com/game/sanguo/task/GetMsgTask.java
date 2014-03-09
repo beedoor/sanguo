@@ -18,8 +18,13 @@ public class GetMsgTask extends GameTask {
 		System.out.println(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date(System.currentTimeMillis())));
 	}
 
-	public void run() {
-		msgIdGetNotify();
+	public void doAction() {
+		try {
+			msgIdGetNotify();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	private void msgIdGetNotify() {
