@@ -4,9 +4,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.lang.reflect.Field;
 import java.lang.reflect.Method;
-import java.util.Date;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
@@ -19,6 +19,7 @@ import org.apache.commons.httpclient.methods.PostMethod;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.game.sanguo.domain.Pair;
 import com.game.sanguo.domain.UserBean;
 import com.game.sanguo.util.GameUtil;
 import com.game.sanguo.util.LoginGameInfo;
@@ -152,31 +153,68 @@ public abstract class GameTask implements Runnable {
 				return null;
 			}
 			classInstance = classType.newInstance();
-			String[] filedInfoArray = content.split("[,]");
-			for (String filedInfo : filedInfoArray) {
-				int splitIdx = filedInfo.indexOf(":");
-				System.out.println(filedInfo);
-				if (splitIdx == -1) {
-					continue;
-				}
-				String filedName = filedInfo.substring(0, splitIdx);
-				String filedValue = GameUtil.parseUnicode(filedInfo.substring(splitIdx + 1));
-				
-				String methodName = String.format("set%s%s", filedName.substring(0, 1).toUpperCase(), filedName.substring(1));
-				Method m = classType.getDeclaredMethod(methodName, new Class[] { String.class });
-				if(m != null)
-				{
-					if(!m.isAccessible())
-					{
+			List<Pair<String, String>> filedInfoArray = split(content, ',', ':');
+			for (Pair<String, String> filedInfo : filedInfoArray) {
+				String methodName = String.format("set%s%s", filedInfo.first.substring(0, 1).toUpperCase(), filedInfo.first.substring(1));
+				Method m = getMethod(classType, methodName, new Class[] { String.class });
+				if (m != null) {
+					if (!m.isAccessible()) {
 						m.setAccessible(true);
 					}
-					m.invoke(classInstance, filedValue);
+					m.invoke(classInstance, filedInfo.second);
 				}
 			}
 		} catch (Exception e) {
 			// logger.error("创建bean对象异常", e);
 		}
 		return classInstance;
+	}
+
+	private static <T> Method getMethod(Class<T> classType, String methodName, Class<?>... paramTypes) {
+		try {
+			Method m = classType.getDeclaredMethod(methodName, new Class[] { String.class });
+			return m;
+		} catch (Throwable e) {
+			// TODO: handle exception
+		}
+		return null;
+	}
+
+	private static List<Pair<String, String>> split(String s, char wordSplit, char valueSplit) {
+		if(s.charAt(s.length()-1) != wordSplit)
+		{
+			s += String.valueOf(wordSplit);
+		}
+		List<Pair<String, String>> splitResult = new ArrayList<Pair<String, String>>();
+		StringBuilder sBuffer = new StringBuilder();
+		String key = null, value = null;
+		int endC = 0;
+		for (int i = 0; i < s.length(); i++) {
+			char c = s.charAt(i);
+			if (c == valueSplit && endC == 0) {
+				key = sBuffer.toString();
+				sBuffer.setLength(0);
+			} else if (c == wordSplit && endC == 0) {
+				value = GameUtil.parseUnicode(sBuffer.toString());
+				if (value.startsWith("\"") && value.endsWith("\"")) {
+					value = value.substring(1, value.length() - 1);
+				}
+				sBuffer.setLength(0);
+				splitResult.add(Pair.makePair(key, value));
+				key = null;
+				value = null;
+			} else if (c == '{') {
+				endC--;
+				sBuffer.append(c);
+			} else if (c == '}' && endC < 0) {
+				endC++;
+				sBuffer.append(c);
+			} else {
+				sBuffer.append(c);
+			}
+		}
+
+		return splitResult;
 	}
 
 	public static void main(String args[]) {

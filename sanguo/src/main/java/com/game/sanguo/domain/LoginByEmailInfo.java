@@ -37,14 +37,14 @@ public class LoginByEmailInfo {
 	public Long getDesktopVersion() {
 		return desktopVersion;
 	}
-	public void setDesktopVersion(Long desktopVersion) {
-		this.desktopVersion = desktopVersion;
+	public void setDesktopVersion(String desktopVersion) {
+		this.desktopVersion = Long.valueOf(desktopVersion);
 	}
 	public Date getDisuseEndTime() {
 		return disuseEndTime;
 	}
 	public void setDisuseEndTime(Date disuseEndTime) {
-		this.disuseEndTime = disuseEndTime;
+//		this.disuseEndTime = disuseEndTime;
 	}
 	public String getLogOnServers() {
 		return logOnServers;
