@@ -51,6 +51,7 @@ public class LoginGameInfo {
 	private Long vipLv = 0L;
 	private String worldInfo;
 
+	private String guideProgress;
 	public boolean isAutoFlag() {
 		return autoFlag;
 	}
@@ -255,7 +256,7 @@ public class LoginGameInfo {
 		return permitLoginTime;
 	}
 
-	public void setPermitLoginTime(Date permitLoginTime) {
+	public void setPermitLoginTime(String permitLoginTime) {
 		// this.permitLoginTime = Date.permitLoginTime;
 	}
 
@@ -427,6 +428,14 @@ public class LoginGameInfo {
 		this.worldInfo = worldInfo;
 	}
 
+	public String getGuideProgress() {
+		return guideProgress;
+	}
+
+	public void setGuideProgress(String guideProgress) {
+		this.guideProgress = guideProgress;
+	}
+
 	@Override
 	public String toString() {
 		return "LoginGameInfo [autoFlag=" + autoFlag + ", captureHeros=" + captureHeros + ", challengeTimes=" + challengeTimes + ", changeNameTimes=" + changeNameTimes + ", computerCitys="
@@ -438,6 +447,6 @@ public class LoginGameInfo {
 				+ preChapterIsReward + ", prepareSoldierNum=" + prepareSoldierNum + ", pvpMainCityOccupyHead=" + pvpMainCityOccupyHead + ", pvpMainCityOccupyName=" + pvpMainCityOccupyName
 				+ ", pvpScore=" + pvpScore + ", resultCode=" + resultCode + ", selectedHeroPresent=" + selectedHeroPresent + ", sendGold=" + sendGold + ", sessionId=" + sessionId + ", sex=" + sex
 				+ ", skipFightTimes=" + skipFightTimes + ", taskTriggers=" + taskTriggers + ", tasks=" + tasks + ", totalRecharge=" + totalRecharge + ", unreadLetterCount=" + unreadLetterCount
-				+ ", vipItem=" + vipItem + ", vipLv=" + vipLv + ", worldInfo=" + worldInfo + "]";
+				+ ", vipItem=" + vipItem + ", vipLv=" + vipLv + ", worldInfo=" + worldInfo + ", guideProgress=" + guideProgress + "]";
 	}
 }

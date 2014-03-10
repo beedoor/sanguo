@@ -14,6 +14,7 @@ public class Test {
 	private static String sessionId = "ADD8EBD17CBDF79EEF93DD4EBF8FCAA9";
 	public static void main(String[] args) throws Exception {
 		fight();
+	
 	}
 	public static void fight() {
 		int numberId=5;

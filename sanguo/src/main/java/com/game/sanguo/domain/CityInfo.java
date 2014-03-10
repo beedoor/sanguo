@@ -1,40 +1,44 @@
 package com.game.sanguo.domain;
+
+import java.util.Date;
+
 public class CityInfo {
-	String areaId;
-	String badge;
+	Long areaId = 0L;
+	Long badge = 0L;
 	String cityName;
-	String citySrc;
-	String color;
-	String heroCount;
-	String id;
-	String leagueId;
-	String lv;
-	String maxHeroCount;
-	String occupierHeroCount;
-	String occupierId;
+	Long citySrc = 0L;
+	Long color = 0L;
+	Long heroCount = 0L;
+	Long id = 0L;
+	Long leagueId = 0L;
+	Long lv = 0L;
+	Long maxHeroCount = 0L;
+	Long occupierHeroCount = 0L;
+	Long occupierId = 0L;
 	String occupierName;
-	String occupierVipLv;
-	String occupyTime;
-	String playerId;
-	String protectMsLeft;
-	String statusAsInt;
-	String typeAsInt;
+	Long occupierVipLv = 0L;
+	Date occupyTime;
+	Long playerId = 0L;
+	Long protectMsLeft = 0L;
+	Long statusAsInt = 0L;
+	Long typeAsInt = 0L;
 	String unionName;
-	String zoneId;
-	public String getAreaId() {
+	Long zoneId = 0L;
+
+	public Long getAreaId() {
 		return areaId;
 	}
 
 	public void setAreaId(String areaId) {
-		this.areaId = areaId;
+		this.areaId = Long.parseLong(areaId);
 	}
 
-	public String getBadge() {
+	public Long getBadge() {
 		return badge;
 	}
 
 	public void setBadge(String badge) {
-		this.badge = badge;
+		this.badge = Long.parseLong(badge);
 	}
 
 	public String getCityName() {
@@ -45,76 +49,76 @@ public class CityInfo {
 		this.cityName = cityName;
 	}
 
-	public String getCitySrc() {
+	public Long getCitySrc() {
 		return citySrc;
 	}
 
 	public void setCitySrc(String citySrc) {
-		this.citySrc = citySrc;
+		this.citySrc = Long.parseLong(citySrc);
 	}
 
-	public String getColor() {
+	public Long getColor() {
 		return color;
 	}
 
 	public void setColor(String color) {
-		this.color = color;
+		this.color = Long.parseLong(color);
 	}
 
-	public String getHeroCount() {
+	public Long getHeroCount() {
 		return heroCount;
 	}
 
 	public void setHeroCount(String heroCount) {
-		this.heroCount = heroCount;
+		this.heroCount = Long.parseLong(heroCount);
 	}
 
-	public String getId() {
+	public Long getId() {
 		return id;
 	}
 
 	public void setId(String id) {
-		this.id = id;
+		this.id = Long.parseLong(id);
 	}
 
-	public String getLeagueId() {
+	public Long getLeagueId() {
 		return leagueId;
 	}
 
 	public void setLeagueId(String leagueId) {
-		this.leagueId = leagueId;
+		this.leagueId = Long.parseLong(leagueId);
 	}
 
-	public String getLv() {
+	public Long getLv() {
 		return lv;
 	}
 
 	public void setLv(String lv) {
-		this.lv = lv;
+		this.lv = Long.parseLong(lv);
 	}
 
-	public String getMaxHeroCount() {
+	public Long getMaxHeroCount() {
 		return maxHeroCount;
 	}
 
 	public void setMaxHeroCount(String maxHeroCount) {
-		this.maxHeroCount = maxHeroCount;
+		this.maxHeroCount = Long.parseLong(maxHeroCount);
 	}
 
-	public String getOccupierHeroCount() {
+	public Long getOccupierHeroCount() {
 		return occupierHeroCount;
 	}
 
 	public void setOccupierHeroCount(String occupierHeroCount) {
-		this.occupierHeroCount = occupierHeroCount;
+		this.occupierHeroCount = Long.parseLong(occupierHeroCount);
 	}
 
-	public String getOccupierId() {
+	public Long getOccupierId() {
 		return occupierId;
 	}
 
 	public void setOccupierId(String occupierId) {
-		this.occupierId = occupierId;
+		this.occupierId = Long.parseLong(occupierId);
 	}
 
 	public String getOccupierName() {
@@ -125,52 +129,54 @@ public class CityInfo {
 		this.occupierName = occupierName;
 	}
 
-	public String getOccupierVipLv() {
+	public Long getOccupierVipLv() {
 		return occupierVipLv;
 	}
 
 	public void setOccupierVipLv(String occupierVipLv) {
-		this.occupierVipLv = occupierVipLv;
+		this.occupierVipLv = Long.parseLong(occupierVipLv);
 	}
 
-	public String getOccupyTime() {
+	public Date getOccupyTime() {
 		return occupyTime;
 	}
 
 	public void setOccupyTime(String occupyTime) {
-		this.occupyTime = occupyTime;
+		if (occupyTime != null && !occupyTime.equals("") && !occupyTime.endsWith("null")) {
+			this.occupyTime = new Date(Long.parseLong(occupyTime.substring(occupyTime.indexOf("(") + 1, occupyTime.indexOf(")"))));
+		}
 	}
 
-	public String getPlayerId() {
+	public Long getPlayerId() {
 		return playerId;
 	}
 
 	public void setPlayerId(String playerId) {
-		this.playerId = playerId;
+		this.playerId = Long.parseLong(playerId);
 	}
 
-	public String getProtectMsLeft() {
+	public Long getProtectMsLeft() {
 		return protectMsLeft;
 	}
 
 	public void setProtectMsLeft(String protectMsLeft) {
-		this.protectMsLeft = protectMsLeft;
+		this.protectMsLeft = Long.parseLong(protectMsLeft);
 	}
 
-	public String getStatusAsInt() {
+	public Long getStatusAsInt() {
 		return statusAsInt;
 	}
 
 	public void setStatusAsInt(String statusAsInt) {
-		this.statusAsInt = statusAsInt;
+		this.statusAsInt = Long.parseLong(statusAsInt);
 	}
 
-	public String getTypeAsInt() {
+	public Long getTypeAsInt() {
 		return typeAsInt;
 	}
 
 	public void setTypeAsInt(String typeAsInt) {
-		this.typeAsInt = typeAsInt;
+		this.typeAsInt = Long.parseLong(typeAsInt);
 	}
 
 	public String getUnionName() {
@@ -181,12 +187,12 @@ public class CityInfo {
 		this.unionName = unionName;
 	}
 
-	public String getZoneId() {
+	public Long getZoneId() {
 		return zoneId;
 	}
 
 	public void setZoneId(String zoneId) {
-		this.zoneId = zoneId;
+		this.zoneId = Long.parseLong(zoneId);
 	}
 
 	@Override
@@ -196,6 +202,5 @@ public class CityInfo {
 				+ ", occupierVipLv=" + occupierVipLv + ", occupyTime=" + occupyTime + ", playerId=" + playerId + ", protectMsLeft=" + protectMsLeft + ", statusAsInt=" + statusAsInt + ", typeAsInt="
 				+ typeAsInt + ", unionName=" + unionName + ", zoneId=" + zoneId + "]";
 	}
-	
-	
+
 }

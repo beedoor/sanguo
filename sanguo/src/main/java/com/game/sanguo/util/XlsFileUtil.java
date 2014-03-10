@@ -71,8 +71,8 @@ public class XlsFileUtil {
 					occupierName.setCellValue(GameUtil.parseUnicode(cityInfo.getOccupierName()));
 					occupierVipLv.setCellValue(cityInfo.getOccupierVipLv());
 					unionName.setCellValue(GameUtil.parseUnicode(cityInfo.getUnionName()));
-					occupierTime.setCellValue(GameUtil.parseDate(new Date(Long.parseLong(cityInfo.getOccupyTime()))));
-					occupierEndTime.setCellValue(GameUtil.parseDate(generateEndTime(new Date(Long.parseLong(cityInfo.getOccupyTime())), cityInfo.getOccupierVipLv())));
+					occupierTime.setCellValue(GameUtil.parseDate(cityInfo.getOccupyTime()));
+					occupierEndTime.setCellValue(GameUtil.parseDate(generateEndTime(cityInfo.getOccupyTime(), cityInfo.getOccupierVipLv())));
 				}
 			} catch (Exception e) {
 				logger.error("生成单元格数据异常",e);
@@ -103,8 +103,8 @@ public class XlsFileUtil {
 						if (o2.getOccupierName() == null || o2.getOccupierName().equals("")) {
 							return 1;
 						}
-						Date o1End = generateEndTime(new Date(Long.parseLong(o1.getOccupyTime())), o1.getOccupierVipLv());
-						Date o2End = generateEndTime(new Date(Long.parseLong(o2.getOccupyTime())), o2.getOccupierVipLv());
+						Date o1End = generateEndTime(o1.getOccupyTime(), o1.getOccupierVipLv());
+						Date o2End = generateEndTime(o2.getOccupyTime(), o2.getOccupierVipLv());
 						return o1End.compareTo(o2End);
 				}
 			};
@@ -112,8 +112,7 @@ public class XlsFileUtil {
 		Collections.sort(second, comparator);
 	}
 
-	private static Date generateEndTime(Date date, String alevel) {
-		int level = Integer.parseInt(alevel);
+	private static Date generateEndTime(Date date, long level) {
 		Calendar cal = Calendar.getInstance();
 		cal.setTime(date);
 		if (level == 9) {

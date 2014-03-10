@@ -3,14 +3,14 @@ package com.game.sanguo.domain;
 public class GameAreaInfo {
 	Long id=0L;
 	String name;
-	Long recommend;
-	Long statusAsInt;
+	Long recommend=0L;
+	Long statusAsInt=0L;
 	String url;
 	public Long getId() {
 		return id;
 	}
-	public void setId(Long id) {
-		this.id = id;
+	public void setId(String id) {
+		this.id = Long.parseLong(id);
 	}
 	public String getName() {
 		return name;
@@ -21,14 +21,14 @@ public class GameAreaInfo {
 	public Long getRecommend() {
 		return recommend;
 	}
-	public void setRecommend(Long recommend) {
-		this.recommend = recommend;
+	public void setRecommend(String recommend) {
+		this.recommend = Long.parseLong(recommend);
 	}
 	public Long getStatusAsInt() {
 		return statusAsInt;
 	}
-	public void setStatusAsInt(Long statusAsInt) {
-		this.statusAsInt = statusAsInt;
+	public void setStatusAsInt(String statusAsInt) {
+		this.statusAsInt = Long.parseLong(statusAsInt);
 	}
 	public String getUrl() {
 		return url;

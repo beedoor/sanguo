@@ -7,14 +7,13 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.commons.httpclient.Header;
-import org.apache.commons.httpclient.HeaderElement;
 import org.apache.commons.httpclient.NameValuePair;
 import org.apache.commons.httpclient.methods.PostMethod;
 
 import com.game.sanguo.domain.ClientUpdateInfo;
 import com.game.sanguo.domain.GameAreaInfo;
 import com.game.sanguo.domain.LoginByEmailInfo;
+import com.game.sanguo.domain.StartChatInfo;
 import com.game.sanguo.domain.UserBean;
 import com.game.sanguo.util.LoginGameInfo;
 
@@ -36,7 +35,7 @@ public class LoginTask extends GameTask {
 
 	public void doAction() {
 		try {
-			logger.info(delay + " 秒后重新登陆");
+			logger.info(delay + " 秒后进行登陆");
 			if (delay != 0) {
 				sleep(delay, timeUnit);
 			}
@@ -104,7 +103,6 @@ public class LoginTask extends GameTask {
 
 		try {
 			LoginByEmailInfo beanInfo = initBeanInfo(LoginByEmailInfo.class, postMethod.getResponseBodyAsStream(), "dwr");
-			logger.info(beanInfo.toString());
 			userBean.setCheckId(beanInfo.getCheckId());
 			userBean.setAreaId(beanInfo.getServerId());
 			userBean.setUserID(beanInfo.getUserId());
@@ -146,8 +144,8 @@ public class LoginTask extends GameTask {
 			logger.info(beanInfo.toString());
 			userBean.setLoginGameInfo(beanInfo);
 			userBean.setSessionId(beanInfo.getSessionId());
-		} catch (Exception e) {
-			logger.error("登录服务器异常",e);
+		} catch (Throwable e) {
+			logger.error("登录服务器异常", e);
 		}
 	}
 
@@ -191,9 +189,8 @@ public class LoginTask extends GameTask {
 					userBean.putGameAreaInfo(gameArea);
 				}
 			}
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		} catch (Throwable e) {
+			logger.error("获取服务列表异常", e);
 		}
 	}
 
@@ -221,10 +218,10 @@ public class LoginTask extends GameTask {
 
 		try {
 			ClientUpdateInfo clientInfo = initBeanInfo(ClientUpdateInfo.class, postMethod.getResponseBodyAsStream(), "dwr");
+			logger.info("客户端版本信息:" + clientInfo.toString());
 			userBean.setClientInfo(clientInfo);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		} catch (Throwable e) {
+			logger.error("客户端更新异常", e);
 		}
 
 	}
@@ -249,13 +246,12 @@ public class LoginTask extends GameTask {
 		postMethod.addParameter(new NameValuePair("batchId", "" + userBean.getBatchId()));
 		doRequest(postMethod);
 
-		Header header = postMethod.getResponseHeader("Set-Cookie");
-		HeaderElement[] h = header.getElements();
-		if (h.length > 0) {
-			logger.info("获取新的聊天sessionID：" + h[0].getValue());
-			userBean.setChatSessionId(h[0].getValue());
-		} else {
-			logger.error("登录异常");
+		try {
+			StartChatInfo beanInfo = initBeanInfo(StartChatInfo.class, postMethod.getResponseBodyAsStream(), "dwr");
+			logger.info(beanInfo.toString());
+			userBean.setChatSessionId(beanInfo.getSessionId());
+		} catch (Throwable e) {
+			logger.error("获取聊天会话ID异常", e);
 		}
 	}
 }

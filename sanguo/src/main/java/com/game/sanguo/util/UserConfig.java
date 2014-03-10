@@ -68,7 +68,7 @@ public class UserConfig {
 		digester.addObjectCreate("configuration/users/user/configure/scanResource",ScanResource.class);
 		digester.addCallMethod("configuration/users/user/userName", "setUserName",0);
 		digester.addCallMethod("configuration/users/user/password", "setPassword",0);
-		digester.addCallMethod("configuration/users/user/areaId", "setAreaId",0);
+		digester.addCallMethod("configuration/users/user/areaId", "setAreaId",0,new Class[]{Long.class});
 		//设置扫描间隔
 		digester.addSetProperties("configuration/users/user/configure/scanResource","waitTime","waitTime");
 		
