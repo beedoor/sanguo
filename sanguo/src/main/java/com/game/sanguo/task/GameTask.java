@@ -27,9 +27,9 @@ public abstract class GameTask implements Runnable {
 
 	UserBean userBean = null;
 	protected static Logger logger = LoggerFactory.getLogger(GameTask.class);
-	HttpClient httpClient = new HttpClient();
 
 	protected static Lock loginLock = new ReentrantReadWriteLock().writeLock();
+	static HttpClient httpClient = new HttpClient();
 
 	public GameTask() {
 		super();
@@ -39,12 +39,13 @@ public abstract class GameTask implements Runnable {
 		boolean lockFlag = false;
 		try {
 			lockFlag = loginLock.tryLock(10, TimeUnit.SECONDS);
+			logger.info(Thread.currentThread().getName() + " 获取锁" + getClass() + "\t" + lockFlag);
 			if (lockFlag) {
 				doAction();
 			} else {
 				logger.info("暂时没有登录，无法执行该请求，等待登录");
 			}
-		} catch (Exception e) {
+		} catch (Throwable e) {
 			logger.error("任务异常", e);
 		} finally {
 			if (lockFlag) {
@@ -102,9 +103,12 @@ public abstract class GameTask implements Runnable {
 
 	private void printBody(PostMethod postMethod) throws Exception {
 		String responseStr = GameUtil.parseUnicode(postMethod.getResponseBodyAsString());
-		if (responseStr.indexOf("java.lang") != -1) {
+		logger.info(responseStr);
+		if (responseStr.indexOf("java.lang.Throwable") != -1) {
 			// 会话失效，重新登录吧
-			new LoginTask(userBean, 5, TimeUnit.SECONDS).doAction();
+			logger.info(String.format("会话失效，[%s]分钟后重新登录", userBean.getReLoginTime()));
+			sleep(userBean.getReLoginTime(), TimeUnit.MINUTES);
+			new LoginTask(userBean).doAction();
 		}
 	}
 

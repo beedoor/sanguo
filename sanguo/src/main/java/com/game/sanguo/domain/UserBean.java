@@ -16,6 +16,7 @@ public class UserBean {
 	private Long userID=0L;
 	private String checkId;
 	private Long areaId;
+	private Long reLoginTime=0L;
 	private ClientUpdateInfo clientInfo;
 
 	private LoginGameInfo loginGameInfo;
@@ -57,6 +58,14 @@ public class UserBean {
 
 	public boolean isSuspend() {
 		return isSuspend;
+	}
+
+	public Long getReLoginTime() {
+		return reLoginTime;
+	}
+
+	public void setReLoginTime(Long reLoginTime) {
+		this.reLoginTime = reLoginTime;
 	}
 
 	public void setSuspend(boolean isSuspend) {
@@ -110,7 +119,7 @@ public class UserBean {
 	}
 
 	public int getNumberId() {
-		return numberId.getAndIncrement();
+		return numberId.incrementAndGet();
 	}
 	public int getNumberIdNoIncrement() {
 		return numberId.get();
@@ -120,7 +129,7 @@ public class UserBean {
 	}
 
 	public int getBatchId() {
-		return batchId.getAndIncrement();
+		return batchId.incrementAndGet();
 	}
 
 	public String getSessionId() {
@@ -158,8 +167,8 @@ public class UserBean {
 	@Override
 	public String toString() {
 		return "UserBean [numberId=" + numberId + ", batchId=" + batchId + ", sessionId=" + sessionId + ", chatSessionId=" + chatSessionId + ", userName=" + userName + ", password=" + password
-				+ ", userID=" + userID + ", checkId=" + checkId + ", areaId=" + areaId + ", clientInfo=" + clientInfo + ", gameAreaInfoMap=" + gameAreaInfoMap + ", configure=" + configure + "]";
+				+ ", userID=" + userID + ", checkId=" + checkId + ", areaId=" + areaId + ", reLoginTime=" + reLoginTime + ", clientInfo=" + clientInfo + ", loginGameInfo=" + loginGameInfo
+				+ ", isSuspend=" + isSuspend + ", gameAreaInfoMap=" + gameAreaInfoMap + ", configure=" + configure + "]";
 	}
-
 
 }

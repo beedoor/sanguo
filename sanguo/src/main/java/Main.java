@@ -28,7 +28,7 @@ public class Main {
 
 		UserBean userBean = userConfig.getUserConfig(null);
 		// 登录
-		GameHelper.submit(new LoginTask(userBean, 0, TimeUnit.SECONDS));
+		GameHelper.submit(new LoginTask(userBean));
 		// 维持会话的获取通知信息惹任务
 		GameHelper.scheduleAtFixedRate(new GameNotifyTask(userBean), 10, TimeUnit.SECONDS);
 		// 扫描全图信息
