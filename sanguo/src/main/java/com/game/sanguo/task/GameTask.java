@@ -39,7 +39,6 @@ public abstract class GameTask implements Runnable {
 		boolean lockFlag = false;
 		try {
 			lockFlag = loginLock.tryLock(10, TimeUnit.SECONDS);
-			logger.info(Thread.currentThread().getName() + " 获取锁" + getClass() + "\t" + lockFlag);
 			if (lockFlag) {
 				doAction();
 			} else {
@@ -95,7 +94,6 @@ public abstract class GameTask implements Runnable {
 	protected void printResponseInfo(PostMethod postMethod) throws Exception {
 		logger.debug(String.format("response for 【%s】 【%s】【%s】 【%s】【%s】 【%s】【%s】  ", getParamValue(postMethod, "c0-scriptName"), getParamValue(postMethod, "c0-methodName"),
 				getParamValue(postMethod, "c0-e2"), getParamValue(postMethod, "c0-e3"), userBean.getSessionId(), userBean.getNumberIdNoIncrement(), userBean.getBatchIdNoIncrement()));
-		logger.debug(postMethod.getPath());
 		printHeader(postMethod);
 		printBody(postMethod);
 		logger.debug("response end ");
@@ -103,7 +101,7 @@ public abstract class GameTask implements Runnable {
 
 	private void printBody(PostMethod postMethod) throws Exception {
 		String responseStr = GameUtil.parseUnicode(postMethod.getResponseBodyAsString());
-		logger.info(responseStr);
+		logger.debug(responseStr);
 		if (responseStr.indexOf("java.lang.Throwable") != -1) {
 			// 会话失效，重新登录吧
 			logger.info(String.format("会话失效，[%s]分钟后重新登录", userBean.getReLoginTime()));

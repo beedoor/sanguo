@@ -14,7 +14,7 @@ public class GameHelper {
 	}
 	public static void scheduleAtFixedRate(GameTask gameTask,int interval,TimeUnit tim)
 	{
-		exec.scheduleWithFixedDelay(gameTask, 0, interval, tim);
+		exec.scheduleAtFixedRate(gameTask, 0, interval, tim);
 	}
 	
 }
