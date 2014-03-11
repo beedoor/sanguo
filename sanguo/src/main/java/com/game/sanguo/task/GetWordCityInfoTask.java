@@ -178,11 +178,9 @@ public class GetWordCityInfoTask extends GameTask {
 			}
 		}
 		int s0Idx = s1.indexOf("s0.");
-		s1 = s1.substring(s0Idx + 1);
+		s1 = s1.substring(s0Idx);
 		s1 = s1.replaceAll("s0[.]", "");
-		s1 = "{" + s1 + "}";
-		logger.info("######" + s1);
-		cityInfo = initBeanInfo(CityInfo.class, s1);
+		cityInfo = initBeanInfo(CityInfo.class, s1,';','=');
 		return cityInfo;
 	}
 }

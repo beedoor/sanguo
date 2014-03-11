@@ -119,7 +119,7 @@ public class UserBean {
 	}
 
 	public int getNumberId() {
-		return numberId.incrementAndGet();
+		return numberId.getAndIncrement();
 	}
 	public int getNumberIdNoIncrement() {
 		return numberId.get();
@@ -129,7 +129,7 @@ public class UserBean {
 	}
 
 	public int getBatchId() {
-		return batchId.incrementAndGet();
+		return batchId.getAndIncrement();
 	}
 
 	public String getSessionId() {

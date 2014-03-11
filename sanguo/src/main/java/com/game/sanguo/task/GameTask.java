@@ -162,7 +162,6 @@ public abstract class GameTask implements Runnable {
 			}
 		} catch (Throwable e) {
 		}
-		logger.info(String.format("%s----\r\n%s", content, classInstance.toString()));
 		return classInstance;
 	}
 
