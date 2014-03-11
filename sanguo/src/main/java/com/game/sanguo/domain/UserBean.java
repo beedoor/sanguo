@@ -13,15 +13,16 @@ public class UserBean {
 	private String chatSessionId;
 	private String userName;
 	private String password;
-	private long userID;
+	private Long userID=0L;
 	private String checkId;
-	private String areaId;
+	private Long areaId;
+	private Long reLoginTime=0L;
 	private ClientUpdateInfo clientInfo;
 
 	private LoginGameInfo loginGameInfo;
 	
-	private boolean isSuspend=false;
-	private Map<String,GameAreaInfo> gameAreaInfoMap = new HashMap<String,GameAreaInfo>();
+	private Boolean isSuspend=false;
+	private Map<Long,GameAreaInfo> gameAreaInfoMap = new HashMap<Long,GameAreaInfo>();
 	
 	private Configure configure;
 	public UserBean() {
@@ -59,6 +60,14 @@ public class UserBean {
 		return isSuspend;
 	}
 
+	public Long getReLoginTime() {
+		return reLoginTime;
+	}
+
+	public void setReLoginTime(Long reLoginTime) {
+		this.reLoginTime = reLoginTime;
+	}
+
 	public void setSuspend(boolean isSuspend) {
 		this.isSuspend = isSuspend;
 	}
@@ -80,15 +89,15 @@ public class UserBean {
 		return String.format("http://%s", gameAreaInfoMap.get(areaId).getUrl());
 	}
 	public void putGameAreaInfo(GameAreaInfo gameAreaInfo) {
-		gameAreaInfoMap.put(String.valueOf(gameAreaInfo.getId()), gameAreaInfo);
+		gameAreaInfoMap.put(gameAreaInfo.getId(), gameAreaInfo);
 	}
 
-	public String getAreaId() {
+	public Long getAreaId() {
 		return areaId;
 	}
 
 
-	public void setAreaId(String areaId) {
+	public void setAreaId(Long areaId) {
 		this.areaId = areaId;
 	}
 
@@ -147,19 +156,19 @@ public class UserBean {
 		this.password = password;
 	}
 
-	public long getUserID() {
+	public Long getUserID() {
 		return userID;
 	}
 
-	public void setUserID(long userID) {
+	public void setUserID(Long userID) {
 		this.userID = userID;
 	}
 
 	@Override
 	public String toString() {
 		return "UserBean [numberId=" + numberId + ", batchId=" + batchId + ", sessionId=" + sessionId + ", chatSessionId=" + chatSessionId + ", userName=" + userName + ", password=" + password
-				+ ", userID=" + userID + ", checkId=" + checkId + ", areaId=" + areaId + ", clientInfo=" + clientInfo + ", gameAreaInfoMap=" + gameAreaInfoMap + ", configure=" + configure + "]";
+				+ ", userID=" + userID + ", checkId=" + checkId + ", areaId=" + areaId + ", reLoginTime=" + reLoginTime + ", clientInfo=" + clientInfo + ", loginGameInfo=" + loginGameInfo
+				+ ", isSuspend=" + isSuspend + ", gameAreaInfoMap=" + gameAreaInfoMap + ", configure=" + configure + "]";
 	}
-
 
 }

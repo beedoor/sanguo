@@ -11,8 +11,8 @@ public class ContinuousLoginDaysRewardInfo {
 	public Long getErrCode() {
 		return errCode;
 	}
-	public void setErrCode(Long errCode) {
-		this.errCode = errCode;
+	public void setErrCode(String errCode) {
+		this.errCode = Long.parseLong(errCode);
 	}
 	public String getErrMsg() {
 		return errMsg;
@@ -23,20 +23,20 @@ public class ContinuousLoginDaysRewardInfo {
 	public Long getGemLeft() {
 		return gemLeft;
 	}
-	public void setGemLeft(Long gemLeft) {
-		this.gemLeft = gemLeft;
+	public void setGemLeft(String gemLeft) {
+		this.gemLeft = Long.parseLong(gemLeft);
 	}
 	public Long getGoldLeft() {
 		return goldLeft;
 	}
-	public void setGoldLeft(Long goldLeft) {
-		this.goldLeft = goldLeft;
+	public void setGoldLeft(String goldLeft) {
+		this.goldLeft = Long.parseLong(goldLeft);
 	}
 	public Long getResult() {
 		return result;
 	}
-	public void setResult(Long result) {
-		this.result = result;
+	public void setResult(String result) {
+		this.result = Long.parseLong(result);
 	}
 	public String getRewardHeros() {
 		return rewardHeros;

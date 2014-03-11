@@ -29,8 +29,7 @@ public class CitySearchAndGoldTask extends GameTask {
 			if (userBean.getConfigure().getSearchResource() == 1) {
 				msgIdGetGold();
 				msgIdCitySearch();
-			}else
-			{
+			} else {
 				logger.info("禁止自动收资源");
 			}
 		} catch (Throwable e) {
@@ -65,16 +64,9 @@ public class CitySearchAndGoldTask extends GameTask {
 		doRequest(postMethod);
 
 		try {
-			BufferedReader br = new BufferedReader(new InputStreamReader(postMethod.getResponseBodyAsStream()));
-			String s1 = null;
-			while ((s1 = br.readLine()) != null) {
-				if (s1.startsWith("dwr")) {
-					break;
-				}
-			}
-			GoldSearchInfo goldInfo = initBeanInfo(GoldSearchInfo.class, s1);
+			GoldSearchInfo goldInfo = initBeanInfo(GoldSearchInfo.class, postMethod.getResponseBodyAsStream(), "dwr");
 			logger.info("当前金币[{}],获得金币[{}]", new Object[] { goldInfo.getGold(), goldInfo.getAddGold() });
-		} catch (Exception e) {
+		} catch (Throwable e) {
 			logger.error("转换异常", e);
 		}
 	}
@@ -125,7 +117,7 @@ public class CitySearchAndGoldTask extends GameTask {
 			cityInfo.setItems(item);
 			logger.info("当前金币[{}],获得金币[{}],武将[{}],物品[{}]",
 					new Object[] { cityInfo.getGold(), cityInfo.getSearchGold(), GameUtil.ingoreNull(cityInfo.getHeros()), GameUtil.ingoreNull(cityInfo.getItems()) });
-		} catch (Exception e) {
+		} catch (Throwable e) {
 			logger.error("转换异常", e);
 		}
 	}

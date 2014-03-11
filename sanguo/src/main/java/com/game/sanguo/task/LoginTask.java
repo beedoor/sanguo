@@ -7,26 +7,20 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.commons.httpclient.Header;
-import org.apache.commons.httpclient.HeaderElement;
 import org.apache.commons.httpclient.NameValuePair;
 import org.apache.commons.httpclient.methods.PostMethod;
 
 import com.game.sanguo.domain.ClientUpdateInfo;
 import com.game.sanguo.domain.GameAreaInfo;
 import com.game.sanguo.domain.LoginByEmailInfo;
+import com.game.sanguo.domain.StartChatInfo;
 import com.game.sanguo.domain.UserBean;
 import com.game.sanguo.util.LoginGameInfo;
 
 public class LoginTask extends GameTask {
 
-	private int delay;
-	private TimeUnit timeUnit;
-
-	public LoginTask(UserBean userBean, int delay, TimeUnit timeUnit) {
+	public LoginTask(UserBean userBean) {
 		super();
-		this.delay = delay;
-		this.timeUnit = timeUnit;
 		this.userBean = userBean;
 	}
 
@@ -36,10 +30,6 @@ public class LoginTask extends GameTask {
 
 	public void doAction() {
 		try {
-			logger.info(delay + " 秒后重新登陆");
-			if (delay != 0) {
-				sleep(delay, timeUnit);
-			}
 			userBean.reSetNumberIdAndBatchId();
 
 			getBaseInfoNew();
@@ -50,6 +40,9 @@ public class LoginTask extends GameTask {
 			loginGame();
 			sleep(5);// 游戏加载
 			startChat();
+			msgIdServerTime();
+			//获取资源信息
+			msgIdGetCitiesGoldAvailable();
 		} catch (Throwable e) {
 			logger.error("登录异常", e);
 		}
@@ -104,7 +97,6 @@ public class LoginTask extends GameTask {
 
 		try {
 			LoginByEmailInfo beanInfo = initBeanInfo(LoginByEmailInfo.class, postMethod.getResponseBodyAsStream(), "dwr");
-			logger.info(beanInfo.toString());
 			userBean.setCheckId(beanInfo.getCheckId());
 			userBean.setAreaId(beanInfo.getServerId());
 			userBean.setUserID(beanInfo.getUserId());
@@ -146,8 +138,8 @@ public class LoginTask extends GameTask {
 			logger.info(beanInfo.toString());
 			userBean.setLoginGameInfo(beanInfo);
 			userBean.setSessionId(beanInfo.getSessionId());
-		} catch (Exception e) {
-			logger.error("登录服务器异常",e);
+		} catch (Throwable e) {
+			logger.error("登录服务器异常", e);
 		}
 	}
 
@@ -191,9 +183,8 @@ public class LoginTask extends GameTask {
 					userBean.putGameAreaInfo(gameArea);
 				}
 			}
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		} catch (Throwable e) {
+			logger.error("获取服务列表异常", e);
 		}
 	}
 
@@ -215,20 +206,27 @@ public class LoginTask extends GameTask {
 		postMethod.addParameter(new NameValuePair("c0-id", "0"));
 		postMethod.addParameter(new NameValuePair("c0-param0", "string:SC"));
 		postMethod.addParameter(new NameValuePair("c0-param1", "string:2"));
-		postMethod.addParameter(new NameValuePair("c0-param2", "string:460"));
+		postMethod.addParameter(new NameValuePair("c0-param2", "string:"+getClientVersion()));
 		postMethod.addParameter(new NameValuePair("batchId", "" + userBean.getBatchId()));
 		doRequest(postMethod);
 
 		try {
 			ClientUpdateInfo clientInfo = initBeanInfo(ClientUpdateInfo.class, postMethod.getResponseBodyAsStream(), "dwr");
+			logger.info("客户端版本信息:" + clientInfo.toString());
 			userBean.setClientInfo(clientInfo);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		} catch (Throwable e) {
+			logger.error("客户端更新异常", e);
 		}
-
 	}
 
+	private String getClientVersion()
+	{
+		if(userBean.getClientInfo() == null)
+		{
+			return "475";
+		}
+		return userBean.getClientInfo().getLatestVersion()+"";
+	}
 	public void startChat() {
 		PostMethod postMethod = new PostMethod(String.format("%s/ChatServer/dwr/call/plaincall/DwrChat.startChat.dwr;jsessionid", userBean.getUrlPrx()));
 		postMethod.addRequestHeader("Content-type", "application/octet-stream");
@@ -249,13 +247,63 @@ public class LoginTask extends GameTask {
 		postMethod.addParameter(new NameValuePair("batchId", "" + userBean.getBatchId()));
 		doRequest(postMethod);
 
-		Header header = postMethod.getResponseHeader("Set-Cookie");
-		HeaderElement[] h = header.getElements();
-		if (h.length > 0) {
-			logger.info("获取新的聊天sessionID：" + h[0].getValue());
-			userBean.setChatSessionId(h[0].getValue());
-		} else {
-			logger.error("登录异常");
+		try {
+			StartChatInfo beanInfo = initBeanInfo(StartChatInfo.class, postMethod.getResponseBodyAsStream(), "dwr");
+			logger.info(beanInfo.toString());
+			userBean.setChatSessionId(beanInfo.getSessionId());
+		} catch (Throwable e) {
+			logger.error("获取聊天会话ID异常", e);
 		}
+	}
+
+	private void msgIdServerTime() {
+		PostMethod postMethod = new PostMethod(String.format("%s/hero/dwr/call/plaincall/DwrGameWorld.getMsg.dwr;jsessionid=%s;mid=%s", userBean.getUrlPrx(), userBean.getSessionId(),
+				userBean.getSessionId()));
+		postMethod.addRequestHeader("Content-type", "application/octet-stream");
+		postMethod.addRequestHeader("Cache-Control", "no-cache");
+		postMethod.addRequestHeader("Pragma", "no-cache");
+		postMethod.addRequestHeader("Accept-Encoding", "gzip");
+		postMethod.addRequestHeader("User-Agent", "Dalvik/1.4.0 (Linux; U; Android 2.3.4; GT-I9100 Build/GRJ22)");
+		postMethod.addRequestHeader("Connection", "Keep-Alive");
+		postMethod.addParameter(new NameValuePair("callCount", "1"));
+		postMethod.addParameter(new NameValuePair("page", ""));
+		postMethod.addParameter(new NameValuePair("httpSessionId", userBean.getSessionId()));
+		postMethod.addParameter(new NameValuePair("scriptSessionId", "51A0434AF2250025CA28BCB7B4E55E900"));
+		postMethod.addParameter(new NameValuePair("c0-scriptName", "DwrGameWorld"));
+		postMethod.addParameter(new NameValuePair("c0-methodName", "getMsg"));
+		postMethod.addParameter(new NameValuePair("c0-id", "0"));
+		postMethod.addParameter(new NameValuePair("c0-e1", "number:0"));
+		postMethod.addParameter(new NameValuePair("c0-e2", "string:msgTypeGameWorld"));
+		postMethod.addParameter(new NameValuePair("c0-e3", "string:msgIdServerTime"));
+		postMethod.addParameter(new NameValuePair("c0-e4", "string:"));
+		postMethod.addParameter(new NameValuePair("c0-param0", "Object_Object:{instanceId:reference:c0-e1, messageType:reference:c0-e2, messageId:reference:c0-e3, message:reference:c0-e4}"));
+		postMethod.addParameter(new NameValuePair("batchId", "" + userBean.getBatchId()));
+		doRequest(postMethod);
+	}
+
+	private void msgIdGetCitiesGoldAvailable()
+	{
+		PostMethod postMethod = new PostMethod(String.format("%s/hero/dwr/call/plaincall/DwrGameWorld.getMsg.dwr;jsessionid=%s;mid=%s", userBean.getUrlPrx(), userBean.getSessionId(),
+				userBean.getSessionId()));
+		postMethod.addRequestHeader("Content-type", "application/octet-stream");
+		postMethod.addRequestHeader("Cache-Control", "no-cache");
+		postMethod.addRequestHeader("Pragma", "no-cache");
+		postMethod.addRequestHeader("Accept-Encoding", "gzip");
+		postMethod.addRequestHeader("User-Agent", "Dalvik/1.4.0 (Linux; U; Android 2.3.4; GT-I9100 Build/GRJ22)");
+		postMethod.addRequestHeader("Connection", "Keep-Alive");
+		postMethod.addParameter(new NameValuePair("callCount", "1"));
+		postMethod.addParameter(new NameValuePair("page", ""));
+		postMethod.addParameter(new NameValuePair("httpSessionId", userBean.getSessionId()));
+		postMethod.addParameter(new NameValuePair("scriptSessionId", "51A0434AF2250025CA28BCB7B4E55E900"));
+		postMethod.addParameter(new NameValuePair("c0-scriptName", "DwrGameWorld"));
+		postMethod.addParameter(new NameValuePair("c0-methodName", "getMsg"));
+		postMethod.addParameter(new NameValuePair("c0-id", "0"));
+		postMethod.addParameter(new NameValuePair("c0-e1", "number:0"));
+		postMethod.addParameter(new NameValuePair("c0-e2", "string:msgTypeCity"));
+		postMethod.addParameter(new NameValuePair("c0-e3", "string:msgIdGetCitiesGoldAvailable"));
+		postMethod.addParameter(new NameValuePair("c0-e4", "string:"));
+		postMethod.addParameter(new NameValuePair("c0-param0", "Object_Object:{instanceId:reference:c0-e1, messageType:reference:c0-e2, messageId:reference:c0-e3, message:reference:c0-e4}"));
+		postMethod.addParameter(new NameValuePair("batchId", "" + userBean.getBatchId()));
+		doRequest(postMethod);
 	}
 }

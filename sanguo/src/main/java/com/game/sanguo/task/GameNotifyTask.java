@@ -34,6 +34,7 @@ public class GameNotifyTask extends GameTask {
 	}
 
 	private void msgTypeGameWorld() {
+		logger.info("------"+userBean.getSessionId());
 		PostMethod postMethod = new PostMethod(String.format("%s/hero/dwr/call/plaincall/DwrGameWorld.getMsg.dwr;jsessionid=%s;mid=%s",userBean.getUrlPrx(),userBean.getSessionId(),userBean.getSessionId()));
 		postMethod.addRequestHeader("Content-type", "application/octet-stream");
 		postMethod.addRequestHeader("Cache-Control", "no-cache");
