@@ -7,7 +7,9 @@ import java.io.InputStreamReader;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.commons.httpclient.NameValuePair;
 import org.apache.commons.httpclient.methods.PostMethod;
@@ -169,7 +171,6 @@ public class LoginTask extends GameTask {
 					loginGameInfo = initBeanInfo(LoginGameInfo.class, s1);
 					break;
 				}
-				logger.info(s1 + "\t" + s1.startsWith("s5[0]") + "\t" + s1.startsWith("s6[0]") + "\t" + s1.startsWith("s7[0]"));
 				if (s1.startsWith("s5[0]")) {
 					decodeArrayPrex(s5ArrayList, s1);
 				} else if (s1.startsWith("s6[0]")) {
@@ -200,6 +201,7 @@ public class LoginTask extends GameTask {
 				loginGameInfo.setPlayerHerosInfoList(playerHerosInfoList);
 				loginGameInfo.setPlayerItemsInfoList(playerItemsInfoList);
 			}
+			addOtherInfo(playerCitysInfoList, playerHerosInfoList, playerItemsInfoList);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -207,6 +209,25 @@ public class LoginTask extends GameTask {
 
 		return loginGameInfo;
 	}
+
+	private void addOtherInfo(List<PlayerCitysInfo> playerCitysInfoList, List<PlayerHerosInfo> playerHerosInfoList, List<PlayerItemsInfo> playerItemsInfoList) {
+		for (PlayerCitysInfo playerCitysInfo : playerCitysInfoList) {
+			playerCitysInfo.setCityName(userBean.getItemConfig().decodeCity(playerCitysInfo.getSourceId()));
+		}
+		for (PlayerHerosInfo playerHerosInfo : playerHerosInfoList) {
+			userBean.putHeroIdToSrcId(playerHerosInfo.getId(), playerHerosInfo.getSourceId());
+			playerHerosInfo.setCityName(userBean.getItemConfig().decodeCity(playerHerosInfo.getCityId()));
+			playerHerosInfo.setHeroName(userBean.getItemConfig().decodeHero(playerHerosInfo.getSourceId()));
+		}
+		for (PlayerItemsInfo playerItemsInfo : playerItemsInfoList) {
+			userBean.putItemIdToSrcId(playerItemsInfo.getId(), playerItemsInfo.getSourceId());
+			playerItemsInfo.setItemName(userBean.getItemConfig().decodeEquipment(playerItemsInfo.getSourceId()));
+			playerItemsInfo.setHeroName(userBean.getItemConfig().decodeHero(userBean.decodeHeroSrcIdByUseId(playerItemsInfo.getHeroUseId())));
+		}
+		logger.info(userBean.getItemIdToSrcIdMap()+"");
+		logger.info(userBean.getHeroIdToSrcIdMap()+"");
+	}
+	
 
 	private void decodeArrayPrex(List<String> sArrayList, String s) {
 		String[] sArray = s.split(";");

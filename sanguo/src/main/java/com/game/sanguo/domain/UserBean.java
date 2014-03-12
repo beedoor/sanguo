@@ -3,6 +3,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import com.game.sanguo.util.ItemConfig;
 import com.game.sanguo.util.LoginGameInfo;
 
 public class UserBean {
@@ -25,8 +26,50 @@ public class UserBean {
 	private Map<Long,GameAreaInfo> gameAreaInfoMap = new HashMap<Long,GameAreaInfo>();
 	
 	private Configure configure;
+	private ItemConfig itemConfig;
+	
+	private Map<Long,Long> itemIdToSrcIdMap = new HashMap<Long,Long>();
+	private Map<Long,Long> heroIdToSrcIdMap = new HashMap<Long,Long>();
+	
+	
+	public Map<Long, Long> getItemIdToSrcIdMap() {
+		return itemIdToSrcIdMap;
+	}
+	public void setItemIdToSrcIdMap(Map<Long, Long> itemIdToSrcIdMap) {
+		this.itemIdToSrcIdMap = itemIdToSrcIdMap;
+	}
+	public Map<Long, Long> getHeroIdToSrcIdMap() {
+		return heroIdToSrcIdMap;
+	}
+	public void setHeroIdToSrcIdMap(Map<Long, Long> heroIdToSrcIdMap) {
+		this.heroIdToSrcIdMap = heroIdToSrcIdMap;
+	}
+	public void putItemIdToSrcId(Long itemId,Long srcId)
+	{
+		itemIdToSrcIdMap.put(itemId, srcId);
+	}
+	public void putHeroIdToSrcId(Long itemId,Long srcId)
+	{
+		heroIdToSrcIdMap.put(itemId, srcId);
+	}
+	public Long decodeItemSrcIdByUseId(Long userId)
+	{
+		return itemIdToSrcIdMap.get(userId);
+	}
+	public Long decodeHeroSrcIdByUseId(Long useId)
+	{
+		return heroIdToSrcIdMap.get(useId);
+	}
 	public UserBean() {
 		super();
+	}
+
+	public ItemConfig getItemConfig() {
+		return itemConfig;
+	}
+
+	public void setItemConfig(ItemConfig itemConfig) {
+		this.itemConfig = itemConfig;
 	}
 
 	public UserBean(String userName, String password) {

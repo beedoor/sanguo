@@ -1172,4 +1172,216 @@
 <hero id="1016"    name="神·关羽"    default_warriors="1"    skill1_type="1"    skill1_level="1"    skill1_id="50"    skill2_type="1"    skill2_level="9"    skill2_id="63"    skill3_type="1"    skill3_level="18"    skill3_id="69"    skill4_type="1"    skill4_level="29"    skill4_id="77"    skill5_type="1"    skill5_level="38"    skill5_id="84"    skill6_type="1"    skill6_level="50"    skill6_id="88"    skill7_type="1"    skill7_level="61"    skill7_id="102"    skill8_type="1"    skill8_level="70"    skill8_id="110"    skill9_type="2"    skill9_level="1"    skill9_id="8"    skill10_type="2"    skill10_level="9"    skill10_id="16"    skill11_type="2"    skill11_level="20"    skill11_id="22"    skill12_type="2"    skill12_level="32"    skill12_id="32"    skill13_type="2"    skill13_level="45"    skill13_id="38"    skill14_type="2"    skill14_level="55"    skill14_id="51"    skill15_type="2"    skill15_level="68"    skill15_id="54"    skill16_type="1"    skill16_level="100"    skill16_id="126"    skill17_type="1"    skill17_level="130"    skill17_id="143"    skill18_type="0"    skill18_level="0"    skill18_id="0" />
 <hero id="1017"    name="神·太史慈"    default_warriors="2"    skill1_type="1"    skill1_level="1"    skill1_id="52"    skill2_type="1"    skill2_level="8"    skill2_id="58"    skill3_type="1"    skill3_level="20"    skill3_id="66"    skill4_type="1"    skill4_level="29"    skill4_id="77"    skill5_type="1"    skill5_level="39"    skill5_id="81"    skill6_type="1"    skill6_level="48"    skill6_id="89"    skill7_type="1"    skill7_level="57"    skill7_id="95"    skill8_type="1"    skill8_level="70"    skill8_id="110"    skill9_type="2"    skill9_level="1"    skill9_id="7"    skill10_type="2"    skill10_level="13"    skill10_id="15"    skill11_type="2"    skill11_level="27"    skill11_id="20"    skill12_type="2"    skill12_level="41"    skill12_id="30"    skill13_type="2"    skill13_level="55"    skill13_id="40"    skill14_type="0"    skill14_level="0"    skill14_id="0"    skill15_type="0"    skill15_level="0"    skill15_id="0"    skill16_type="0"    skill16_level="0"    skill16_id="0"    skill17_type="0"    skill17_level="0"    skill17_id="0"    skill18_type="0"    skill18_level="0"    skill18_id="0" />
 	</heros>
+	<skills>
+		<skill id="1"    name="命疗术"    mp_consume="20"    description="快速恢复己方武将15点生命"/>
+<skill id="2"    name="落月弓"    mp_consume="18"    description="放出一个蓝紫色的弓箭，对敌将造成20点伤害"/>
+<skill id="3"    name="地泉冲"    mp_consume="19"    description="施展三个水柱，用水柱来冲跑敌人，每个水柱对敌人造成5点伤害"/>
+<skill id="4"    name="火箭"    mp_consume="20"    description="派出两行操火的弓箭手，齐射向敌人，每根火箭对敌人造成5点伤害"/>
+<skill id="5"    name="伏兵组阵"    mp_consume="21"    description="从我方后面派遣最多五名伏兵支持我方战斗"/>
+<skill id="6"    name="木轮攻"    mp_consume="22"    description="在高处滚下三个大木轮，造成路径上的敌人5点伤害"/>
+<skill id="7"    name="虎咆"    mp_consume="21"    description="主将集气后，用力放出十一个紫色星火的怒吼，每个紫色的星火造成敌人5点伤害"/>
+<skill id="8"    name="火雷"    mp_consume="22"    description="在两个普通的木桶里，装满炸药，在合适的地方点燃，爆炸时造成周围敌人5点伤害"/>
+<skill id="9"    name="雷击"    mp_consume="22"    description="瞬间发出三段闪电，闪电落下，造成一定范围敌人7点伤害"/>
+<skill id="10"    name="炎龙"    mp_consume="23"    description="召唤出一条黄龙，黄龙在空中旋舞，并攻击中间行走的敌人"/>
+<skill id="11"    name="伏焰"    mp_consume="23"    description="在平坦的地底下铺设三个着火点，对经过的敌人造成持续伤害"/>
+<skill id="12"    name="定身技"    mp_consume="24"    description="释放八卦定身咒语，短时间定住敌人，持续5秒"/>
+<skill id="13"    name="御飞刀"    mp_consume="25"    description="浑身发出一个充满怒气的飞刀，飞向敌主将，减少敌将25点生命"/>
+<skill id="14"    name="雷光波动"    mp_consume="25"    description="瞬间发出五段闪电，对闪电中心敌人造成10点伤害，并对周围敌人一定伤害"/>
+<skill id="15"    name="火箭烈"    mp_consume="26"    description="派出三行操火的弓箭手，齐射向敌人，每根火箭对敌人造成5点伤害"/>
+<skill id="16"    name="虎咆震"    mp_consume="26"    description="主将集气后，用力放出二十二个紫色星火的怒吼，每个紫色的星火造成敌人5点伤害"/>
+<skill id="17"    name="伏兵排阵"    mp_consume="28"    description="从我方后面派遣最多十名伏兵支持我方战斗"/>
+<skill id="18"    name="地泉裂劲"    mp_consume="29"    description="施展四根水柱，用水柱来冲跑敌人，每根水柱对敌人造成5点伤害"/>
+<skill id="19"    name="后伏连兵"    mp_consume="30"    description="从战场后面派遣最多五名伏兵，支持我方战斗"/>
+<skill id="20"    name="木轮强袭"    mp_consume="31"    description="在高处滚下五个大木轮，造成路径上的敌人5点伤害"/>
+<skill id="21"    name="炎龙无双"    mp_consume="35"    description="召唤出两条黄龙，黄龙在空中旋舞，并攻击中间行走的敌人"/>
+<skill id="22"    name="雷光振杀"    mp_consume="35"    description="瞬间发出七段闪电，对闪电中心敌人造成10点伤害，并对周围敌人一定伤害"/>
+<skill id="23"    name="虎咆阳炎"    mp_consume="35"    description="主将集气后，用力放出二十六个紫色星火的怒吼，每个紫色的星火造成敌人5点伤害"/>
+<skill id="24"    name="火雷爆"    mp_consume="36"    description="在四个普通的木桶里，装满炸药，在合适的地方点燃，爆炸时造成周围敌人5点伤害"/>
+<skill id="25"    name="黄龙天翔"    mp_consume="38"    description="在武将中心召唤出一条黄龙，黄龙升起，在空中吐出巨大的黄色火球，火球落下，烧死触到的敌军"/>
+<skill id="26"    name="地泉鲸浪"    mp_consume="38"    description="放出八个水柱，水柱逆流来冲击敌人"/>
+<skill id="27"    name="定身咒"    mp_consume="38"    description="释放八卦定身咒语，短时间定住敌人，持续10秒"/>
+<skill id="28"    name="雷击闪"    mp_consume="39"    description="瞬间发出九段闪电，对闪电中心敌人造成10点伤害，并对周围敌人一定伤害"/>
+<skill id="29"    name="炎龙杀阵"    mp_consume="40"    description="召唤出三条黄龙，黄龙在空中旋舞，并攻击中间行走的敌人"/>
+<skill id="30"    name="火箭天袭"    mp_consume="40"    description="派出四行操火的弓箭手，齐射向敌人，每根火箭对敌人造成5点伤害"/>
+<skill id="31"    name="后伏兵阵"    mp_consume="42"    description="从战场后面派遣最多十名伏兵，支持我方战斗"/>
+<skill id="32"    name="火雷星雨"    mp_consume="45"    description="在七个普通的木桶里，装满炸药，在合适的地方点燃，爆炸时造成周围敌人5点伤害"/>
+<skill id="33"    name="炎龙怒涛"    mp_consume="50"    description="召唤出四条黄龙，黄龙在空中旋舞，并攻击中间行走的敌人"/>
+<skill id="34"    name="赤焰洪流"    mp_consume="42"    description="在平坦的地底下铺设六个着火点，对经过的敌人造成持续伤害"/>
+<skill id="35"    name="木轮涛击"    mp_consume="55"    description="在高处滚下七个大木轮，造成路径上的敌人5点伤害"/>
+<skill id="36"    name="赤焰火海"    mp_consume="70"    description="在平坦的地底下铺设九个着火点，对经过的敌人造成持续伤害"/>
+<skill id="37"    name="后伏军阵"    mp_consume="45"    description="从战场后面派遣最多十五名伏兵，支持我方战斗"/>
+<skill id="38"    name="大地狂啸"    mp_consume="65"    description="施展时，大地摇动，地上突石狂起，以剧烈震动和碎石的突击来杀死敌人"/>
+<skill id="39"    name="雷光燋狱"    mp_consume="50"    description="瞬间发出十一段闪电，对闪电中心敌人造成10点伤害，并对周围敌人一定伤害"/>
+<skill id="40"    name="八门锁"    mp_consume="23"    description="释放八卦定身咒语，短时间定住敌人，持续15秒"/>
+<skill id="41"    name="炎龙绝杀"    mp_consume="65"    description="召唤出五条黄龙，黄龙在空中旋舞，并攻击中间行走的敌人"/>
+<skill id="42"    name="五雷轰顶"    mp_consume="60"    description="施展一个巨大的电球，持续对敌军主将造成20点伤害，并附带雷击效果"/>
+<skill id="43"    name="狂雷天牢"    mp_consume="70"    description="施展一个巨大的电球，持续对敌军主将造成30点伤害"/>
+<skill id="44"    name="天地无用"    mp_consume="75"    description="施展一条黄龙，黄龙升起带动火牛冲锋，火牛杀进敌阵，同时电球持续对敌将造成伤害"/>
+<skill id="45"    name="飞矢"    mp_consume="18"    description="施展时，派出一行的弓箭手，齐射向天空，每根箭矢对敌人造成5点伤害"/>
+<skill id="46"    name="连弩"    mp_consume="20"    description="从身后掏出一张硬弓，连续射击四次，每根箭矢对敌人造成4点伤害"/>
+<skill id="47"    name="突石"    mp_consume="20"    description="引发一个巨大的石头，刺伤敌将，并对周围士兵造成最多15点的伤害"/>
+<skill id="48"    name="落石"    mp_consume="18"    description="在战场后面准备三台投石车，巨石被抛向天空，每颗巨石对敌人造成最多20点伤害"/>
+<skill id="49"    name="刀剑乱"    mp_consume="18"    description="施展时，召唤六把兵器，随机的刺杀敌兵，造成最多5点伤害"/>
+<skill id="50"    name="半月斩"    mp_consume="22"    description="施展一条半月，在移动中，斩杀触到的敌兵，并对敌将造成最多22点伤害"/>
+<skill id="51"    name="旋龙"    mp_consume="22"    description="施展两个龙卷风，卷走战场的少许士兵，每个最多造成20点伤害"/>
+<skill id="52"    name="落日弓"    mp_consume="18"    description="放出一个带有日光之力的弓箭，对敌将造成20点伤害"/>
+<skill id="53"    name="八面火"    mp_consume="23"    description="以主将为中心八个方向放火攻击敌人，最多造成40点伤害"/>
+<skill id="54"    name="旋灯火"    mp_consume="23"    description="在主将周围燃起火焰，火焰转动的同时，烧死沿途的敌方士兵，减少范围内敌将的生命，持续6秒"/>
+<skill id="55"    name="突石剑"    mp_consume="23"    description="引发两个巨大的石头，刺伤敌将，并对周围士兵造成最多15点的伤害"/>
+<skill id="56"    name="太极门"    mp_consume="23"    description="施展两个太极图，图案会放出蓝白色的气波，每个太极对敌人最多造成9点伤害"/>
+<skill id="57"    name="伏兵班阵"    mp_consume="21"    description="从我方后面派遣最多二十五名伏兵支持我方战斗"/>
+<skill id="58"    name="八门金锁"    mp_consume="20"    description="施展一个八卦阵法，锁住敌军士兵，持续20秒"/>
+<skill id="59"    name="鬼戟"    mp_consume="24"    description="挥出一柄重戟，戟会在以敌将为中心的直线上移动，并造成敌将最多20点伤害"/>
+<skill id="60"    name="回天术"    mp_consume="26"    description="快速恢复己方武将40点生命"/>
+<skill id="61"    name="地茅刺"    mp_consume="26"    description="在平坦的地上，迅速冒出两队长刺，每对长刺最多造成敌人25点伤害"/>
+<skill id="62"    name="连弩激射"    mp_consume="26"    description="从身后掏出一张硬弓，连续射击六次，每根箭矢对敌人造成4点伤害"/>
+<skill id="63"    name="冰柱刺"    mp_consume="26"    description="施展三座冰山，冰山从地面上突然上起，专门对付没有准备的士兵"/>
+<skill id="64"    name="突剑四方"    mp_consume="27"    description="引发四个巨大的石头，刺伤敌将，并对周围士兵造成最多15点的伤害"/>
+<skill id="65"    name="冲车"    mp_consume="27"    description="派出三辆安置了巨大的铁刺的战车快速的在战场上移动，攻击所在直线上的所有敌人"/>
+<skill id="66"    name="神剑"    mp_consume="28"    description="施展一把升向天空的剑，用少量的小剑雨攻击敌人，剑雨造成对多7点伤害"/>
+<skill id="67"    name="八面火转"    mp_consume="28"    description="以主将为中心连续两次向八个方向放火攻击敌人，最多造成80点伤害"/>
+<skill id="68"    name="突袭石"    mp_consume="28"    description="在高地上放下四个巨大的石头，每颗石头对路径上的敌人造成最多9点伤害"/>
+<skill id="69"    name="龙炮"    mp_consume="29"    description="在战场后面安置两辆大炮，然后一齐射向天空，每颗巨石对敌人造成最多20点伤害"/>
+<skill id="70"    name="火牛阵"    mp_consume="30"    description="派出两头带有火的野牛冲入敌阵，对沿路的敌人造成伤害"/>
+<skill id="71"    name="生死门"    mp_consume="31"    description="用一个黑洞在战场中央出现，黑洞的吸引力可以将敌兵魂魄吸入，持续4秒"/>
+<skill id="72"    name="乱飞矢"    mp_consume="32"    description="施展时，派出两行弓箭手，齐射向天空，每根箭矢对敌人造成5点伤害"/>
+<skill id="73"    name="地茅乱刺"    mp_consume="33"    description="在平坦的地上，迅速冒出四队长刺，每对长刺最多造成敌人25点伤害"/>
+<skill id="74"    name="龙炮激射"    mp_consume="34"    description="在战场后面安置三辆大炮，然后一齐射向天空，每颗巨石对敌人造成最多20点伤害"/>
+<skill id="75"    name="旋龙合璧"    mp_consume="34"    description="施展四个龙卷风，卷走战场的少许士兵，每个最多造成20点伤害"/>
+<skill id="76"    name="冰柱群锋"    mp_consume="34"    description="施展五根冰柱，冰柱从地面上突然上起，每个冰柱最多造成20点伤害"/>
+<skill id="77"    name="烈火旋灯"    mp_consume="35"    description="在主将周围燃起火焰，火焰转动的同时，烧死沿途的敌方士兵，减少范围内敌将的生命，持续8秒"/>
+<skill id="78"    name="太极华阵"    mp_consume="36"    description="施展五个太极图，图案会放出蓝白色的气波，每个太极对敌人最多造成9点伤害"/>
+<skill id="79"    name="滚石遽压"    mp_consume="36"    description="在高地上放下六个巨大的石头，每颗石头对路径上的敌人造成最多9点伤害"/>
+<skill id="80"    name="八卦奇阵"    mp_consume="37"    description="施展一个黄色的八卦气旋升到天空，落下时放出冲击，每次冲击最多造成10点伤害"/>
+<skill id="81"    name="伏兵连阵"    mp_consume="37"    description="从我方后面派遣最多三十名伏兵支持我方战斗"/>
+<skill id="82"    name="驷冲车"    mp_consume="38"    description="派出四辆安置了巨大的铁刺的战车快速的在战场上移动，攻击所在直线上的所有敌人"/>
+<skill id="83"    name="三日月斩"    mp_consume="38"    description="施展三条半月，在移动中，斩杀触到的敌兵，并对敌将造成最多22点伤害"/>
+<skill id="84"    name="神剑闪"    mp_consume="38"    description="施展一把升向天空的剑，用大量的小剑雨攻击敌人，剑雨造成对多7点伤害"/>
+<skill id="85"    name="连弩狂涛"    mp_consume="38"    description="从身后掏出一张硬弓，连续射击8次，每根箭矢对敌人造成4点伤害"/>
+<skill id="86"    name="乱刀狂舞"    mp_consume="39"    description="施展时，召唤十二把兵器，随机的刺杀敌兵，造成最多5点伤害"/>
+<skill id="87"    name="飞矢烈震"    mp_consume="39"    description="施展时，派出三行弓箭手，齐射向天空，每根箭矢对敌人造成5点伤害"/>
+<skill id="88"    name="三圣华斩"    mp_consume="40"    description="放出三道紫色的剑气，攻击沿路的敌兵，并对武将造成最多40点伤害"/>
+<skill id="89"    name="神火旋张"    mp_consume="40"    description="在主将周围燃起火焰，火焰转动的同时，烧死沿途的敌方士兵，减少范围内敌将的生命，持续8秒"/>
+<skill id="90"    name="回天命术"    mp_consume="40"    description="快速恢复己方武将60点生命"/>
+<skill id="91"    name="炬石轰"    mp_consume="42"    description="在战场后面派出一行的投石车，投石车安置带有火的巨大石头投到空中，每颗巨石最多造成20点伤害"/>
+<skill id="92"    name="火牛群舞"    mp_consume="45"    description="派出四头带有火的野牛冲入敌阵，对沿路的敌人造成伤害"/>
+<skill id="93"    name="茅刺遍地"    mp_consume="45"    description="在平坦的地上，迅速冒出六队长刺，每对长刺最多造成敌人25点伤害"/>
+<skill id="94"    name="滚石怒冲"    mp_consume="50"    description="在高地上放下八个巨大的石头，每颗石头对路径上的敌人造成最多9点伤害"/>
+<skill id="95"    name="剑轮舞"    mp_consume="55"    description="施展一组围绕武将且相互展开的蓝色宝剑，对周围敌人造成一定伤害"/>
+<skill id="96"    name="分身斩"    mp_consume="55"    description="浑身放出剑气，剑气凝成以敌将为目标一个分身，对敌将造成最多50点伤害"/>
+<skill id="97"    name="冰岚刃舞"    mp_consume="55"    description="施展七根冰柱，冰柱从地面上突然上起，每个冰柱最多造成20点伤害"/>
+<skill id="98"    name="神剑闪华"    mp_consume="58"    description="施展一把升向天空的剑，用大量的小剑雨攻击敌人，剑雨造成对多7点伤害"/>
+<skill id="99"    name="炎墙"    mp_consume="58"    description="在战场中间铺设两道火墙，对进入的敌人造成持续伤害"/>
+<skill id="100"    name="旋龙天舞"    mp_consume="60"    description="施展六个龙卷风，卷走战场的少许士兵，每个最多造成20点伤害"/>
+<skill id="101"    name="地狱之门"    mp_consume="60"    description="两个黑洞在战场中央出现，黑洞的吸引力可以将敌兵魂魄吸入，持续4秒"/>
+<skill id="102"    name="集火柱"    mp_consume="65"    description="施展四个火球，旋转后生起一道柱子，柱子旋转扩散，烧死在柱子里面的敌"/>
+<skill id="103"    name="神火怒张"    mp_consume="65"    description="在主将周围燃起火焰，火焰转动的同时，烧死沿途的敌方士兵，减少范围内敌将的生命，持续8秒"/>
+<skill id="104"    name="神鬼乱舞"    mp_consume="70"    description="武将借助神鬼之力，狂挥乱砍，对范围内的敌人造成最多100点伤害"/>
+<skill id="105"    name="炬石炼狱"    mp_consume="68"    description="在战场后面派出一行的投石车，投石车安置带有火的巨大石头投到空中，每颗巨石最多造成20点伤害"/>
+<skill id="106"    name="炎墙烈烧"    mp_consume="68"    description="在战场中间铺设四道火墙，对进入的敌人造成持续伤害"/>
+<skill id="107"    name="日月轮斩"    mp_consume="70"    description="施展五条半月，在移动中，斩杀触到的敌兵，并对敌将造成最多22点伤害"/>
+<skill id="108"    name="火牛烈崩"    mp_consume="70"    description="派出六头带有火的野牛冲入敌阵，对沿路的敌人造成伤害"/>
+<skill id="109"    name="五岳华斩"    mp_consume="70"    description="放出五道紫色的剑气，攻击沿路的敌兵，并对武将造成最多40点伤害"/>
+<skill id="110"    name="鬼哭神号"    mp_consume="75"    description="分身从将出，太极闹地龙，怒燃集火柱，旋转舞长空，对敌人造成大范围的伤害"/>
+	</skills>
+	<citys>
+		<city id="1"    city_name="新野"/>
+<city id="2"    city_name="博望坡"/>
+<city id="3"    city_name="豫山"/>
+<city id="4"    city_name="安林"/>
+<city id="5"    city_name="长安"/>
+<city id="6"    city_name="弘农"/>
+<city id="11"    city_name="洛阳"/>
+<city id="8"    city_name="宛"/>
+<city id="9"    city_name="筑阳"/>
+<city id="10"    city_name="安定"/>
+<city id="7"    city_name="虎牢关"/>
+<city id="12"    city_name="南皮"/>
+<city id="13"    city_name="平原"/>
+<city id="14"    city_name="代县"/>
+<city id="15"    city_name="北平"/>
+<city id="16"    city_name="襄平"/>
+<city id="17"    city_name="邺"/>
+<city id="18"    city_name="北海"/>
+<city id="19"    city_name="晋阳"/>
+<city id="20"    city_name="壶关"/>
+<city id="21"    city_name="官渡"/>
+<city id="22"    city_name="界桥"/>
+<city id="23"    city_name="乐陵"/>
+<city id="24"    city_name="汉中"/>
+<city id="25"    city_name="下弁"/>
+<city id="26"    city_name="上庸"/>
+<city id="27"    city_name="定军山"/>
+<city id="28"    city_name="天水"/>
+<city id="29"    city_name="陇右"/>
+<city id="30"    city_name="西凉"/>
+<city id="31"    city_name="武陵"/>
+<city id="32"    city_name="江陵"/>
+<city id="33"    city_name="襄阳"/>
+<city id="34"    city_name="江夏"/>
+<city id="35"    city_name="长沙"/>
+<city id="36"    city_name="长坂"/>
+<city id="37"    city_name="桂阳"/>
+<city id="38"    city_name="零陵"/>
+<city id="39"    city_name="赤壁"/>
+<city id="40"    city_name="建平"/>
+<city id="41"    city_name="成都"/>
+<city id="42"    city_name="梓潼"/>
+<city id="43"    city_name="永安"/>
+<city id="44"    city_name="江州"/>
+<city id="45"    city_name="建宁"/>
+<city id="46"    city_name="云南"/>
+<city id="47"    city_name="吴"/>
+<city id="48"    city_name="建业"/>
+<city id="49"    city_name="庐江"/>
+<city id="50"    city_name="会稽"/>
+<city id="51"    city_name="豫章"/>
+<city id="52"    city_name="鄱阳"/>
+<city id="53"    city_name="庐陵"/>
+<city id="54"    city_name="交趾"/>
+<city id="55"    city_name="南海"/>
+<city id="56"    city_name="许昌"/>
+<city id="57"    city_name="谯城"/>
+<city id="58"    city_name="汝南"/>
+<city id="59"    city_name="徐州"/>
+<city id="60"    city_name="下邳"/>
+<city id="61"    city_name="陈留"/>
+<city id="62"    city_name="濮阳"/>
+<city id="63"    city_name="定陶"/>
+<city id="64"    city_name="都阳"/>
+<city id="65"    city_name="合肥"/>
+<city id="66"    city_name="寿春"/>
+<city id="68"    city_name="琅矫"/>
+<city id="69"    city_name="打狗"/>
+<city id="70"    city_name="台南府"/>
+<city id="71"    city_name="笨港"/>
+<city id="72"    city_name="洄澜"/>
+<city id="73"    city_name="鹿水"/>
+<city id="74"    city_name="诸罗"/>
+<city id="75"    city_name="竹埑"/>
+<city id="76"    city_name="宜兰"/>
+<city id="77"    city_name="艋舺"/>
+<city id="78"    city_name="沪尾"/>
+<city id="79"    city_name="鸡笼"/>
+<city id="81"    city_name="陭氏"/>
+<city id="82"    city_name="长子"/>
+<city id="83"    city_name="壶关"/>
+<city id="84"    city_name="上党"/>
+<city id="85"    city_name="铜鞮"/>
+<city id="86"    city_name="屯留"/>
+<city id="87"    city_name="中阳"/>
+<city id="88"    city_name="中都"/>
+<city id="89"    city_name="西河"/>
+<city id="90"    city_name="阳邑"/>
+<city id="91"    city_name="广牧"/>
+<city id="92"    city_name="定襄"/>
+<city id="93"    city_name="雁门"/>
+<city id="94"    city_name="繁畤"/>
+<city id="95"    city_name="广武"/>
+<city id="96"    city_name="云中"/>
+<city id="97"    city_name="蔺县"/>
+<city id="98"    city_name="阳曲"/>
+<city id="99"    city_name="太原"/>
+
+	</citys>
 </configuration>

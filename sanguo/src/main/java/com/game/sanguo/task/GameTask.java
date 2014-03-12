@@ -22,6 +22,7 @@ import com.game.sanguo.domain.LoginByEmailInfo;
 import com.game.sanguo.domain.Pair;
 import com.game.sanguo.domain.UserBean;
 import com.game.sanguo.util.GameUtil;
+import com.game.sanguo.util.ItemConfig;
 
 public abstract class GameTask implements Runnable {
 

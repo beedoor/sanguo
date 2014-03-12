@@ -10,6 +10,7 @@ import com.game.sanguo.task.GameHelper;
 import com.game.sanguo.task.GameNotifyTask;
 import com.game.sanguo.task.GetWordCityInfoTask;
 import com.game.sanguo.task.LoginTask;
+import com.game.sanguo.util.ItemConfig;
 import com.game.sanguo.util.ResourceConfig;
 import com.game.sanguo.util.UserConfig;
 
@@ -23,10 +24,16 @@ public class Main {
 	public static void main(String[] args) {
 		UserConfig userConfig = new UserConfig();
 		ResourceConfig resourceConfig = new ResourceConfig();
+		ItemConfig itemConfig = new ItemConfig();
+		
 		userConfig.loadUserConfig();
 		resourceConfig.loadResourceConfig();
+		itemConfig.loadUserConfig();
 
 		UserBean userBean = userConfig.getUserConfig(null);
+		//加载资源配置
+		userBean.setItemConfig(itemConfig);
+		
 		// 登录
 		GameHelper.submit(new LoginTask(userBean));
 		// 维持会话的获取通知信息惹任务

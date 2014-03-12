@@ -49,6 +49,25 @@ public class PlayerHerosInfo {
 	private Long surrenderNum=0L;
 	private Long type=0L;
 	private Date updateDate;
+	private String cityName;
+	private String heroName;
+	
+
+	public String getCityName() {
+		return cityName;
+	}
+
+	public void setCityName(String cityName) {
+		this.cityName = cityName;
+	}
+
+	public String getHeroName() {
+		return heroName;
+	}
+
+	public void setHeroName(String heroName) {
+		this.heroName = heroName;
+	}
 
 	public Long getBelongState() {
 		return belongState;
@@ -362,6 +381,7 @@ public class PlayerHerosInfo {
 				+ ", killHeroNum=" + killHeroNum + ", kingId=" + kingId + ", level=" + level + ", locationAsInt=" + locationAsInt + ", magic=" + magic + ", magicAdd=" + magicAdd + ", magicBuffAdd="
 				+ magicBuffAdd + ", masterLineup=" + masterLineup + ", masterWarriors=" + masterWarriors + ", playerHero=" + playerHero + ", plusExpCount=" + plusExpCount + ", sendItemFlag="
 				+ sendItemFlag + ", sendItemNum=" + sendItemNum + ", soldierNum=" + soldierNum + ", soldierNumBufferAdd=" + soldierNumBufferAdd + ", soldierType=" + soldierType + ", sourceId="
-				+ sourceId + ", surrenderGrem=" + surrenderGrem + ", surrenderNum=" + surrenderNum + ", type=" + type + ", updateDate=" + updateDate + "]";
+				+ sourceId + ", surrenderGrem=" + surrenderGrem + ", surrenderNum=" + surrenderNum + ", type=" + type + ", updateDate=" + updateDate + ", cityName=" + cityName + ", heroName="
+				+ heroName + "]";
 	}
 }

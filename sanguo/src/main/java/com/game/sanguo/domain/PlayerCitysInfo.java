@@ -15,6 +15,7 @@ public class PlayerCitysInfo {
 	private Long fidelity = 0L;
 	private Boolean hasObtainAward;
 	private Long id;
+	private String cityName;
 	private Long kingId;
 	private Date lastSearchDate;
 	private Long level;
@@ -23,6 +24,14 @@ public class PlayerCitysInfo {
 	private Long sourceId;
 	private Long type;
 	private Date updateDate;
+
+	public String getCityName() {
+		return cityName;
+	}
+
+	public void setCityName(String cityName) {
+		this.cityName = cityName;
+	}
 
 	public Date getCreateDate() {
 		return createDate;
@@ -122,7 +131,8 @@ public class PlayerCitysInfo {
 
 	@Override
 	public String toString() {
-		return "PlayerCitysInfo [createDate=" + createDate + ", fidelity=" + fidelity + ", hasObtainAward=" + hasObtainAward + ", id=" + id + ", kingId=" + kingId + ", lastSearchDate="
-				+ lastSearchDate + ", level=" + level + ", population=" + population + ", resDate=" + resDate + ", sourceId=" + sourceId + ", type=" + type + ", updateDate=" + updateDate + "]";
+		return "PlayerCitysInfo [createDate=" + createDate + ", fidelity=" + fidelity + ", hasObtainAward=" + hasObtainAward + ", id=" + id + ", cityName=" + cityName + ", kingId=" + kingId
+				+ ", lastSearchDate=" + lastSearchDate + ", level=" + level + ", population=" + population + ", resDate=" + resDate + ", sourceId=" + sourceId + ", type=" + type + ", updateDate="
+				+ updateDate + "]";
 	}
 }

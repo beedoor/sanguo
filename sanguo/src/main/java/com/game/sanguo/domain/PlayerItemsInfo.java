@@ -21,6 +21,25 @@ public class PlayerItemsInfo {
 	private Long type = 0L;
 	private Date updateDate;
 
+	private String itemName;
+	private String heroName;
+	
+	public String getItemName() {
+		return itemName;
+	}
+
+	public void setItemName(String itemName) {
+		this.itemName = itemName;
+	}
+
+	public String getHeroName() {
+		return heroName;
+	}
+
+	public void setHeroName(String heroName) {
+		this.heroName = heroName;
+	}
+
 	public Date getCreateDate() {
 		return createDate;
 	}
@@ -145,7 +164,7 @@ public class PlayerItemsInfo {
 	public String toString() {
 		return "PlayerItemsInfo [createDate=" + createDate + ", ext=" + ext + ", frozenLevel=" + frozenLevel + ", heroPos=" + heroPos + ", heroUseId=" + heroUseId + ", id=" + id + ", num=" + num
 				+ ", openHeroSrcId=" + openHeroSrcId + ", sendItemFlag=" + sendItemFlag + ", sendItemNum=" + sendItemNum + ", sourceId=" + sourceId + ", storagePos=" + storagePos
-				+ ", strengthenLevel=" + strengthenLevel + ", type=" + type + ", updateDate=" + updateDate + "]";
+				+ ", strengthenLevel=" + strengthenLevel + ", type=" + type + ", updateDate=" + updateDate + ", itemName=" + itemName + ", heroName=" + heroName + "]";
 	}
 
 }
