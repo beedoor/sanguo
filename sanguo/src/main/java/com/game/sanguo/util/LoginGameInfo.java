@@ -1,6 +1,13 @@
 package com.game.sanguo.util;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
+
+import com.game.sanguo.domain.PlayerCitysInfo;
+import com.game.sanguo.domain.PlayerHerosInfo;
+import com.game.sanguo.domain.PlayerItemsInfo;
 
 public class LoginGameInfo {
 	private Boolean autoFlag;
@@ -52,6 +59,11 @@ public class LoginGameInfo {
 	private String worldInfo;
 
 	private String guideProgress;
+
+	List<PlayerCitysInfo> playerCitysInfoList = null;
+	List<PlayerHerosInfo> playerHerosInfoList = null;
+	List<PlayerItemsInfo> playerItemsInfoList = null;
+
 	public boolean isAutoFlag() {
 		return autoFlag;
 	}
@@ -436,6 +448,30 @@ public class LoginGameInfo {
 		this.guideProgress = guideProgress;
 	}
 
+	public List<PlayerCitysInfo> getPlayerCitysInfoList() {
+		return playerCitysInfoList;
+	}
+
+	public void setPlayerCitysInfoList(List<PlayerCitysInfo> playerCitysInfoList) {
+		this.playerCitysInfoList = playerCitysInfoList;
+	}
+
+	public List<PlayerHerosInfo> getPlayerHerosInfoList() {
+		return playerHerosInfoList;
+	}
+
+	public void setPlayerHerosInfoList(List<PlayerHerosInfo> playerHerosInfoList) {
+		this.playerHerosInfoList = playerHerosInfoList;
+	}
+
+	public List<PlayerItemsInfo> getPlayerItemsInfoList() {
+		return playerItemsInfoList;
+	}
+
+	public void setPlayerItemsInfoList(List<PlayerItemsInfo> playerItemsInfoList) {
+		this.playerItemsInfoList = playerItemsInfoList;
+	}
+
 	@Override
 	public String toString() {
 		return "LoginGameInfo [autoFlag=" + autoFlag + ", captureHeros=" + captureHeros + ", challengeTimes=" + challengeTimes + ", changeNameTimes=" + changeNameTimes + ", computerCitys="
@@ -447,6 +483,14 @@ public class LoginGameInfo {
 				+ preChapterIsReward + ", prepareSoldierNum=" + prepareSoldierNum + ", pvpMainCityOccupyHead=" + pvpMainCityOccupyHead + ", pvpMainCityOccupyName=" + pvpMainCityOccupyName
 				+ ", pvpScore=" + pvpScore + ", resultCode=" + resultCode + ", selectedHeroPresent=" + selectedHeroPresent + ", sendGold=" + sendGold + ", sessionId=" + sessionId + ", sex=" + sex
 				+ ", skipFightTimes=" + skipFightTimes + ", taskTriggers=" + taskTriggers + ", tasks=" + tasks + ", totalRecharge=" + totalRecharge + ", unreadLetterCount=" + unreadLetterCount
-				+ ", vipItem=" + vipItem + ", vipLv=" + vipLv + ", worldInfo=" + worldInfo + ", guideProgress=" + guideProgress + "]";
+				+ ", vipItem=" + vipItem + ", vipLv=" + vipLv + ", worldInfo=" + worldInfo + ", guideProgress=" + guideProgress + ", playerCitysInfoList=" + toArrayStr(playerCitysInfoList)
+				+ ", playerHerosInfoList=" + toArrayStr(playerHerosInfoList) + ", playerItemsInfoList=" + toArrayStr(playerItemsInfoList) + "]";
+	}
+
+	private <T> String toArrayStr(List<T> objList) {
+		if (objList == null) {
+			return "";
+		}
+		return Arrays.toString(objList.toArray());
 	}
 }

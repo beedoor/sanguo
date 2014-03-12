@@ -6,9 +6,9 @@ import java.util.Date;
 public class GameUtil {
 
 	private static SimpleDateFormat sdf = new SimpleDateFormat("YYYY-MM-dd HH:mm:ss");
+
 	public static String parseUnicode(String line) {
-		if(line == null)
-		{
+		if (line == null) {
 			return "";
 		}
 		int len = line.length();
@@ -73,24 +73,32 @@ public class GameUtil {
 		}
 		return new String(out, 0, outLen);
 	}
-	public static String ingoreNull(String s)
-	{
-		if(s == null)
-		{
+
+	public static String ingoreNull(String s) {
+		if (s == null) {
 			return "";
 		}
 		return s;
 	}
-	
-	public static String parseDate(Date date)
-	{
-		if(null == date){
+
+	public static String parseDate(Date date) {
+		if (null == date) {
 			return "";
 		}
 		return sdf.format(date);
 	}
-	public static void main(String args[])
-	{	
-		System.out.println(parseDate(new Date(System.currentTimeMillis())));
+
+	// 格式为 new Date(12341122121)
+	public static Date parseDate(String dateStr) {
+		int sIdx = dateStr.indexOf('(');
+		int eIdx = dateStr.indexOf(')');
+		if (sIdx != -1 && eIdx != -1) {
+			return new Date(Long.parseLong(dateStr.substring(sIdx + 1, eIdx)));
+		}
+		return null;
+	}
+
+	public static void main(String args[]) {
+		System.out.println(parseDate("new Date(1386000000000)"));
 	}
 }

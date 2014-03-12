@@ -13,7 +13,10 @@ public class Test {
 	final static ExecutorService exec = Executors.newFixedThreadPool(100);
 	private static String sessionId = "ADD8EBD17CBDF79EEF93DD4EBF8FCAA9";
 	public static void main(String[] args) throws Exception {
-		fight();
+//		fight();
+		String s1 ="s108.belongState=0;s108.blood=60;s108.bloodAdd=0;s108.bloodBuffAdd=0;s108.bookSkills=s251;s108.bufferBlood=60;s108.cityId=56;s108.createDate=new Date(1385637132000);s108.currentLineup=2;s108.experience=0;s108.fidelity=0;s108.fighting=false;s108.forceAdd=0;s108.forceBuffAdd=0;s108.id=622;s108.intelligenceAdd=0;s108.intelligenceBuffAdd=0;s108.killHeroNum=0;s108.kingId=1;s108.level=2;s108.locationAsInt=1;s108.magic=39;s108.magicAdd=0;s108.magicBuffAdd=0;s108.masterLineup=66;s108.masterWarriors=11;s108.playerHero=true;s108.plusExpCount=0;s108.sendItemFlag=0;s108.sendItemNum=0;s108.soldierNum=11;s108.soldierNumBufferAdd=0;s108.soldierType=8;s108.sourceId=118;s108.surrenderGrem=0;s108.surrenderNum=1;s108.type=1;s108.updateDate=new Date(1391851781000);";
+		s1 = s1.replaceAll(String.format("%s[.]", "s108"), "");
+		System.out.println(s1);
 	
 	}
 	public static void fight() {

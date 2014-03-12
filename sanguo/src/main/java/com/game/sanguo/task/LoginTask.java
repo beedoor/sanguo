@@ -2,10 +2,12 @@ package com.game.sanguo.task;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
-import java.util.concurrent.TimeUnit;
+import java.util.List;
 
 import org.apache.commons.httpclient.NameValuePair;
 import org.apache.commons.httpclient.methods.PostMethod;
@@ -13,6 +15,9 @@ import org.apache.commons.httpclient.methods.PostMethod;
 import com.game.sanguo.domain.ClientUpdateInfo;
 import com.game.sanguo.domain.GameAreaInfo;
 import com.game.sanguo.domain.LoginByEmailInfo;
+import com.game.sanguo.domain.PlayerCitysInfo;
+import com.game.sanguo.domain.PlayerHerosInfo;
+import com.game.sanguo.domain.PlayerItemsInfo;
 import com.game.sanguo.domain.StartChatInfo;
 import com.game.sanguo.domain.UserBean;
 import com.game.sanguo.util.LoginGameInfo;
@@ -41,7 +46,7 @@ public class LoginTask extends GameTask {
 			sleep(5);// 游戏加载
 			startChat();
 			msgIdServerTime();
-			//获取资源信息
+			// 获取资源信息
 			msgIdGetCitiesGoldAvailable();
 		} catch (Throwable e) {
 			logger.error("登录异常", e);
@@ -134,12 +139,83 @@ public class LoginTask extends GameTask {
 		doRequest(postMethod);
 
 		try {
-			LoginGameInfo beanInfo = initBeanInfo(LoginGameInfo.class, postMethod.getResponseBodyAsStream(), "dwr");
+			// LoginGameInfo beanInfo = initBeanInfo(LoginGameInfo.class,
+			// postMethod.getResponseBodyAsStream(), "dwr");
+			LoginGameInfo beanInfo = decoeLoginGameInfo(postMethod.getResponseBodyAsStream());
 			logger.info(beanInfo.toString());
 			userBean.setLoginGameInfo(beanInfo);
 			userBean.setSessionId(beanInfo.getSessionId());
 		} catch (Throwable e) {
 			logger.error("登录服务器异常", e);
+		}
+	}
+
+	/**
+	 * 解析登录游戏内容数据
+	 * 
+	 * @param inputStream
+	 */
+	private LoginGameInfo decoeLoginGameInfo(InputStream inputStream) {
+		LoginGameInfo loginGameInfo = null;
+		try {
+			BufferedReader br = new BufferedReader(new InputStreamReader(inputStream));
+			String s1 = null;
+			List<String> s5ArrayList = new ArrayList<String>(), s6ArrayList = new ArrayList<String>(), s7ArrayList = new ArrayList<String>();
+			List<PlayerCitysInfo> playerCitysInfoList = new ArrayList<PlayerCitysInfo>();
+			List<PlayerHerosInfo> playerHerosInfoList = new ArrayList<PlayerHerosInfo>();
+			List<PlayerItemsInfo> playerItemsInfoList = new ArrayList<PlayerItemsInfo>();
+			while ((s1 = br.readLine()) != null) {
+				if (s1.startsWith("dwr")) {
+					loginGameInfo = initBeanInfo(LoginGameInfo.class, s1);
+					break;
+				}
+				logger.info(s1 + "\t" + s1.startsWith("s5[0]") + "\t" + s1.startsWith("s6[0]") + "\t" + s1.startsWith("s7[0]"));
+				if (s1.startsWith("s5[0]")) {
+					decodeArrayPrex(s5ArrayList, s1);
+				} else if (s1.startsWith("s6[0]")) {
+					decodeArrayPrex(s6ArrayList, s1);
+				} else if (s1.startsWith("s7[0]")) {
+					decodeArrayPrex(s7ArrayList, s1);
+				} else {
+					String[] sContentPrex = s1.split("[.]");
+					if (sContentPrex.length <= 1) {
+						continue;
+					}
+					if (s5ArrayList.contains(sContentPrex[0])) {
+						s1 = s1.replaceAll(String.format("%s[.]", sContentPrex[0]), "");
+						playerCitysInfoList.add(initBeanInfo(PlayerCitysInfo.class, s1, ';', '='));
+					}
+					if (s6ArrayList.contains(sContentPrex[0])) {
+						s1 = s1.replaceAll(String.format("%s[.]", sContentPrex[0]), "");
+						playerHerosInfoList.add(initBeanInfo(PlayerHerosInfo.class, s1, ';', '='));
+					}
+					if (s7ArrayList.contains(sContentPrex[0])) {
+						s1 = s1.replaceAll(String.format("%s[.]", sContentPrex[0]), "");
+						playerItemsInfoList.add(initBeanInfo(PlayerItemsInfo.class, s1, ';', '='));
+					}
+				}
+			}
+			if (loginGameInfo != null) {
+				loginGameInfo.setPlayerCitysInfoList(playerCitysInfoList);
+				loginGameInfo.setPlayerHerosInfoList(playerHerosInfoList);
+				loginGameInfo.setPlayerItemsInfoList(playerItemsInfoList);
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		return loginGameInfo;
+	}
+
+	private void decodeArrayPrex(List<String> sArrayList, String s) {
+		String[] sArray = s.split(";");
+		for (String sPrex : sArray) {
+			String[] sPrexArray = sPrex.split("=");
+			if (sPrexArray.length != 2) {
+				continue;
+			}
+			sArrayList.add(sPrexArray[1]);
 		}
 	}
 
@@ -206,7 +282,7 @@ public class LoginTask extends GameTask {
 		postMethod.addParameter(new NameValuePair("c0-id", "0"));
 		postMethod.addParameter(new NameValuePair("c0-param0", "string:SC"));
 		postMethod.addParameter(new NameValuePair("c0-param1", "string:2"));
-		postMethod.addParameter(new NameValuePair("c0-param2", "string:"+getClientVersion()));
+		postMethod.addParameter(new NameValuePair("c0-param2", "string:" + getClientVersion()));
 		postMethod.addParameter(new NameValuePair("batchId", "" + userBean.getBatchId()));
 		doRequest(postMethod);
 
@@ -219,14 +295,13 @@ public class LoginTask extends GameTask {
 		}
 	}
 
-	private String getClientVersion()
-	{
-		if(userBean.getClientInfo() == null)
-		{
+	private String getClientVersion() {
+		if (userBean.getClientInfo() == null) {
 			return "475";
 		}
-		return userBean.getClientInfo().getLatestVersion()+"";
+		return userBean.getClientInfo().getLatestVersion() + "";
 	}
+
 	public void startChat() {
 		PostMethod postMethod = new PostMethod(String.format("%s/ChatServer/dwr/call/plaincall/DwrChat.startChat.dwr;jsessionid", userBean.getUrlPrx()));
 		postMethod.addRequestHeader("Content-type", "application/octet-stream");
@@ -281,8 +356,7 @@ public class LoginTask extends GameTask {
 		doRequest(postMethod);
 	}
 
-	private void msgIdGetCitiesGoldAvailable()
-	{
+	private void msgIdGetCitiesGoldAvailable() {
 		PostMethod postMethod = new PostMethod(String.format("%s/hero/dwr/call/plaincall/DwrGameWorld.getMsg.dwr;jsessionid=%s;mid=%s", userBean.getUrlPrx(), userBean.getSessionId(),
 				userBean.getSessionId()));
 		postMethod.addRequestHeader("Content-type", "application/octet-stream");
