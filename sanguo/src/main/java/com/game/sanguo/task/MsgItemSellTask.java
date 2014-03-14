@@ -25,7 +25,7 @@ public class MsgItemSellTask extends GameTask {
 
 	@Override
 	protected void doAction() {
-		if (userBean.getConfigure().getAutoSell() == 0) {
+		if (userBean.getConfigure().getSellConfig().getSell() == 0) {
 			logger.info("禁止自动贩卖装备");
 			return;
 		}
@@ -41,16 +41,27 @@ public class MsgItemSellTask extends GameTask {
 				if (null != equipmentItem) {
 					// 判断装备类别,没有装备，并且非粉色装备，并且强化等级为0的卖掉，狗日的
 					if (equipmentItem.getMax_smith() < 30 && playerItemsInfo.getHeroUseId() == -1 && playerItemsInfo.getStrengthenLevel() == 0) {
-						logger.info(String.format("准备卖掉[%s]", equipmentItem.getName()));
-						msgIdItemSell(playerItemsInfo.getId());
-						sleep(1, TimeUnit.SECONDS);
+						if (userBean.getConfigure().getSellConfig().getLevel() > equipmentItem.getNeed_level()) {
+							logger.info(String.format("准备卖掉[%s]", equipmentItem.getName()));
+							EquipmentItemSellInfo beanInfo = msgIdItemSell(playerItemsInfo.getId());
+							sleep(1, TimeUnit.SECONDS);
+							if (beanInfo.getErrCode() == 0) {
+								logger.info(String.format("贩卖装备[%s]成功,当前金币[%s]", equipmentItem.getName(), beanInfo.getGold()));
+								//卖掉后清理
+								ite.remove();
+							} else {
+								logger.info(String.format("贩卖装备[%s]失败,异常原因[%s]", equipmentItem.getName(), beanInfo.getErrMsg()));
+							}
+						} else {
+							logger.info(String.format("装备[%s]，等级[%s]，高于设置卖出的最高等级[%s]，不卖", equipmentItem.getName(), equipmentItem.getNeed_level(), userBean.getConfigure().getSellConfig().getLevel()));
+						}
 					}
 				}
 			}
 		}
 	}
 
-	private void msgIdItemSell(Long itemId) {
+	private EquipmentItemSellInfo msgIdItemSell(Long itemId) {
 		PostMethod postMethod = new PostMethod(String.format("%s/hero/dwr/call/plaincall/DwrGameWorld.setMsg.dwr;jsessionid=%s;mid=%s", userBean.getUrlPrx(), userBean.getSessionId(),
 				userBean.getSessionId()));
 		postMethod.addRequestHeader("Content-type", "application/octet-stream");
@@ -78,13 +89,11 @@ public class MsgItemSellTask extends GameTask {
 		doRequest(postMethod);
 		try {
 			EquipmentItemSellInfo beanInfo = initBeanInfo(EquipmentItemSellInfo.class, postMethod.getResponseBodyAsStream(), "dwr");
-			if (beanInfo.getErrCode() == 0) {
-				logger.info(String.format("贩卖装备[%s]成功,当前金币[%s]", itemId, beanInfo.getGold()));
-			} else {
-				logger.info(String.format("贩卖装备[%s]失败,异常原因[%s]", itemId, beanInfo.getErrMsg()));
-			}
-		} catch (Exception ex) {
+			return beanInfo;
+		} catch (Throwable ex) {
 			logger.error(String.format("贩卖装备[%s]异常", itemId), ex);
 		}
+
+		return null;
 	}
 }

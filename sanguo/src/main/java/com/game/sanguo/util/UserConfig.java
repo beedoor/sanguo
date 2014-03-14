@@ -13,6 +13,7 @@ import org.xml.sax.SAXException;
 
 import com.game.sanguo.domain.Configure;
 import com.game.sanguo.domain.ScanResource;
+import com.game.sanguo.domain.SellConfig;
 import com.game.sanguo.domain.UserBean;
 
 public class UserConfig {
@@ -66,6 +67,7 @@ public class UserConfig {
 		digester.addObjectCreate("configuration/users/user", UserBean.class);// 创建节点的实例
 		digester.addObjectCreate("configuration/users/user/configure",Configure.class);
 		digester.addObjectCreate("configuration/users/user/configure/scanResource",ScanResource.class);
+		digester.addObjectCreate("configuration/users/user/configure/autoSell",SellConfig.class);
 		digester.addCallMethod("configuration/users/user/userName", "setUserName",0);
 		digester.addCallMethod("configuration/users/user/password", "setPassword",0);
 		digester.addCallMethod("configuration/users/user/reLoginTime", "setReLoginTime",0,new Class[]{Long.class});
@@ -78,10 +80,12 @@ public class UserConfig {
 		digester.addCallMethod("configuration/users/user/configure/scanResource/solider","setSolider",0,new Class[]{Long.class});
 		
 		digester.addCallMethod("configuration/users/user/configure/searchResource","setSearchResource",0,new Class[]{Long.class});
-		digester.addCallMethod("configuration/users/user/configure/autoSell","setAutoSell",0,new Class[]{Long.class});
+		digester.addCallMethod("configuration/users/user/configure/autoSell/sell","setSell",0,new Class[]{Long.class});
+		digester.addCallMethod("configuration/users/user/configure/autoSell/level","setLevel",0,new Class[]{Long.class});
 		
 		digester.addSetNext("configuration/users/user/configure","setConfigure");
 		digester.addSetNext("configuration/users/user/configure/scanResource","setScanResource");
+		digester.addSetNext("configuration/users/user/configure/autoSell","setSellConfig");
 		
 		digester.addSetNext("configuration/users/user", "addItem");
 	}
