@@ -63,7 +63,9 @@ public class GetWordCityInfoTask extends GameTask {
 			} else {
 				logger.info("配置禁止扫描兵营资源");
 			}
-			XlsFileUtil.createSearchResultFile(createDataList, userBean.getConfigure().getScanResource().getSortType());
+			if (!createDataList.isEmpty()) {
+				XlsFileUtil.createSearchResultFile(createDataList, userBean.getConfigure().getScanResource().getSortType());
+			}
 		} catch (Exception e) {
 			logger.error("获取资源信息异常", e);
 		}
@@ -180,7 +182,7 @@ public class GetWordCityInfoTask extends GameTask {
 		int s0Idx = s1.indexOf("s0.");
 		s1 = s1.substring(s0Idx);
 		s1 = s1.replaceAll("s0[.]", "");
-		cityInfo = initBeanInfo(CityInfo.class, s1,';','=');
+		cityInfo = initBeanInfo(CityInfo.class, s1, ';', '=');
 		return cityInfo;
 	}
 }

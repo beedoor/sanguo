@@ -4,6 +4,7 @@ public class Configure {
 
 	private ScanResource scanResource;
 	private Long searchResource = 0L;
+	private Long autoSell = 0L;
 
 	public Configure() {
 		super();
@@ -25,9 +26,16 @@ public class Configure {
 		this.scanResource = scanResource;
 	}
 
-	@Override
-	public String toString() {
-		return "Configure [scanResource=" + scanResource + ", searchResource=" + searchResource + "]";
+	public Long getAutoSell() {
+		return autoSell;
 	}
 
+	public void setAutoSell(Long autoSell) {
+		this.autoSell = autoSell;
+	}
+
+	@Override
+	public String toString() {
+		return "Configure [scanResource=" + scanResource + ", searchResource=" + searchResource + ", autoSell=" + autoSell + "]";
+	}
 }

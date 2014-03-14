@@ -10,6 +10,7 @@ import com.game.sanguo.task.GameHelper;
 import com.game.sanguo.task.GameNotifyTask;
 import com.game.sanguo.task.GetWordCityInfoTask;
 import com.game.sanguo.task.LoginTask;
+import com.game.sanguo.task.MsgItemSellTask;
 import com.game.sanguo.util.ItemConfig;
 import com.game.sanguo.util.ResourceConfig;
 import com.game.sanguo.util.UserConfig;
@@ -25,15 +26,16 @@ public class Main {
 		UserConfig userConfig = new UserConfig();
 		ResourceConfig resourceConfig = new ResourceConfig();
 		ItemConfig itemConfig = new ItemConfig();
-		
+
 		userConfig.loadUserConfig();
 		resourceConfig.loadResourceConfig();
+		
 		itemConfig.loadUserConfig();
 
 		UserBean userBean = userConfig.getUserConfig(null);
-		//加载资源配置
+		// 加载资源配置
 		userBean.setItemConfig(itemConfig);
-		
+
 		// 登录
 		GameHelper.submit(new LoginTask(userBean));
 		// 维持会话的获取通知信息惹任务
@@ -45,6 +47,8 @@ public class Main {
 
 		// 扫描宝山，黑市，兵营，金矿资源定时任务
 		GameHelper.submit(new GetWordCityInfoTask(userBean, resourceConfig));
+		// 卖东西定时任务
+		GameHelper.scheduleAtFixedRate(new MsgItemSellTask(userBean, itemConfig), 24, TimeUnit.HOURS);
 		// 领取资源，宝箱等定时搜索任务
 		GameHelper.scheduleAtFixedRate(new CitySearchAndGoldTask(userBean), 10, TimeUnit.MINUTES);
 	}

@@ -33,39 +33,39 @@ public class ItemConfig {
 	private Map<Long, SkillItem> skillItemMap = new HashMap<Long, SkillItem>();
 	private Map<Long, CityItem> cityItemMap = new HashMap<Long, CityItem>();
 
-	public String decodeHero(Long heroId) {
+	public HeroItem decodeHero(Long heroId) {
 		if (heroItemMap.containsKey(heroId)) {
-			return heroItemMap.get(heroId).getName();
+			return heroItemMap.get(heroId);
 		}
-		return "";
+		return null;
 	}
 
-	public String decodePack(Long packId) {
+	public PackItem decodePack(Long packId) {
 		if (packItemMap.containsKey(packId)) {
-			return packItemMap.get(packId).getProps_name();
+			return packItemMap.get(packId);
 		}
-		return "";
+		return null;
 	}
 
-	public String decodeEquipment(Long equipmentId) {
+	public EquipmentItem decodeEquipment(Long equipmentId) {
 		if (equipmentItemMap.containsKey(equipmentId)) {
-			return equipmentItemMap.get(equipmentId).getName();
+			return equipmentItemMap.get(equipmentId);
 		}
-		return "";
+		return null;
 	}
 
-	public String decodeSkill(Long skillId) {
+	public SkillItem decodeSkill(Long skillId) {
 		if (skillItemMap.containsKey(skillId)) {
-			return skillItemMap.get(skillId).getName();
+			return skillItemMap.get(skillId);
 		}
-		return "";
+		return null;
 	}
 
-	public String decodeCity(Long cityId) {
+	public CityItem decodeCity(Long cityId) {
 		if (cityItemMap.containsKey(cityId)) {
-			return cityItemMap.get(cityId).getCity_name();
+			return cityItemMap.get(cityId);
 		}
-		return "";
+		return null;
 	}
 
 	public ItemConfig() {
@@ -147,6 +147,6 @@ public class ItemConfig {
 		System.out.println(Arrays.toString(config.heroItemList.toArray()));
 		System.out.println(Arrays.toString(config.equipmentItemList.toArray()));
 		System.out.println(Arrays.toString(config.skillItemList.toArray()));
-		System.out.println(Arrays.toString(config.cityItemList.toArray()));
+//		System.out.println(Arrays.toString(config.cityItemList.toArray()));
 	}
 }

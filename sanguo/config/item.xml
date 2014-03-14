@@ -220,435 +220,436 @@
 	<pack id="10394"    props_type="2"    props_name="未来之星礼包"    p_descrip="限量发行（开启可获得元宝、金币、武将包等）"    price="490" />
 	</packs>
 	<equipments>
-		<equipment    id="2"    name="白羽扇"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="普通的羽扇，用羽毛做成的扇面"/>
-<equipment    id="3"    name="手戟"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="精铁所制，最常见的兵器"/>
-<equipment    id="4"    name="双铁戟"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="寻常镔铁打造而成，典韦手中运使如飞"/>
-<equipment    id="5"    name="丈八长标"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="南蛮特有的武器，祝融夫人所使"/>
-<equipment    id="6"    name="短戟"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="比手戟略短，典韦以此作暗器救曹操"/>
-<equipment    id="7"    name="流星锤"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="浑铁链扣着钢球，可做暗器使用"/>
-<equipment    id="8"    name="铜挝"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="挝头似斧脑可宕击，马超曾以此投向张飞"/>
-<equipment    id="9"    name="朴刀"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="木柄上安有钢刀，可劈杀敌人"/>
-<equipment    id="10"    name="古锭刀"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="又名七星刀，孙权所使，刀身有松纹故名之"/>
-<equipment    id="11"    name="镇山剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="蜀后帝刘禅所造巨剑以镇剑口山"/>
-<equipment    id="12"    name="钢鞭"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="精铁所制，有节无锋刃"/>
-<equipment    id="13"    name="四楞铁简"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="蜀将傅佥的兵器，曾以此打得魏将眼珠迸出"/>
-<equipment    id="15"    name="陨铁双戟"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="陨铁铸造的双戟"/>
-<equipment    id="16"    name="衠钢槊"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="纯钢所制，周泰在赤壁之战中使用"/>
-<equipment    id="17"    name="没羽箭"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="锋锐所及，有没羽之力故名之"/>
-<equipment    id="18"    name="铁脊蛇矛"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="程普所使用的武器，刃脊隆起，两旁微陷"/>
-<equipment    id="19"    name="百辟匕首"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹丕所制匕首之一，纹似灵龟，名曰灵宝"/>
-<equipment    id="20"    name="两石力之弓"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="紫檀木所制，坚硬异常"/>
-<equipment    id="21"    name="文士剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="杨修献于曹丕的宝剑"/>
-<equipment    id="22"    name="蜀八剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="刘备采金牛山铁矿铸造的八把宝剑之一"/>
-<equipment    id="23"    name="龙鳞刀"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹丕所制宝刀之一，状如龙纹，名曰龙鳞"/>
-<equipment    id="24"    name="飞景三剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹丕所制宝剑之一，光似流星，名曰飞景"/>
-<equipment    id="25"    name="思召剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="袁绍在黎阳梦神人所授宝剑"/>
-<equipment    id="26"    name="截头大刀"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="庞德的兵器，刀头比普通大刀短"/>
-<equipment    id="27"    name="三尖两刃刀"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="纪灵的兵器，两面开刃，锋利无比"/>
-<equipment    id="28"    name="蘸金斧"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="斧头上镀金的大斧，为李异所有"/>
-<equipment    id="29"    name="百辟宝刀"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="能够辟邪的宝刀"/>
-<equipment    id="30"    name="铁蒺藜骨朵"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="沙摩柯所使兵器，锤头上有锐利的尖刺"/>
-<equipment    id="33"    name="诸葛枪"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="诸葛亮所造二丈五尺的竹柄枪，枪头铁制"/>
-<equipment    id="34"    name="虎筋弦弓"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="又名麒麟弓，虎筋做弦，吕布辕门射戟所用"/>
-<equipment    id="36"    name="鹊画弓"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="因弓身似鹊身而得名"/>
-<equipment    id="38"    name="马岱宝刀"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="马岱曾以此宝剑击败钟繇"/>
-<equipment    id="40"    name="开山鏖金斧"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="徐晃所使兵器，斧阔五寸，柄长七尺"/>
-<equipment    id="41"    name="王双大刀"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="天下第一富贵刀，王双所有"/>
-<equipment    id="42"    name="孟德剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹操于幽谷所得的宝剑"/>
-<equipment    id="43"    name="双股剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="刘备的兵器，又名鸳鸯剑，利可断金"/>
-<equipment    id="45"    name="松纹厢宝剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="孟获对战诸葛亮所使宝剑，剑身由松纹"/>
-<equipment    id="50"    name="宝雕弓"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="金玉装饰，弓身雕有花纹"/>
-<equipment    id="53"    name="青釭"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="削铁如泥，锋利无比，赵云从曹操处夺得"/>
-<equipment    id="56"    name="龙胆枪"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="赵子龙所使用的家传武器"/>
-<equipment    id="60"    name="七星宝刀"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹操从王允处借得刺杀董卓的宝刀"/>
-<equipment    id="68"    name="诸葛连弩"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="又作元戎弩，诸葛亮所制威力强大的连弩"/>
-<equipment    id="70"    name="倚天剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹操的佩剑，与青虹并称为绝世双剑"/>
-<equipment    id="71"    name="龙泉剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="欧冶子和干将联手所铸，俯视剑身有巨龙盘卧"/>
-<equipment    id="73"    name="丈八蛇矛"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="张飞的霹雳神兵，矛头镔铁打造，犹如蛇吐信"/>
-<equipment    id="74"    name="青龙偃月刀"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="奇名冷艳锯，关羽所使神兵"/>
-<equipment    id="75"    name="方天画戟"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="吕布的专属神兵，有龙纹绕身，霸气十足（不受等级限制）"/>
-<equipment    id="110"    name="白雪"    intelligence="0"    max_hp="0"    max_mp="2"    speed="0"    description="郭嘉的马名曰白雪"/>
-<equipment    id="113"    name="黑云"    intelligence="0"    max_hp="0"    max_mp="3"    speed="0"    description="周泰的马名曰黑云"/>
-<equipment    id="115"    name="白鸽"    intelligence="0"    max_hp="0"    max_mp="5"    speed="0"    description="陆逊火烧连营的坐骑"/>
-<equipment    id="117"    name="紫骍"    intelligence="0"    max_hp="0"    max_mp="6"    speed="0"    description="曹植所有的一匹大宛良马"/>
-<equipment    id="119"    name="汗血"    intelligence="0"    max_hp="0"    max_mp="12"    speed="0"    description="马岱砍杀魏延时所骑之马"/>
-<equipment    id="124"    name="乌骓"    intelligence="0"    max_hp="0"    max_mp="12"    speed="0"    description="魏延的坐骑"/>
-<equipment    id="130"    name="白鹤"    intelligence="0"    max_hp="0"    max_mp="15"    speed="0"    description="曹洪的名驹"/>
-<equipment    id="133"    name="灰影"    intelligence="0"    max_hp="0"    max_mp="28"    speed="0"    description="张辽骑此马大战逍遥津"/>
-<equipment    id="136"    name="乌孙"    intelligence="0"    max_hp="0"    max_mp="32"    speed="0"    description="司马懿的名驹"/>
-<equipment    id="139"    name="燎原火"    intelligence="0"    max_hp="0"    max_mp="32"    speed="0"    description="老将黄忠的宝马"/>
-<equipment    id="143"    name="惊帆"    intelligence="0"    max_hp="0"    max_mp="47"    speed="0"    description="曹真之马，奔跑如行云流水"/>
-<equipment    id="145"    name="夜照玉狮子"    intelligence="0"    max_hp="0"    max_mp="36"    speed="0"    description="赵玉的坐骑，浑身雪白，日行千里"/>
-<equipment    id="148"    name="王追"    intelligence="0"    max_hp="0"    max_mp="47"    speed="0"    description="张飞的坐骑"/>
-<equipment    id="151"    name="爪黄飞电"    intelligence="0"    max_hp="0"    max_mp="52"    speed="0"    description="气质高贵的良驹，曹操的坐骑之一"/>
-<equipment    id="155"    name="战象"    intelligence="0"    max_hp="0"    max_mp="52"    speed="0"    description="南蛮王孟获的生猛坐骑"/>
-<equipment    id="165"    name="的卢"    intelligence="0"    max_hp="0"    max_mp="64"    speed="0"    description="刘备的坐骑，曾在其危难之时救其性命"/>
-<equipment    id="167"    name="绝影无影"    intelligence="0"    max_hp="0"    max_mp="64"    speed="0"    description="曹操的坐骑之一"/>
-<equipment    id="172"    name="赤兔"    intelligence="0"    max_hp="0"    max_mp="72"    speed="0"    description="赤兔胭脂兽，吕布坐骑，后为关羽所得"/>
-<equipment    id="207"    name="鱼鳞甲"    intelligence="0"    max_hp="2"    max_mp="0"    speed="0"    description="普通护甲，部分由青铜鳞片制成"/>
-<equipment    id="210"    name="锁子甲"    intelligence="0"    max_hp="2"    max_mp="0"    speed="0"    description="青铜环相扣而成，缺点是过于柔软"/>
-<equipment    id="213"    name="玄铁甲"    intelligence="0"    max_hp="3"    max_mp="0"    speed="0"    description="由玄铁打造的铠甲，但非常笨重"/>
-<equipment    id="215"    name="虎皮铠"    intelligence="0"    max_hp="5"    max_mp="0"    speed="0"    description="用韧性极佳的虎皮而制"/>
-<equipment    id="217"    name="桃花铠"    intelligence="0"    max_hp="6"    max_mp="0"    speed="0"    description="相传是张飞在桃园中用精铁打造"/>
-<equipment    id="218"    name="乌纱铠"    intelligence="0"    max_hp="12"    max_mp="0"    speed="0"    description="高级将领在室内常穿戴的护具"/>
-<equipment    id="219"    name="黑金甲"    intelligence="0"    max_hp="12"    max_mp="0"    speed="0"    description="因盔甲周围镀有一层乌金而得名"/>
-<equipment    id="222"    name="孔明铠"    intelligence="0"    max_hp="12"    max_mp="0"    speed="0"    description="诸葛亮专门为蜀兵所作"/>
-<equipment    id="224"    name="铁铠甲"    intelligence="0"    max_hp="12"    max_mp="0"    speed="0"    description="浑铁所制铠甲"/>
-<equipment    id="230"    name="赤铁盔"    intelligence="0"    max_hp="15"    max_mp="0"    speed="0"    description="反复精炼镔铁而得的精铁铠甲"/>
-<equipment    id="235"    name="金蟒鳞甲"    intelligence="0"    max_hp="28"    max_mp="0"    speed="0"    description="精铁鳞片制成，并在胸前镀有金蟒图案"/>
-<equipment    id="238"    name="精木兽铠"    intelligence="0"    max_hp="28"    max_mp="0"    speed="0"    description="蛮族精兵用精木兽骨制成"/>
-<equipment    id="241"    name="麒麟铠甲"    intelligence="0"    max_hp="32"    max_mp="0"    speed="0"    description="相传为麒麟皮精致而成"/>
-<equipment    id="245"    name="三昧神铠"    intelligence="0"    max_hp="36"    max_mp="0"    speed="0"    description="用陨铁在三道不同火候的烈火中锻造而成"/>
-<equipment    id="246"    name="黄龙铠甲"    intelligence="0"    max_hp="45"    max_mp="0"    speed="0"    description="相传为黄龙真人在仙池炼制的铠甲"/>
-<equipment    id="248"    name="星罗重铠"    intelligence="0"    max_hp="45"    max_mp="0"    speed="0"    description="司马懿绘制星辰万变于甲之上"/>
-<equipment    id="252"    name="银月亮铠"    intelligence="0"    max_hp="50"    max_mp="0"    speed="0"    description="赵云和马超都曾穿戴过的银亮神甲"/>
-<equipment    id="256"    name="炎龙金铠"    intelligence="0"    max_hp="50"    max_mp="0"    speed="0"    description="凯身赤红，精光耀眼，宛如炎龙再生"/>
-<equipment    id="260"    name="八门金凯"    intelligence="0"    max_hp="50"    max_mp="0"    speed="0"    description="诸葛亮封印奇门遁甲其中的铠甲"/>
-<equipment    id="265"    name="鬼哭神铠"    intelligence="0"    max_hp="49"    max_mp="0"    speed="0"    description="吕布专属护甲，冲杀敌阵中，鬼哭神泣不绝于耳"/>
-<equipment    id="270"    name="神嚎狱铠"    intelligence="0"    max_hp="56"    max_mp="0"    speed="0"    description="穿戴者犹如神助，让敌人置身炼狱之中（不受等级限制）"/>
-<equipment    id="310"    name="礼记"    intelligence="0"    max_hp="0"    max_mp="1"    speed="0"    description="戴圣所著的典章书籍"/>
-<equipment    id="313"    name="山海经"    intelligence="2"    max_hp="0"    max_mp="0"    speed="0"    description="先秦古籍，记录了古老神话传说"/>
-<equipment    id="315"    name="史记"    intelligence="0"    max_hp="0"    max_mp="3"    speed="0"    description="司马迁记录的先代历史书籍"/>
-<equipment    id="317"    name="吕氏春秋"    intelligence="0"    max_hp="0"    max_mp="6"    speed="0"    description="秦国吕不韦所著"/>
-<equipment    id="319"    name="司马法"    intelligence="8"    max_hp="0"    max_mp="0"    speed="0"    description="司马穰苴所著兵书，战国时期已失传"/>
-<equipment    id="323"    name="汉书"    intelligence="0"    max_hp="0"    max_mp="10"    speed="0"    description="班固所著史书"/>
-<equipment    id="327"    name="老子"    intelligence="8"    max_hp="0"    max_mp="0"    speed="0"    description="又名道德经，道祖老子所写"/>
-<equipment    id="328"    name="尉缭子"    intelligence="8"    max_hp="0"    max_mp="0"    speed="0"    description="秦朝尉缭子所著兵书"/>
-<equipment    id="331"    name="孟德新书"    intelligence="8"    max_hp="0"    max_mp="0"    speed="0"    description="曹操所著兵法韬略"/>
-<equipment    id="333"    name="韩非子"    intelligence="17"    max_hp="0"    max_mp="0"    speed="0"    description="战国韩非子的巨著"/>
-<equipment    id="335"    name="青囊书"    intelligence="17"    max_hp="0"    max_mp="0"    speed="0"    description="华佗毕生精力所著医书"/>
-<equipment    id="340"    name="春秋左氏传"    intelligence="0"    max_hp="0"    max_mp="20"    speed="0"    description="春秋末年左丘明解释春秋而著"/>
-<equipment    id="342"    name="商君书"    intelligence="0"    max_hp="0"    max_mp="20"    speed="0"    description="战国商鞅所著变法之书"/>
-<equipment    id="345"    name="战国策"    intelligence="22"    max_hp="0"    max_mp="0"    speed="0"    description="西汉刘向记载战国策士纵横捭阖之书"/>
-<equipment    id="348"    name="孙膑兵法"    intelligence="32"    max_hp="0"    max_mp="0"    speed="0"    description="孙武后人孙膑所著兵书"/>
-<equipment    id="352"    name="六韬"    intelligence="32"    max_hp="0"    max_mp="0"    speed="0"    description="周朝姜尚所著兵法之书"/>
-<equipment    id="355"    name="太平要术"    intelligence="32"    max_hp="0"    max_mp="0"    speed="0"    description="相传为南华老仙传授张角之书"/>
-<equipment    id="358"    name="兵法二十四篇"    intelligence="32"    max_hp="0"    max_mp="0"    speed="0"    description="诸葛亮所著的用兵之道"/>
-<equipment    id="362"    name="易经"    intelligence="32"    max_hp="0"    max_mp="0"    speed="0"    description="相传是周文王记录的卜筮之书"/>
-<equipment    id="366"    name="遁甲天书"    intelligence="0"    max_hp="0"    max_mp="40"    speed="0"    description="神人左慈修行的天书"/>
-<equipment    id="368"    name="孙子兵法"    intelligence="45"    max_hp="0"    max_mp="0"    speed="0"    description="春秋孙武所著的神级兵书"/>
-<equipment    id="502"    name="白羽扇"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="普通的羽扇，用羽毛做成的扇面"/>
-<equipment    id="503"    name="手戟"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="精铁所制，最常见的兵器"/>
-<equipment    id="504"    name="双铁戟"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="寻常镔铁打造而成，典韦手中运使如飞"/>
-<equipment    id="505"    name="丈八长标"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="南蛮特有的武器，祝融夫人所使"/>
-<equipment    id="506"    name="短戟"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="比手戟略短，典韦以此作暗器救曹操"/>
-<equipment    id="507"    name="流星锤"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="浑铁链扣着钢球，可做暗器使用"/>
-<equipment    id="508"    name="铜挝"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="挝头似斧脑可宕击，马超曾以此投向张飞"/>
-<equipment    id="509"    name="朴刀"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="木柄上安有钢刀，可劈杀敌人"/>
-<equipment    id="510"    name="古锭刀"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="又名七星刀，孙权所使，刀身有松纹故名之"/>
-<equipment    id="511"    name="镇山剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="蜀后帝刘禅所造巨剑以镇剑口山"/>
-<equipment    id="512"    name="钢鞭"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="精铁所制，有节无锋刃"/>
-<equipment    id="513"    name="四楞铁简"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="蜀将傅佥的兵器，曾以此打得魏将眼珠迸出"/>
-<equipment    id="515"    name="陨铁双戟"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="陨铁铸造的双戟"/>
-<equipment    id="516"    name="衠钢槊"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="纯钢所制，周泰在赤壁之战中使用"/>
-<equipment    id="517"    name="没羽箭"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="锋锐所及，有没羽之力故名之"/>
-<equipment    id="518"    name="铁脊蛇矛"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="程普所使用的武器，刃脊隆起，两旁微陷"/>
-<equipment    id="519"    name="百辟匕首"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹丕所制匕首之一，纹似灵龟，名曰灵宝"/>
-<equipment    id="520"    name="两石力之弓"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="紫檀木所制，坚硬异常"/>
-<equipment    id="521"    name="文士剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="杨修献于曹丕的宝剑"/>
-<equipment    id="522"    name="蜀八剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="刘备采金牛山铁矿铸造的八把宝剑之一"/>
-<equipment    id="523"    name="龙鳞刀"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹丕所制宝刀之一，状如龙纹，名曰龙鳞"/>
-<equipment    id="524"    name="飞景三剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹丕所制宝剑之一，光似流星，名曰飞景"/>
-<equipment    id="525"    name="思召剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="袁绍在黎阳梦神人所授宝剑"/>
-<equipment    id="526"    name="截头大刀"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="庞德的兵器，刀头比普通大刀短"/>
-<equipment    id="527"    name="三尖两刃刀"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="纪灵的兵器，两面开刃，锋利无比"/>
-<equipment    id="528"    name="蘸金斧"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="斧头上镀金的大斧，为李异所有"/>
-<equipment    id="529"    name="百辟宝刀"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="能够辟邪的宝刀"/>
-<equipment    id="530"    name="铁蒺藜骨朵"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="沙摩柯所使兵器，锤头上有锐利的尖刺"/>
-<equipment    id="533"    name="诸葛枪"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="诸葛亮所造二丈五尺的竹柄枪，枪头铁制"/>
-<equipment    id="534"    name="虎筋弦弓"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="又名麒麟弓，虎筋做弦，吕布辕门射戟所用"/>
-<equipment    id="536"    name="鹊画弓"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="因弓身似鹊身而得名"/>
-<equipment    id="538"    name="马岱宝刀"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="马岱曾以此宝剑击败钟繇"/>
-<equipment    id="540"    name="开山鏖金斧"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="徐晃所使兵器，斧阔五寸，柄长七尺"/>
-<equipment    id="541"    name="王双大刀"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="天下第一富贵刀，王双所有"/>
-<equipment    id="542"    name="孟德剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹操于幽谷所得的宝剑"/>
-<equipment    id="543"    name="双股剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="刘备的兵器，又名鸳鸯剑，利可断金"/>
-<equipment    id="545"    name="松纹厢宝剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="孟获对战诸葛亮所使宝剑，剑身由松纹"/>
-<equipment    id="610"    name="白雪"    intelligence="0"    max_hp="0"    max_mp="9"    speed="0"    description="郭嘉的马名曰白雪"/>
-<equipment    id="613"    name="黑云"    intelligence="0"    max_hp="0"    max_mp="9"    speed="0"    description="周泰的马名曰黑云"/>
-<equipment    id="615"    name="白鸽"    intelligence="0"    max_hp="0"    max_mp="9"    speed="0"    description="陆逊火烧连营的坐骑"/>
-<equipment    id="617"    name="紫骍"    intelligence="0"    max_hp="0"    max_mp="9"    speed="0"    description="曹植所有的一匹大宛良马"/>
-<equipment    id="619"    name="汗血"    intelligence="0"    max_hp="0"    max_mp="20"    speed="0"    description="马岱砍杀魏延时所骑之马"/>
-<equipment    id="624"    name="乌骓"    intelligence="0"    max_hp="0"    max_mp="24"    speed="0"    description="魏延的坐骑"/>
-<equipment    id="630"    name="白鹤"    intelligence="0"    max_hp="0"    max_mp="28"    speed="0"    description="曹洪的名驹"/>
-<equipment    id="633"    name="灰影"    intelligence="0"    max_hp="0"    max_mp="41"    speed="0"    description="张辽骑此马大战逍遥津"/>
-<equipment    id="636"    name="乌孙"    intelligence="0"    max_hp="0"    max_mp="41"    speed="0"    description="司马懿的名驹"/>
-<equipment    id="639"    name="燎原火"    intelligence="0"    max_hp="0"    max_mp="41"    speed="0"    description="老将黄忠的宝马"/>
-<equipment    id="707"    name="鱼鳞甲"    intelligence="0"    max_hp="9"    max_mp="0"    speed="0"    description="普通护甲，部分由青铜鳞片制成"/>
-<equipment    id="710"    name="锁子甲"    intelligence="0"    max_hp="9"    max_mp="0"    speed="0"    description="青铜环相扣而成，缺点是过于柔软"/>
-<equipment    id="713"    name="玄铁甲"    intelligence="0"    max_hp="9"    max_mp="0"    speed="0"    description="由玄铁打造的铠甲，但非常笨重"/>
-<equipment    id="715"    name="虎皮铠"    intelligence="0"    max_hp="9"    max_mp="0"    speed="0"    description="用韧性极佳的虎皮而制"/>
-<equipment    id="717"    name="桃花铠"    intelligence="0"    max_hp="9"    max_mp="0"    speed="0"    description="相传是张飞在桃园中用精铁打造"/>
-<equipment    id="718"    name="乌纱铠"    intelligence="0"    max_hp="20"    max_mp="0"    speed="0"    description="高级将领在室内常穿戴的护具"/>
-<equipment    id="719"    name="黑金甲"    intelligence="0"    max_hp="20"    max_mp="0"    speed="0"    description="因盔甲周围镀有一层乌金而得名"/>
-<equipment    id="722"    name="孔明铠"    intelligence="0"    max_hp="20"    max_mp="0"    speed="0"    description="诸葛亮专门为蜀兵所作"/>
-<equipment    id="724"    name="铁铠甲"    intelligence="0"    max_hp="20"    max_mp="0"    speed="0"    description="浑铁所制铠甲"/>
-<equipment    id="730"    name="赤铁盔"    intelligence="0"    max_hp="24"    max_mp="0"    speed="0"    description="反复精炼镔铁而得的精铁铠甲"/>
-<equipment    id="735"    name="金蟒鳞甲"    intelligence="0"    max_hp="40"    max_mp="0"    speed="0"    description="精铁鳞片制成，并在胸前镀有金蟒图案"/>
-<equipment    id="738"    name="精木兽铠"    intelligence="0"    max_hp="40"    max_mp="0"    speed="0"    description="蛮族精兵用精木兽骨制成"/>
-<equipment    id="741"    name="麒麟铠甲"    intelligence="0"    max_hp="40"    max_mp="0"    speed="0"    description="相传为麒麟皮精致而成"/>
-<equipment    id="745"    name="三昧神铠"    intelligence="0"    max_hp="45"    max_mp="0"    speed="0"    description="用陨铁在三道不同火候的烈火中锻造而成"/>
-<equipment    id="810"    name="礼记"    intelligence="0"    max_hp="0"    max_mp="6"    speed="0"    description="戴圣所著的典章书籍"/>
-<equipment    id="813"    name="山海经"    intelligence="0"    max_hp="0"    max_mp="6"    speed="0"    description="先秦古籍，记录了古老神话传说"/>
-<equipment    id="815"    name="史记"    intelligence="0"    max_hp="0"    max_mp="6"    speed="0"    description="司马迁记录的先代历史书籍"/>
-<equipment    id="817"    name="吕氏春秋"    intelligence="0"    max_hp="0"    max_mp="10"    speed="0"    description="秦国吕不韦所著"/>
-<equipment    id="819"    name="司马法"    intelligence="13"    max_hp="0"    max_mp="0"    speed="0"    description="司马穰苴所著兵书，战国时期已失传"/>
-<equipment    id="823"    name="汉书"    intelligence="13"    max_hp="0"    max_mp="0"    speed="0"    description="班固所著史书"/>
-<equipment    id="827"    name="老子"    intelligence="13"    max_hp="0"    max_mp="0"    speed="0"    description="又名道德经，道祖老子所写"/>
-<equipment    id="828"    name="尉缭子"    intelligence="0"    max_hp="0"    max_mp="15"    speed="0"    description="秦朝尉缭子所著兵书"/>
-<equipment    id="831"    name="孟德新书"    intelligence="0"    max_hp="0"    max_mp="15"    speed="0"    description="曹操所著兵法韬略"/>
-<equipment    id="833"    name="韩非子"    intelligence="25"    max_hp="0"    max_mp="0"    speed="0"    description="战国韩非子的巨著"/>
-<equipment    id="835"    name="青囊书"    intelligence="25"    max_hp="0"    max_mp="0"    speed="0"    description="华佗毕生精力所著医书"/>
-<equipment    id="840"    name="春秋左氏传"    intelligence="0"    max_hp="0"    max_mp="29"    speed="0"    description="春秋末年左丘明解释春秋而著"/>
-<equipment    id="842"    name="商君书"    intelligence="0"    max_hp="0"    max_mp="29"    speed="0"    description="战国商鞅所著变法之书"/>
-<equipment    id="845"    name="战国策"    intelligence="0"    max_hp="0"    max_mp="29"    speed="0"    description="西汉刘向记载战国策士纵横捭阖之书"/>
-<equipment    id="1002"    name="白羽扇"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="普通的羽扇，用羽毛做成的扇面"/>
-<equipment    id="1003"    name="手戟"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="精铁所制，最常见的兵器"/>
-<equipment    id="1004"    name="双铁戟"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="寻常镔铁打造而成，典韦手中运使如飞"/>
-<equipment    id="1005"    name="丈八长标"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="南蛮特有的武器，祝融夫人所使"/>
-<equipment    id="1006"    name="短戟"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="比手戟略短，典韦以此作暗器救曹操"/>
-<equipment    id="1007"    name="流星锤"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="浑铁链扣着钢球，可做暗器使用"/>
-<equipment    id="1008"    name="铜挝"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="挝头似斧脑可宕击，马超曾以此投向张飞"/>
-<equipment    id="1009"    name="朴刀"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="木柄上安有钢刀，可劈杀敌人"/>
-<equipment    id="1010"    name="古锭刀"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="又名七星刀，孙权所使，刀身有松纹故名之"/>
-<equipment    id="1011"    name="镇山剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="蜀后帝刘禅所造巨剑以镇剑口山"/>
-<equipment    id="1012"    name="钢鞭"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="精铁所制，有节无锋刃"/>
-<equipment    id="1013"    name="四楞铁简"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="蜀将傅佥的兵器，曾以此打得魏将眼珠迸出"/>
-<equipment    id="1015"    name="陨铁双戟"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="陨铁铸造的双戟"/>
-<equipment    id="1016"    name="衠钢槊"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="纯钢所制，周泰在赤壁之战中使用"/>
-<equipment    id="1017"    name="没羽箭"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="锋锐所及，有没羽之力故名之"/>
-<equipment    id="1018"    name="铁脊蛇矛"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="程普所使用的武器，刃脊隆起，两旁微陷"/>
-<equipment    id="1019"    name="百辟匕首"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹丕所制匕首之一，纹似灵龟，名曰灵宝"/>
-<equipment    id="1020"    name="两石力之弓"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="紫檀木所制，坚硬异常"/>
-<equipment    id="1021"    name="文士剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="杨修献于曹丕的宝剑"/>
-<equipment    id="1022"    name="蜀八剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="刘备采金牛山铁矿铸造的八把宝剑之一"/>
-<equipment    id="1023"    name="龙鳞刀"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹丕所制宝刀之一，状如龙纹，名曰龙鳞"/>
-<equipment    id="1024"    name="飞景三剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹丕所制宝剑之一，光似流星，名曰飞景"/>
-<equipment    id="1025"    name="思召剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="袁绍在黎阳梦神人所授宝剑"/>
-<equipment    id="1026"    name="截头大刀"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="庞德的兵器，刀头比普通大刀短"/>
-<equipment    id="1027"    name="三尖两刃刀"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="纪灵的兵器，两面开刃，锋利无比"/>
-<equipment    id="1028"    name="蘸金斧"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="斧头上镀金的大斧，为李异所有"/>
-<equipment    id="1029"    name="百辟宝刀"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="能够辟邪的宝刀"/>
-<equipment    id="1030"    name="铁蒺藜骨朵"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="沙摩柯所使兵器，锤头上有锐利的尖刺"/>
-<equipment    id="1033"    name="诸葛枪"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="诸葛亮所造二丈五尺的竹柄枪，枪头铁制"/>
-<equipment    id="1034"    name="虎筋弦弓"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="又名麒麟弓，虎筋做弦，吕布辕门射戟所用"/>
-<equipment    id="1036"    name="鹊画弓"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="因弓身似鹊身而得名"/>
-<equipment    id="1038"    name="马岱宝刀"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="马岱曾以此宝剑击败钟繇"/>
-<equipment    id="1040"    name="开山鏖金斧"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="徐晃所使兵器，斧阔五寸，柄长七尺"/>
-<equipment    id="1041"    name="王双大刀"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="天下第一富贵刀，王双所有"/>
-<equipment    id="1042"    name="孟德剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹操于幽谷所得的宝剑"/>
-<equipment    id="1043"    name="双股剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="刘备的兵器，又名鸳鸯剑，利可断金"/>
-<equipment    id="1045"    name="松纹厢宝剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="孟获对战诸葛亮所使宝剑，剑身由松纹"/>
-<equipment    id="1110"    name="白雪"    intelligence="0"    max_hp="0"    max_mp="16"    speed="0"    description="郭嘉的马名曰白雪"/>
-<equipment    id="1113"    name="黑云"    intelligence="0"    max_hp="0"    max_mp="16"    speed="0"    description="周泰的马名曰黑云"/>
-<equipment    id="1115"    name="白鸽"    intelligence="0"    max_hp="0"    max_mp="16"    speed="0"    description="陆逊火烧连营的坐骑"/>
-<equipment    id="1117"    name="紫骍"    intelligence="0"    max_hp="0"    max_mp="16"    speed="0"    description="曹植所有的一匹大宛良马"/>
-<equipment    id="1119"    name="汗血"    intelligence="0"    max_hp="0"    max_mp="36"    speed="0"    description="马岱砍杀魏延时所骑之马"/>
-<equipment    id="1124"    name="乌骓"    intelligence="0"    max_hp="0"    max_mp="36"    speed="0"    description="魏延的坐骑"/>
-<equipment    id="1130"    name="白鹤"    intelligence="0"    max_hp="0"    max_mp="41"    speed="0"    description="曹洪的名驹"/>
-<equipment    id="1133"    name="灰影"    intelligence="0"    max_hp="0"    max_mp="72"    speed="0"    description="张辽骑此马大战逍遥津"/>
-<equipment    id="1136"    name="乌孙"    intelligence="0"    max_hp="0"    max_mp="80"    speed="0"    description="司马懿的名驹"/>
-<equipment    id="1139"    name="燎原火"    intelligence="0"    max_hp="0"    max_mp="80"    speed="0"    description="老将黄忠的宝马"/>
-<equipment    id="1207"    name="鱼鳞甲"    intelligence="0"    max_hp="16"    max_mp="0"    speed="0"    description="普通护甲，部分由青铜鳞片制成"/>
-<equipment    id="1210"    name="锁子甲"    intelligence="0"    max_hp="16"    max_mp="0"    speed="0"    description="青铜环相扣而成，缺点是过于柔软"/>
-<equipment    id="1213"    name="玄铁甲"    intelligence="0"    max_hp="16"    max_mp="0"    speed="0"    description="由玄铁打造的铠甲，但非常笨重"/>
-<equipment    id="1215"    name="虎皮铠"    intelligence="0"    max_hp="16"    max_mp="0"    speed="0"    description="用韧性极佳的虎皮而制"/>
-<equipment    id="1217"    name="桃花铠"    intelligence="0"    max_hp="16"    max_mp="0"    speed="0"    description="相传是张飞在桃园中用精铁打造"/>
-<equipment    id="1218"    name="乌纱铠"    intelligence="0"    max_hp="35"    max_mp="0"    speed="0"    description="高级将领在室内常穿戴的护具"/>
-<equipment    id="1219"    name="黑金甲"    intelligence="0"    max_hp="35"    max_mp="0"    speed="0"    description="因盔甲周围镀有一层乌金而得名"/>
-<equipment    id="1222"    name="孔明铠"    intelligence="0"    max_hp="35"    max_mp="0"    speed="0"    description="诸葛亮专门为蜀兵所作"/>
-<equipment    id="1224"    name="铁铠甲"    intelligence="0"    max_hp="35"    max_mp="0"    speed="0"    description="浑铁所制铠甲"/>
-<equipment    id="1230"    name="赤铁盔"    intelligence="0"    max_hp="40"    max_mp="0"    speed="0"    description="反复精炼镔铁而得的精铁铠甲"/>
-<equipment    id="1235"    name="金蟒鳞甲"    intelligence="0"    max_hp="63"    max_mp="0"    speed="0"    description="精铁鳞片制成，并在胸前镀有金蟒图案"/>
-<equipment    id="1238"    name="精木兽铠"    intelligence="0"    max_hp="63"    max_mp="0"    speed="0"    description="蛮族精兵用精木兽骨制成"/>
-<equipment    id="1241"    name="麒麟铠甲"    intelligence="0"    max_hp="70"    max_mp="0"    speed="0"    description="相传为麒麟皮精致而成"/>
-<equipment    id="1245"    name="三昧神铠"    intelligence="0"    max_hp="70"    max_mp="0"    speed="0"    description="用陨铁在三道不同火候的烈火中锻造而成"/>
-<equipment    id="1310"    name="礼记"    intelligence="0"    max_hp="0"    max_mp="10"    speed="0"    description="戴圣所著的典章书籍"/>
-<equipment    id="1313"    name="山海经"    intelligence="0"    max_hp="0"    max_mp="10"    speed="0"    description="先秦古籍，记录了古老神话传说"/>
-<equipment    id="1315"    name="史记"    intelligence="0"    max_hp="0"    max_mp="10"    speed="0"    description="司马迁记录的先代历史书籍"/>
-<equipment    id="1317"    name="吕氏春秋"    intelligence="19"    max_hp="0"    max_mp="0"    speed="0"    description="秦国吕不韦所著"/>
-<equipment    id="1319"    name="司马法"    intelligence="0"    max_hp="0"    max_mp="22"    speed="0"    description="司马穰苴所著兵书，战国时期已失传"/>
-<equipment    id="1323"    name="汉书"    intelligence="0"    max_hp="0"    max_mp="22"    speed="0"    description="班固所著史书"/>
-<equipment    id="1327"    name="老子"    intelligence="0"    max_hp="0"    max_mp="22"    speed="0"    description="又名道德经，道祖老子所写"/>
-<equipment    id="1328"    name="尉缭子"    intelligence="25"    max_hp="0"    max_mp="0"    speed="0"    description="秦朝尉缭子所著兵书"/>
-<equipment    id="1331"    name="孟德新书"    intelligence="25"    max_hp="0"    max_mp="0"    speed="0"    description="曹操所著兵法韬略"/>
-<equipment    id="1333"    name="韩非子"    intelligence="45"    max_hp="0"    max_mp="0"    speed="0"    description="战国韩非子的巨著"/>
-<equipment    id="1335"    name="青囊书"    intelligence="45"    max_hp="0"    max_mp="0"    speed="0"    description="华佗毕生精力所著医书"/>
-<equipment    id="1340"    name="春秋左氏传"    intelligence="0"    max_hp="0"    max_mp="50"    speed="0"    description="春秋末年左丘明解释春秋而著"/>
-<equipment    id="1342"    name="商君书"    intelligence="0"    max_hp="0"    max_mp="50"    speed="0"    description="战国商鞅所著变法之书"/>
-<equipment    id="1345"    name="战国策"    intelligence="0"    max_hp="0"    max_mp="50"    speed="0"    description="西汉刘向记载战国策士纵横捭阖之书"/>
-<equipment    id="1502"    name="白羽扇"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="普通的羽扇，用羽毛做成的扇面"/>
-<equipment    id="1503"    name="手戟"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="精铁所制，最常见的兵器"/>
-<equipment    id="1504"    name="双铁戟"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="寻常镔铁打造而成，典韦手中运使如飞"/>
-<equipment    id="1505"    name="丈八长标"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="南蛮特有的武器，祝融夫人所使"/>
-<equipment    id="1506"    name="短戟"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="比手戟略短，典韦以此作暗器救曹操"/>
-<equipment    id="1507"    name="流星锤"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="浑铁链扣着钢球，可做暗器使用"/>
-<equipment    id="1508"    name="铜挝"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="挝头似斧脑可宕击，马超曾以此投向张飞"/>
-<equipment    id="1509"    name="朴刀"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="木柄上安有钢刀，可劈杀敌人"/>
-<equipment    id="1510"    name="古锭刀"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="又名七星刀，孙权所使，刀身有松纹故名之"/>
-<equipment    id="1511"    name="镇山剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="蜀后帝刘禅所造巨剑以镇剑口山"/>
-<equipment    id="1512"    name="钢鞭"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="精铁所制，有节无锋刃"/>
-<equipment    id="1513"    name="四楞铁简"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="蜀将傅佥的兵器，曾以此打得魏将眼珠迸出"/>
-<equipment    id="1515"    name="陨铁双戟"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="陨铁铸造的双戟"/>
-<equipment    id="1516"    name="衠钢槊"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="纯钢所制，周泰在赤壁之战中使用"/>
-<equipment    id="1517"    name="没羽箭"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="锋锐所及，有没羽之力故名之"/>
-<equipment    id="1518"    name="铁脊蛇矛"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="程普所使用的武器，刃脊隆起，两旁微陷"/>
-<equipment    id="1519"    name="百辟匕首"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹丕所制匕首之一，纹似灵龟，名曰灵宝"/>
-<equipment    id="1520"    name="两石力之弓"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="紫檀木所制，坚硬异常"/>
-<equipment    id="1521"    name="文士剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="杨修献于曹丕的宝剑"/>
-<equipment    id="1522"    name="蜀八剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="刘备采金牛山铁矿铸造的八把宝剑之一"/>
-<equipment    id="1523"    name="龙鳞刀"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹丕所制宝刀之一，状如龙纹，名曰龙鳞"/>
-<equipment    id="1524"    name="飞景三剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹丕所制宝剑之一，光似流星，名曰飞景"/>
-<equipment    id="1525"    name="思召剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="袁绍在黎阳梦神人所授宝剑"/>
-<equipment    id="1526"    name="截头大刀"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="庞德的兵器，刀头比普通大刀短"/>
-<equipment    id="1527"    name="三尖两刃刀"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="纪灵的兵器，两面开刃，锋利无比"/>
-<equipment    id="1528"    name="蘸金斧"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="斧头上镀金的大斧，为李异所有"/>
-<equipment    id="1529"    name="百辟宝刀"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="能够辟邪的宝刀"/>
-<equipment    id="1530"    name="铁蒺藜骨朵"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="沙摩柯所使兵器，锤头上有锐利的尖刺"/>
-<equipment    id="1610"    name="白雪"    intelligence="0"    max_hp="0"    max_mp="31"    speed="0"    description="郭嘉的马名曰白雪"/>
-<equipment    id="1613"    name="黑云"    intelligence="0"    max_hp="0"    max_mp="31"    speed="0"    description="周泰的马名曰黑云"/>
-<equipment    id="1615"    name="白鸽"    intelligence="0"    max_hp="0"    max_mp="31"    speed="0"    description="陆逊火烧连营的坐骑"/>
-<equipment    id="1617"    name="紫骍"    intelligence="0"    max_hp="0"    max_mp="31"    speed="0"    description="曹植所有的一匹大宛良马"/>
-<equipment    id="1619"    name="汗血"    intelligence="0"    max_hp="0"    max_mp="56"    speed="0"    description="马岱砍杀魏延时所骑之马"/>
-<equipment    id="1624"    name="乌骓"    intelligence="0"    max_hp="0"    max_mp="64"    speed="0"    description="魏延的坐骑"/>
-<equipment    id="1630"    name="白鹤"    intelligence="0"    max_hp="0"    max_mp="64"    speed="0"    description="曹洪的名驹"/>
-<equipment    id="1707"    name="鱼鳞甲"    intelligence="0"    max_hp="30"    max_mp="0"    speed="0"    description="普通护甲，部分由青铜鳞片制成"/>
-<equipment    id="1710"    name="锁子甲"    intelligence="0"    max_hp="30"    max_mp="0"    speed="0"    description="青铜环相扣而成，缺点是过于柔软"/>
-<equipment    id="1713"    name="玄铁甲"    intelligence="0"    max_hp="30"    max_mp="0"    speed="0"    description="由玄铁打造的铠甲，但非常笨重"/>
-<equipment    id="1715"    name="虎皮铠"    intelligence="0"    max_hp="30"    max_mp="0"    speed="0"    description="用韧性极佳的虎皮而制"/>
-<equipment    id="1717"    name="桃花铠"    intelligence="0"    max_hp="30"    max_mp="0"    speed="0"    description="相传是张飞在桃园中用精铁打造"/>
-<equipment    id="1718"    name="乌纱铠"    intelligence="0"    max_hp="49"    max_mp="0"    speed="0"    description="高级将领在室内常穿戴的护具"/>
-<equipment    id="1719"    name="黑金甲"    intelligence="0"    max_hp="49"    max_mp="0"    speed="0"    description="因盔甲周围镀有一层乌金而得名"/>
-<equipment    id="1722"    name="孔明铠"    intelligence="0"    max_hp="49"    max_mp="0"    speed="0"    description="诸葛亮专门为蜀兵所作"/>
-<equipment    id="1724"    name="铁铠甲"    intelligence="0"    max_hp="49"    max_mp="0"    speed="0"    description="浑铁所制铠甲"/>
-<equipment    id="1730"    name="赤铁盔"    intelligence="0"    max_hp="56"    max_mp="0"    speed="0"    description="反复精炼镔铁而得的精铁铠甲"/>
-<equipment    id="1810"    name="礼记"    intelligence="19"    max_hp="0"    max_mp="0"    speed="0"    description="戴圣所著的典章书籍"/>
-<equipment    id="1813"    name="山海经"    intelligence="19"    max_hp="0"    max_mp="0"    speed="0"    description="先秦古籍，记录了古老神话传说"/>
-<equipment    id="1815"    name="史记"    intelligence="19"    max_hp="0"    max_mp="0"    speed="0"    description="司马迁记录的先代历史书籍"/>
-<equipment    id="1817"    name="吕氏春秋"    intelligence="35"    max_hp="0"    max_mp="0"    speed="0"    description="秦国吕不韦所著"/>
-<equipment    id="1819"    name="司马法"    intelligence="35"    max_hp="0"    max_mp="0"    speed="0"    description="司马穰苴所著兵书，战国时期已失传"/>
-<equipment    id="1823"    name="汉书"    intelligence="0"    max_hp="0"    max_mp="40"    speed="0"    description="班固所著史书"/>
-<equipment    id="1827"    name="老子"    intelligence="0"    max_hp="0"    max_mp="40"    speed="0"    description="又名道德经，道祖老子所写"/>
-<equipment    id="1828"    name="尉缭子"    intelligence="0"    max_hp="0"    max_mp="40"    speed="0"    description="秦朝尉缭子所著兵书"/>
-<equipment    id="1831"    name="孟德新书"    intelligence="45"    max_hp="0"    max_mp="0"    speed="0"    description="曹操所著兵法韬略"/>
-<equipment    id="2000"    name="孟德剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹操于幽谷所得的宝剑"/>
-<equipment    id="2001"    name="乌孙"    intelligence="0"    max_hp="0"    max_mp="80"    speed="0"    description="司马懿的名驹"/>
-<equipment    id="2002"    name="三昧神铠"    intelligence="0"    max_hp="70"    max_mp="0"    speed="0"    description="用陨铁在三道不同火候的烈火中锻造而成"/>
-<equipment    id="2003"    name="战国策"    intelligence="0"    max_hp="0"    max_mp="50"    speed="0"    description="西汉刘向记载战国策士纵横捭阖之书"/>
-<equipment    id="2903"    name="丈八蛇枪"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="枪头有蛇形环绕"/>
-<equipment    id="2904"    name="火烈枪"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="烈火之威力，势不可挡"/>
-<equipment    id="2905"    name="丧律斧"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="有让鬼神闻风丧胆之威"/>
-<equipment    id="2913"    name="乌金甲"    intelligence="0"    max_hp="70"    max_mp="0"    speed="0"    description="因盔甲周围镀有一层乌金而得名"/>
-<equipment    id="2914"    name="神火御甲"    intelligence="0"    max_hp="90"    max_mp="0"    speed="0"    description="相传由精火纯炼而成"/>
-<equipment    id="2915"    name="兽神铠"    intelligence="0"    max_hp="110"    max_mp="0"    speed="0"    description="南蛮异族，崇尚兽神，铠甲中有巫力"/>
-<equipment    id="2923"    name="钢甲战马"    intelligence="0"    max_hp="0"    max_mp="60"    speed="0"    description="身披钢甲的战马"/>
-<equipment    id="2924"    name="白神驹"    intelligence="0"    max_hp="0"    max_mp="75"    speed="0"    description="白色神马驹"/>
-<equipment    id="2925"    name="可汗神驹"    intelligence="0"    max_hp="0"    max_mp="90"    speed="0"    description="相传为古蒙古某位可汗的坐骑"/>
-<equipment    id="2933"    name="盐铁论"    intelligence="65"    max_hp="0"    max_mp="0"    speed="0"    description="相传为西汉桓宽所著"/>
-<equipment    id="2934"    name="诡道"    intelligence="85"    max_hp="0"    max_mp="0"    speed="0"    description="兵者诡道也"/>
-<equipment    id="2935"    name="青囊衣书"    intelligence="105"    max_hp="0"    max_mp="0"    speed="0"    description="华佗毕生精力所著医书之残卷"/>
-<equipment    id="3003"    name="天龙剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="剑身有龙纹，舞动有龙吟"/>
-<equipment    id="3004"    name="后羿弓"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="相传为后羿射日所用之弓"/>
-<equipment    id="3005"    name="蚩尤斧"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="相传为蚩尤死后，其手骨化为的战斧"/>
-<equipment    id="3013"    name="虎神铠"    intelligence="0"    max_hp="80"    max_mp="0"    speed="0"    description="南蛮部族，崇尚虎神，铠甲中有巫力"/>
-<equipment    id="3014"    name="桃木铠"    intelligence="0"    max_hp="100"    max_mp="0"    speed="0"    description="诸葛亮专门为蜀兵所作，附有神力"/>
-<equipment    id="3015"    name="战神甲"    intelligence="0"    max_hp="120"    max_mp="0"    speed="0"    description="相传为蚩尤死后，其胸骨化为的铠甲"/>
-<equipment    id="3023"    name="白云"    intelligence="0"    max_hp="0"    max_mp="70"    speed="0"    description="白驹过隙，快如闪电"/>
-<equipment    id="3024"    name="骓逝"    intelligence="0"    max_hp="0"    max_mp="85"    speed="0"    description="相传为某位猛将的坐骑"/>
-<equipment    id="3025"    name="黑目"    intelligence="0"    max_hp="0"    max_mp="100"    speed="0"    description="目黑而有神，曰黑目"/>
-<equipment    id="3033"    name="太平清领道"    intelligence="75"    max_hp="0"    max_mp="0"    speed="0"    description="张宝遗留名著"/>
-<equipment    id="3034"    name="魏公子兵法"    intelligence="95"    max_hp="0"    max_mp="0"    speed="0"    description="魏无忌所著兵书"/>
-<equipment    id="3035"    name="太平要术"    intelligence="115"    max_hp="0"    max_mp="0"    speed="0"    description="张角受南华仙人所传授"/>
-<equipment    id="3103"    name="金丝刀"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="刀部有金丝，名曰金丝"/>
-<equipment    id="3104"    name="封神简"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="据说有鞭策神灵之威力"/>
-<equipment    id="3105"    name="后羿弓"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="相传为后羿射日所用之弓"/>
-<equipment    id="3113"    name="银色钢甲"    intelligence="0"    max_hp="90"    max_mp="0"    speed="0"    description="浑身银亮之色，后为赵云所得"/>
-<equipment    id="3114"    name="孔明神铠"    intelligence="0"    max_hp="110"    max_mp="0"    speed="0"    description="诸葛亮日夜观星悟道而作"/>
-<equipment    id="3115"    name="血精之甲"    intelligence="0"    max_hp="130"    max_mp="0"    speed="0"    description="相传融入了生灵精魄的血炼铠甲"/>
-<equipment    id="3123"    name="紫电"    intelligence="0"    max_hp="0"    max_mp="80"    speed="0"    description="快如紫色闪电，名曰紫电"/>
-<equipment    id="3124"    name="快航"    intelligence="0"    max_hp="0"    max_mp="95"    speed="0"    description="名驹，孙权之坐骑"/>
-<equipment    id="3125"    name="紫电"    intelligence="0"    max_hp="0"    max_mp="110"    speed="0"    description="快如紫色闪电，名曰紫电"/>
-<equipment    id="3133"    name="仇国论"    intelligence="85"    max_hp="0"    max_mp="0"    speed="0"    description="中散大夫谯周所著"/>
-<equipment    id="3134"    name="象历注"    intelligence="105"    max_hp="0"    max_mp="0"    speed="0"    description="刘洪所著历法"/>
-<equipment    id="3135"    name="周书阴符"    intelligence="125"    max_hp="0"    max_mp="0"    speed="0"    description="相传为黄帝所著"/>
-<equipment    id="4001"    name="方天画戟"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="吕布的专属神兵，有龙纹绕身，霸气十足（不受等级限制）"/>
-<equipment    id="4002"    name="孟德剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹操于幽谷所得的宝剑"/>
-<equipment    id="4003"    name="诸葛连弩"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="又作元戎弩，诸葛亮所制威力强大的连弩"/>
-<equipment    id="4004"    name="没羽箭"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="锋锐所及，有没羽之力故名之"/>
-<equipment    id="4005"    name="铁脊蛇矛"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="程普所使用的武器，刃脊隆起，两旁微陷"/>
-<equipment    id="4006"    name="百辟匕首"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹丕所制匕首之一，纹似灵龟，名曰灵宝"/>
-<equipment    id="4007"    name="倚天剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹操的佩剑，与青虹并称为绝世双剑"/>
-<equipment    id="4008"    name="龙泉剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="欧冶子和干将联手所铸，俯视剑身有巨龙盘卧"/>
-<equipment    id="4009"    name="丈八蛇矛"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="张飞的霹雳神兵，矛头镔铁打造，犹如蛇吐信"/>
-<equipment    id="4010"    name="青龙偃月刀"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="奇名冷艳锯，关羽所使神兵"/>
-<equipment    id="4011"    name="两石力之弓"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="紫檀木所制，坚硬异常"/>
-<equipment    id="4012"    name="文士剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="杨修献于曹丕的宝剑"/>
-<equipment    id="4013"    name="蜀八剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="刘备采金牛山铁矿铸造的八把宝剑之一"/>
-<equipment    id="4014"    name="龙鳞刀"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹丕所制宝刀之一，状如龙纹，名曰龙鳞"/>
-<equipment    id="4015"    name="飞景三剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹丕所制宝剑之一，光似流星，名曰飞景"/>
-<equipment    id="4016"    name="思召剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="袁绍在黎阳梦神人所授宝剑"/>
-<equipment    id="4017"    name="截头大刀"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="庞德的兵器，刀头比普通大刀短"/>
-<equipment    id="4018"    name="三尖两刃刀"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="纪灵的兵器，两面开刃，锋利无比"/>
-<equipment    id="4019"    name="蘸金斧"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="斧头上镀金的大斧，为李异所有"/>
-<equipment    id="4020"    name="百辟宝刀"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="能够辟邪的宝刀"/>
-<equipment    id="4021"    name="诸葛枪"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="诸葛亮所造二丈五尺的竹柄枪，枪头铁制"/>
-<equipment    id="4022"    name="虎筋弦弓"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="又名麒麟弓，虎筋做弦，吕布辕门射戟所用"/>
-<equipment    id="4023"    name="鹊画弓"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="因弓身似鹊身而得名"/>
-<equipment    id="4024"    name="马岱宝刀"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="马岱曾以此宝剑击败钟繇"/>
-<equipment    id="4025"    name="铁蒺藜骨朵"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="沙摩柯所使兵器，锤头上有锐利的尖刺"/>
-<equipment    id="4026"    name="开山鏖金斧"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="徐晃所使兵器，斧阔五寸，柄长七尺"/>
-<equipment    id="4027"    name="王双大刀"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="天下第一富贵刀，王双所有"/>
-<equipment    id="4028"    name="孟德剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹操于幽谷所得的宝剑"/>
-<equipment    id="4029"    name="双股剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="刘备的兵器，又名鸳鸯剑，利可断金"/>
-<equipment    id="4030"    name="松纹厢宝剑"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="孟获对战诸葛亮所使宝剑，剑身由松纹"/>
-<equipment    id="4031"    name="丧律斧"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="有让鬼神闻风丧胆之威"/>
-<equipment    id="4032"    name="蚩尤斧"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="相传为蚩尤死后，其手骨化为的战斧"/>
-<equipment    id="4033"    name="后羿弓"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="相传为后羿射日所用之弓"/>
-<equipment    id="4101"    name="乌孙"    intelligence="0"    max_hp="0"    max_mp="110"    speed="0"    description="司马懿的名驹"/>
-<equipment    id="4102"    name="汗血"    intelligence="0"    max_hp="0"    max_mp="86"    speed="0"    description="马岱砍杀魏延时所骑之马"/>
-<equipment    id="4103"    name="的卢"    intelligence="0"    max_hp="0"    max_mp="94"    speed="0"    description="刘备的坐骑，曾在其危难之时救其性命"/>
-<equipment    id="4104"    name="绝影无影"    intelligence="0"    max_hp="0"    max_mp="94"    speed="0"    description="曹操的坐骑之一"/>
-<equipment    id="4105"    name="乌骓"    intelligence="0"    max_hp="0"    max_mp="94"    speed="0"    description="魏延的坐骑"/>
-<equipment    id="4106"    name="白鹤"    intelligence="0"    max_hp="0"    max_mp="94"    speed="0"    description="曹洪的名驹"/>
-<equipment    id="4107"    name="赤兔"    intelligence="0"    max_hp="0"    max_mp="102"    speed="0"    description="赤兔胭脂兽，吕布坐骑，后为关羽所得"/>
-<equipment    id="4108"    name="灰影"    intelligence="0"    max_hp="0"    max_mp="102"    speed="0"    description="张辽骑此马大战逍遥津"/>
-<equipment    id="4109"    name="乌孙"    intelligence="0"    max_hp="0"    max_mp="110"    speed="0"    description="司马懿的名驹"/>
-<equipment    id="4110"    name="燎原火"    intelligence="0"    max_hp="0"    max_mp="110"    speed="0"    description="老将黄忠的宝马"/>
-<equipment    id="4111"    name="可汗神驹"    intelligence="0"    max_hp="0"    max_mp="120"    speed="0"    description="相传为古蒙古某位可汗的坐骑"/>
-<equipment    id="4112"    name="黑目"    intelligence="0"    max_hp="0"    max_mp="130"    speed="0"    description="目黑而有神，曰黑目"/>
-<equipment    id="4113"    name="紫电"    intelligence="0"    max_hp="0"    max_mp="140"    speed="0"    description="快如紫色闪电，名曰紫电"/>
-<equipment    id="4201"    name="神嚎狱铠"    intelligence="0"    max_hp="86"    max_mp="0"    speed="0"    description="穿戴者犹如神助，让敌人置身炼狱之中（不受等级限制）"/>
-<equipment    id="4202"    name="三昧神铠"    intelligence="0"    max_hp="100"    max_mp="0"    speed="0"    description="用陨铁在三道不同火候的烈火中锻造而成"/>
-<equipment    id="4203"    name="铁铠甲"    intelligence="0"    max_hp="79"    max_mp="0"    speed="0"    description="浑铁所制铠甲"/>
-<equipment    id="4204"    name="鬼哭神铠"    intelligence="0"    max_hp="79"    max_mp="0"    speed="0"    description="吕布专属护甲，冲杀敌阵中，鬼哭神泣不绝于耳"/>
-<equipment    id="4205"    name="乌纱铠"    intelligence="0"    max_hp="79"    max_mp="0"    speed="0"    description="高级将领在室内常穿戴的护具"/>
-<equipment    id="4206"    name="黑金甲"    intelligence="0"    max_hp="79"    max_mp="0"    speed="0"    description="因盔甲周围镀有一层乌金而得名"/>
-<equipment    id="4207"    name="孔明铠"    intelligence="0"    max_hp="79"    max_mp="0"    speed="0"    description="诸葛亮专门为蜀兵所作"/>
-<equipment    id="4208"    name="赤铁盔"    intelligence="0"    max_hp="86"    max_mp="0"    speed="0"    description="反复精炼镔铁而得的精铁铠甲"/>
-<equipment    id="4209"    name="金蟒鳞甲"    intelligence="0"    max_hp="93"    max_mp="0"    speed="0"    description="精铁鳞片制成，并在胸前镀有金蟒图案"/>
-<equipment    id="4210"    name="精木兽铠"    intelligence="0"    max_hp="93"    max_mp="0"    speed="0"    description="蛮族精兵用精木兽骨制成"/>
-<equipment    id="4211"    name="三昧神铠"    intelligence="0"    max_hp="100"    max_mp="0"    speed="0"    description="用陨铁在三道不同火候的烈火中锻造而成"/>
-<equipment    id="4212"    name="麒麟铠甲"    intelligence="0"    max_hp="100"    max_mp="0"    speed="0"    description="相传为麒麟皮精致而成"/>
-<equipment    id="4213"    name="兽神铠"    intelligence="0"    max_hp="140"    max_mp="0"    speed="0"    description="南蛮异族，崇尚兽神，铠甲中有巫力"/>
-<equipment    id="4214"    name="战神甲"    intelligence="0"    max_hp="150"    max_mp="0"    speed="0"    description="相传为蚩尤死后，其胸骨化为的铠甲"/>
-<equipment    id="4215"    name="血精之甲"    intelligence="0"    max_hp="160"    max_mp="0"    speed="0"    description="相传融入了生灵精魄的血炼铠甲"/>
-<equipment    id="4301"    name="战国策"    intelligence="0"    max_hp="0"    max_mp="80"    speed="0"    description="西汉刘向记载战国策士纵横捭阖之书"/>
-<equipment    id="4302"    name="吕氏春秋"    intelligence="65"    max_hp="0"    max_mp="0"    speed="0"    description="秦国吕不韦所著"/>
-<equipment    id="4303"    name="司马法"    intelligence="65"    max_hp="0"    max_mp="0"    speed="0"    description="司马穰苴所著兵书，战国时期已失传"/>
-<equipment    id="4304"    name="遁甲天书"    intelligence="0"    max_hp="0"    max_mp="70"    speed="0"    description="神人左慈修行的天书"/>
-<equipment    id="4305"    name="汉书"    intelligence="0"    max_hp="0"    max_mp="70"    speed="0"    description="班固所著史书"/>
-<equipment    id="4306"    name="老子"    intelligence="0"    max_hp="0"    max_mp="70"    speed="0"    description="又名道德经，道祖老子所写"/>
-<equipment    id="4307"    name="尉缭子"    intelligence="0"    max_hp="0"    max_mp="70"    speed="0"    description="秦朝尉缭子所著兵书"/>
-<equipment    id="4308"    name="孙子兵法"    intelligence="75"    max_hp="0"    max_mp="0"    speed="0"    description="春秋孙武所著的神级兵书"/>
-<equipment    id="4309"    name="韩非子"    intelligence="75"    max_hp="0"    max_mp="0"    speed="0"    description="战国韩非子的巨著"/>
-<equipment    id="4310"    name="青囊书"    intelligence="75"    max_hp="0"    max_mp="0"    speed="0"    description="华佗毕生精力所著医书"/>
-<equipment    id="4311"    name="孟德新书"    intelligence="75"    max_hp="0"    max_mp="0"    speed="0"    description="曹操所著兵法韬略"/>
-<equipment    id="4312"    name="春秋左氏传"    intelligence="0"    max_hp="0"    max_mp="80"    speed="0"    description="春秋末年左丘明解释春秋而著"/>
-<equipment    id="4313"    name="商君书"    intelligence="0"    max_hp="0"    max_mp="80"    speed="0"    description="战国商鞅所著变法之书"/>
-<equipment    id="4314"    name="战国策"    intelligence="0"    max_hp="0"    max_mp="80"    speed="0"    description="西汉刘向记载战国策士纵横捭阖之书"/>
-<equipment    id="4315"    name="青囊衣书"    intelligence="135"    max_hp="0"    max_mp="0"    speed="0"    description="华佗毕生精力所著医书之残卷"/>
-<equipment    id="4316"    name="太平要术"    intelligence="145"    max_hp="0"    max_mp="0"    speed="0"    description="张角受南华仙人所传授"/>
-<equipment    id="4317"    name="周书阴符"    intelligence="155"    max_hp="0"    max_mp="0"    speed="0"    description="相传为黄帝所著"/>
+		<equipment    id="2"    name="白羽扇"    strength="2"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="普通的羽扇，用羽毛做成的扇面"    need_level="1"    price="612"    max_smith="20"/>    
+<equipment    id="3"    name="手戟"    strength="2"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="精铁所制，最常见的兵器"    need_level="1"    price="612"    max_smith="20"/>    
+<equipment    id="4"    name="双铁戟"    strength="4"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="寻常镔铁打造而成，典韦手中运使如飞"    need_level="5"    price="644"    max_smith="20"/>    
+<equipment    id="5"    name="丈八长标"    strength="4"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="南蛮特有的武器，祝融夫人所使"    need_level="5"    price="644"    max_smith="20"/>    
+<equipment    id="6"    name="短戟"    strength="2"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="比手戟略短，典韦以此作暗器救曹操"    need_level="1"    price="612"    max_smith="20"/>    
+<equipment    id="7"    name="流星锤"    strength="4"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="浑铁链扣着钢球，可做暗器使用"    need_level="5"    price="644"    max_smith="20"/>    
+<equipment    id="8"    name="铜挝"    strength="6"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="挝头似斧脑可宕击，马超曾以此投向张飞"    need_level="10"    price="684"    max_smith="20"/>    
+<equipment    id="9"    name="朴刀"    strength="6"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="木柄上安有钢刀，可劈杀敌人"    need_level="10"    price="684"    max_smith="20"/>    
+<equipment    id="10"    name="古锭刀"    strength="6"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="又名七星刀，孙权所使，刀身有松纹故名之"    need_level="10"    price="684"    max_smith="20"/>    
+<equipment    id="11"    name="镇山剑"    strength="6"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="蜀后帝刘禅所造巨剑以镇剑口山"    need_level="10"    price="684"    max_smith="20"/>    
+<equipment    id="12"    name="钢鞭"    strength="6"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="精铁所制，有节无锋刃"    need_level="10"    price="684"    max_smith="20"/>    
+<equipment    id="13"    name="四楞铁简"    strength="6"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="蜀将傅佥的兵器，曾以此打得魏将眼珠迸出"    need_level="10"    price="684"    max_smith="20"/>    
+<equipment    id="15"    name="陨铁双戟"    strength="8"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="陨铁铸造的双戟"    need_level="20"    price="764"    max_smith="20"/>    
+<equipment    id="16"    name="衠钢槊"    strength="8"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="纯钢所制，周泰在赤壁之战中使用"    need_level="20"    price="764"    max_smith="20"/>    
+<equipment    id="17"    name="没羽箭"    strength="15"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="锋锐所及，有没羽之力故名之"    need_level="10"    price="2772"    max_smith="20"/>    
+<equipment    id="18"    name="铁脊蛇矛"    strength="15"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="程普所使用的武器，刃脊隆起，两旁微陷"    need_level="20"    price="1888"    max_smith="20"/>    
+<equipment    id="19"    name="百辟匕首"    strength="15"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹丕所制匕首之一，纹似灵龟，名曰灵宝"    need_level="20"    price="1888"    max_smith="20"/>    
+<equipment    id="20"    name="两石力之弓"    strength="15"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="紫檀木所制，坚硬异常"    need_level="20"    price="1888"    max_smith="20"/>    
+<equipment    id="21"    name="文士剑"    strength="19"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="杨修献于曹丕的宝剑"    need_level="30"    price="2528"    max_smith="20"/>    
+<equipment    id="22"    name="蜀八剑"    strength="19"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="刘备采金牛山铁矿铸造的八把宝剑之一"    need_level="30"    price="2528"    max_smith="20"/>    
+<equipment    id="23"    name="龙鳞刀"    strength="19"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹丕所制宝刀之一，状如龙纹，名曰龙鳞"    need_level="30"    price="2528"    max_smith="20"/>    
+<equipment    id="24"    name="飞景三剑"    strength="19"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹丕所制宝剑之一，光似流星，名曰飞景"    need_level="30"    price="2528"    max_smith="20"/>    
+<equipment    id="25"    name="思召剑"    strength="19"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="袁绍在黎阳梦神人所授宝剑"    need_level="30"    price="2528"    max_smith="20"/>    
+<equipment    id="26"    name="截头大刀"    strength="19"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="庞德的兵器，刀头比普通大刀短"    need_level="30"    price="2528"    max_smith="20"/>    
+<equipment    id="27"    name="三尖两刃刀"    strength="19"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="纪灵的兵器，两面开刃，锋利无比"    need_level="30"    price="2528"    max_smith="20"/>    
+<equipment    id="28"    name="蘸金斧"    strength="19"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="斧头上镀金的大斧，为李异所有"    need_level="30"    price="2528"    max_smith="20"/>    
+<equipment    id="29"    name="百辟宝刀"    strength="19"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="能够辟邪的宝刀"    need_level="30"    price="2528"    max_smith="20"/>    
+<equipment    id="30"    name="铁蒺藜骨朵"    strength="19"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="沙摩柯所使兵器，锤头上有锐利的尖刺"    need_level="30"    price="2528"    max_smith="20"/>    
+<equipment    id="33"    name="诸葛枪"    strength="40"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="诸葛亮所造二丈五尺的竹柄枪，枪头铁制"    need_level="60"    price="13572"    max_smith="20"/>    
+<equipment    id="34"    name="虎筋弦弓"    strength="40"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="又名麒麟弓，虎筋做弦，吕布辕门射戟所用"    need_level="60"    price="13572"    max_smith="20"/>    
+<equipment    id="36"    name="鹊画弓"    strength="40"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="因弓身似鹊身而得名"    need_level="60"    price="13572"    max_smith="20"/>    
+<equipment    id="38"    name="马岱宝刀"    strength="40"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="马岱曾以此宝剑击败钟繇"    need_level="60"    price="13572"    max_smith="20"/>    
+<equipment    id="40"    name="开山鏖金斧"    strength="40"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="徐晃所使兵器，斧阔五寸，柄长七尺"    need_level="60"    price="13572"    max_smith="20"/>    
+<equipment    id="41"    name="王双大刀"    strength="45"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="天下第一富贵刀，王双所有"    need_level="70"    price="15732"    max_smith="20"/>    
+<equipment    id="42"    name="孟德剑"    strength="45"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹操于幽谷所得的宝剑"    need_level="70"    price="15732"    max_smith="20"/>    
+<equipment    id="43"    name="双股剑"    strength="45"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="刘备的兵器，又名鸳鸯剑，利可断金"    need_level="70"    price="15732"    max_smith="20"/>    
+<equipment    id="45"    name="松纹厢宝剑"    strength="45"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="孟获对战诸葛亮所使宝剑，剑身由松纹"    need_level="70"    price="15732"    max_smith="20"/>    
+<equipment    id="50"    name="宝雕弓"    strength="59"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="金玉装饰，弓身雕有花纹"    need_level="70"    price="36456"    max_smith="20"/>    
+<equipment    id="53"    name="青釭"    strength="59"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="削铁如泥，锋利无比，赵云从曹操处夺得"    need_level="70"    price="36456"    max_smith="20"/>    
+<equipment    id="56"    name="龙胆枪"    strength="59"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="赵子龙所使用的家传武器"    need_level="70"    price="36456"    max_smith="20"/>    
+<equipment    id="60"    name="七星宝刀"    strength="59"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹操从王允处借得刺杀董卓的宝刀"    need_level="70"    price="36456"    max_smith="20"/>    
+<equipment    id="68"    name="诸葛连弩"    strength="70"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="又作元戎弩，诸葛亮所制威力强大的连弩"    need_level="35"    price="50620"    max_smith="20"/>    
+<equipment    id="70"    name="倚天剑"    strength="80"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹操的佩剑，与青虹并称为绝世双剑"    need_level="60"    price="60620"    max_smith="20"/>    
+<equipment    id="71"    name="龙泉剑"    strength="80"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="欧冶子和干将联手所铸，俯视剑身有巨龙盘卧"    need_level="60"    price="60620"    max_smith="20"/>    
+<equipment    id="73"    name="丈八蛇矛"    strength="80"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="张飞的霹雳神兵，矛头镔铁打造，犹如蛇吐信"    need_level="60"    price="60620"    max_smith="20"/>    
+<equipment    id="74"    name="青龙偃月刀"    strength="80"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="奇名冷艳锯，关羽所使神兵"    need_level="60"    price="60620"    max_smith="20"/>    
+<equipment    id="75"    name="方天画戟"    strength="80"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="吕布的专属神兵，有龙纹绕身，霸气十足（不受等级限制）"    need_level="1"    price="60620"    max_smith="20"/>    
+<equipment    id="110"    name="白雪"    strength="0"    intelligence="0"    max_hp="0"    max_mp="2"    speed="0"    description="郭嘉的马名曰白雪"    need_level="1"    price="612"    max_smith="20"/>    
+<equipment    id="113"    name="黑云"    strength="0"    intelligence="0"    max_hp="0"    max_mp="3"    speed="0"    description="周泰的马名曰黑云"    need_level="5"    price="644"    max_smith="20"/>    
+<equipment    id="115"    name="白鸽"    strength="0"    intelligence="0"    max_hp="0"    max_mp="5"    speed="0"    description="陆逊火烧连营的坐骑"    need_level="10"    price="684"    max_smith="20"/>    
+<equipment    id="117"    name="紫骍"    strength="0"    intelligence="0"    max_hp="0"    max_mp="6"    speed="0"    description="曹植所有的一匹大宛良马"    need_level="20"    price="764"    max_smith="20"/>    
+<equipment    id="119"    name="汗血"    strength="0"    intelligence="0"    max_hp="0"    max_mp="12"    speed="0"    description="马岱砍杀魏延时所骑之马"    need_level="10"    price="2772"    max_smith="20"/>    
+<equipment    id="124"    name="乌骓"    strength="0"    intelligence="0"    max_hp="0"    max_mp="12"    speed="0"    description="魏延的坐骑"    need_level="20"    price="1888"    max_smith="20"/>    
+<equipment    id="130"    name="白鹤"    strength="0"    intelligence="0"    max_hp="0"    max_mp="15"    speed="0"    description="曹洪的名驹"    need_level="30"    price="2528"    max_smith="20"/>    
+<equipment    id="133"    name="灰影"    strength="0"    intelligence="0"    max_hp="0"    max_mp="28"    speed="0"    description="张辽骑此马大战逍遥津"    need_level="50"    price="11412"    max_smith="20"/>    
+<equipment    id="136"    name="乌孙"    strength="0"    intelligence="0"    max_hp="0"    max_mp="32"    speed="0"    description="司马懿的名驹"    need_level="60"    price="13572"    max_smith="20"/>    
+<equipment    id="139"    name="燎原火"    strength="0"    intelligence="0"    max_hp="0"    max_mp="32"    speed="0"    description="老将黄忠的宝马"    need_level="60"    price="13572"    max_smith="20"/>    
+<equipment    id="143"    name="惊帆"    strength="0"    intelligence="0"    max_hp="0"    max_mp="47"    speed="0"    description="曹真之马，奔跑如行云流水"    need_level="70"    price="36456"    max_smith="20"/>    
+<equipment    id="145"    name="夜照玉狮子"    strength="0"    intelligence="0"    max_hp="0"    max_mp="36"    speed="0"    description="赵玉的坐骑，浑身雪白，日行千里"    need_level="70"    price="15732"    max_smith="20"/>    
+<equipment    id="148"    name="王追"    strength="0"    intelligence="0"    max_hp="0"    max_mp="47"    speed="0"    description="张飞的坐骑"    need_level="70"    price="36456"    max_smith="20"/>    
+<equipment    id="151"    name="爪黄飞电"    strength="0"    intelligence="0"    max_hp="0"    max_mp="52"    speed="0"    description="气质高贵的良驹，曹操的坐骑之一"    need_level="80"    price="41576"    max_smith="20"/>    
+<equipment    id="155"    name="战象"    strength="0"    intelligence="0"    max_hp="0"    max_mp="52"    speed="0"    description="南蛮王孟获的生猛坐骑"    need_level="80"    price="41576"    max_smith="20"/>    
+<equipment    id="165"    name="的卢"    strength="0"    intelligence="0"    max_hp="0"    max_mp="64"    speed="0"    description="刘备的坐骑，曾在其危难之时救其性命"    need_level="60"    price="60620"    max_smith="20"/>    
+<equipment    id="167"    name="绝影无影"    strength="0"    intelligence="0"    max_hp="0"    max_mp="64"    speed="0"    description="曹操的坐骑之一"    need_level="60"    price="60620"    max_smith="20"/>    
+<equipment    id="172"    name="赤兔"    strength="0"    intelligence="0"    max_hp="0"    max_mp="72"    speed="0"    description="赤兔胭脂兽，吕布坐骑，后为关羽所得"    need_level="70"    price="70620"    max_smith="20"/>    
+<equipment    id="207"    name="鱼鳞甲"    strength="0"    intelligence="0"    max_hp="2"    max_mp="0"    speed="0"    description="普通护甲，部分由青铜鳞片制成"    need_level="1"    price="612"    max_smith="20"/>    
+<equipment    id="210"    name="锁子甲"    strength="0"    intelligence="0"    max_hp="2"    max_mp="0"    speed="0"    description="青铜环相扣而成，缺点是过于柔软"    need_level="1"    price="612"    max_smith="20"/>    
+<equipment    id="213"    name="玄铁甲"    strength="0"    intelligence="0"    max_hp="3"    max_mp="0"    speed="0"    description="由玄铁打造的铠甲，但非常笨重"    need_level="5"    price="644"    max_smith="20"/>    
+<equipment    id="215"    name="虎皮铠"    strength="0"    intelligence="0"    max_hp="5"    max_mp="0"    speed="0"    description="用韧性极佳的虎皮而制"    need_level="10"    price="684"    max_smith="20"/>    
+<equipment    id="217"    name="桃花铠"    strength="0"    intelligence="0"    max_hp="6"    max_mp="0"    speed="0"    description="相传是张飞在桃园中用精铁打造"    need_level="20"    price="764"    max_smith="20"/>    
+<equipment    id="218"    name="乌纱铠"    strength="0"    intelligence="0"    max_hp="12"    max_mp="0"    speed="0"    description="高级将领在室内常穿戴的护具"    need_level="10"    price="2772"    max_smith="20"/>    
+<equipment    id="219"    name="黑金甲"    strength="0"    intelligence="0"    max_hp="12"    max_mp="0"    speed="0"    description="因盔甲周围镀有一层乌金而得名"    need_level="20"    price="1888"    max_smith="20"/>    
+<equipment    id="222"    name="孔明铠"    strength="0"    intelligence="0"    max_hp="12"    max_mp="0"    speed="0"    description="诸葛亮专门为蜀兵所作"    need_level="20"    price="1888"    max_smith="20"/>    
+<equipment    id="224"    name="铁铠甲"    strength="0"    intelligence="0"    max_hp="12"    max_mp="0"    speed="0"    description="浑铁所制铠甲"    need_level="20"    price="1888"    max_smith="20"/>    
+<equipment    id="230"    name="赤铁盔"    strength="0"    intelligence="0"    max_hp="15"    max_mp="0"    speed="0"    description="反复精炼镔铁而得的精铁铠甲"    need_level="30"    price="2528"    max_smith="20"/>    
+<equipment    id="235"    name="金蟒鳞甲"    strength="0"    intelligence="0"    max_hp="28"    max_mp="0"    speed="0"    description="精铁鳞片制成，并在胸前镀有金蟒图案"    need_level="50"    price="11412"    max_smith="20"/>    
+<equipment    id="238"    name="精木兽铠"    strength="0"    intelligence="0"    max_hp="28"    max_mp="0"    speed="0"    description="蛮族精兵用精木兽骨制成"    need_level="50"    price="11412"    max_smith="20"/>    
+<equipment    id="241"    name="麒麟铠甲"    strength="0"    intelligence="0"    max_hp="32"    max_mp="0"    speed="0"    description="相传为麒麟皮精致而成"    need_level="60"    price="13572"    max_smith="20"/>    
+<equipment    id="245"    name="三昧神铠"    strength="0"    intelligence="0"    max_hp="36"    max_mp="0"    speed="0"    description="用陨铁在三道不同火候的烈火中锻造而成"    need_level="70"    price="15732"    max_smith="20"/>    
+<equipment    id="246"    name="黄龙铠甲"    strength="0"    intelligence="0"    max_hp="45"    max_mp="0"    speed="0"    description="相传为黄龙真人在仙池炼制的铠甲"    need_level="70"    price="36456"    max_smith="20"/>    
+<equipment    id="248"    name="星罗重铠"    strength="0"    intelligence="0"    max_hp="45"    max_mp="0"    speed="0"    description="司马懿绘制星辰万变于甲之上"    need_level="70"    price="36456"    max_smith="20"/>    
+<equipment    id="252"    name="银月亮铠"    strength="0"    intelligence="0"    max_hp="50"    max_mp="0"    speed="0"    description="赵云和马超都曾穿戴过的银亮神甲"    need_level="80"    price="41576"    max_smith="20"/>    
+<equipment    id="256"    name="炎龙金铠"    strength="0"    intelligence="0"    max_hp="50"    max_mp="0"    speed="0"    description="凯身赤红，精光耀眼，宛如炎龙再生"    need_level="80"    price="41576"    max_smith="20"/>    
+<equipment    id="260"    name="八门金凯"    strength="0"    intelligence="0"    max_hp="50"    max_mp="0"    speed="0"    description="诸葛亮封印奇门遁甲其中的铠甲"    need_level="80"    price="41576"    max_smith="20"/>    
+<equipment    id="265"    name="鬼哭神铠"    strength="0"    intelligence="0"    max_hp="49"    max_mp="0"    speed="0"    description="吕布专属护甲，冲杀敌阵中，鬼哭神泣不绝于耳"    need_level="50"    price="50620"    max_smith="20"/>    
+<equipment    id="270"    name="神嚎狱铠"    strength="0"    intelligence="0"    max_hp="56"    max_mp="0"    speed="0"    description="穿戴者犹如神助，让敌人置身炼狱之中（不受等级限制）"    need_level="1"    price="60620"    max_smith="20"/>    
+<equipment    id="310"    name="礼记"    strength="0"    intelligence="0"    max_hp="0"    max_mp="1"    speed="0"    description="戴圣所著的典章书籍"    need_level="1"    price="612"    max_smith="20"/>    
+<equipment    id="313"    name="山海经"    strength="0"    intelligence="2"    max_hp="0"    max_mp="0"    speed="0"    description="先秦古籍，记录了古老神话传说"    need_level="5"    price="644"    max_smith="20"/>    
+<equipment    id="315"    name="史记"    strength="0"    intelligence="0"    max_hp="0"    max_mp="3"    speed="0"    description="司马迁记录的先代历史书籍"    need_level="10"    price="684"    max_smith="20"/>    
+<equipment    id="317"    name="吕氏春秋"    strength="0"    intelligence="0"    max_hp="0"    max_mp="6"    speed="0"    description="秦国吕不韦所著"    need_level="10"    price="1248"    max_smith="20"/>    
+<equipment    id="319"    name="司马法"    strength="0"    intelligence="8"    max_hp="0"    max_mp="0"    speed="0"    description="司马穰苴所著兵书，战国时期已失传"    need_level="10"    price="2772"    max_smith="20"/>    
+<equipment    id="323"    name="汉书"    strength="0"    intelligence="0"    max_hp="0"    max_mp="10"    speed="0"    description="班固所著史书"    need_level="30"    price="2528"    max_smith="20"/>    
+<equipment    id="327"    name="老子"    strength="0"    intelligence="8"    max_hp="0"    max_mp="0"    speed="0"    description="又名道德经，道祖老子所写"    need_level="20"    price="1888"    max_smith="20"/>    
+<equipment    id="328"    name="尉缭子"    strength="0"    intelligence="8"    max_hp="0"    max_mp="0"    speed="0"    description="秦朝尉缭子所著兵书"    need_level="20"    price="1888"    max_smith="20"/>    
+<equipment    id="331"    name="孟德新书"    strength="0"    intelligence="8"    max_hp="0"    max_mp="0"    speed="0"    description="曹操所著兵法韬略"    need_level="20"    price="1888"    max_smith="20"/>    
+<equipment    id="333"    name="韩非子"    strength="0"    intelligence="17"    max_hp="0"    max_mp="0"    speed="0"    description="战国韩非子的巨著"    need_level="50"    price="11412"    max_smith="20"/>    
+<equipment    id="335"    name="青囊书"    strength="0"    intelligence="17"    max_hp="0"    max_mp="0"    speed="0"    description="华佗毕生精力所著医书"    need_level="50"    price="11412"    max_smith="20"/>    
+<equipment    id="340"    name="春秋左氏传"    strength="0"    intelligence="0"    max_hp="0"    max_mp="20"    speed="0"    description="春秋末年左丘明解释春秋而著"    need_level="60"    price="13572"    max_smith="20"/>    
+<equipment    id="342"    name="商君书"    strength="0"    intelligence="0"    max_hp="0"    max_mp="20"    speed="0"    description="战国商鞅所著变法之书"    need_level="60"    price="13572"    max_smith="20"/>    
+<equipment    id="345"    name="战国策"    strength="0"    intelligence="22"    max_hp="0"    max_mp="0"    speed="0"    description="西汉刘向记载战国策士纵横捭阖之书"    need_level="70"    price="15732"    max_smith="20"/>    
+<equipment    id="348"    name="孙膑兵法"    strength="0"    intelligence="32"    max_hp="0"    max_mp="0"    speed="0"    description="孙武后人孙膑所著兵书"    need_level="80"    price="41576"    max_smith="20"/>    
+<equipment    id="352"    name="六韬"    strength="0"    intelligence="32"    max_hp="0"    max_mp="0"    speed="0"    description="周朝姜尚所著兵法之书"    need_level="80"    price="41576"    max_smith="20"/>    
+<equipment    id="355"    name="太平要术"    strength="0"    intelligence="32"    max_hp="0"    max_mp="0"    speed="0"    description="相传为南华老仙传授张角之书"    need_level="80"    price="41576"    max_smith="20"/>    
+<equipment    id="358"    name="兵法二十四篇"    strength="0"    intelligence="32"    max_hp="0"    max_mp="0"    speed="0"    description="诸葛亮所著的用兵之道"    need_level="80"    price="41576"    max_smith="20"/>    
+<equipment    id="362"    name="易经"    strength="0"    intelligence="32"    max_hp="0"    max_mp="0"    speed="0"    description="相传是周文王记录的卜筮之书"    need_level="80"    price="41576"    max_smith="20"/>    
+<equipment    id="366"    name="遁甲天书"    strength="0"    intelligence="0"    max_hp="0"    max_mp="40"    speed="0"    description="神人左慈修行的天书"    need_level="60"    price="60620"    max_smith="20"/>    
+<equipment    id="368"    name="孙子兵法"    strength="0"    intelligence="45"    max_hp="0"    max_mp="0"    speed="0"    description="春秋孙武所著的神级兵书"    need_level="70"    price="70620"    max_smith="20"/>    
+<equipment    id="502"    name="白羽扇"    strength="11"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="普通的羽扇，用羽毛做成的扇面"    need_level="10"    price="1248"    max_smith="20"/>    
+<equipment    id="503"    name="手戟"    strength="11"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="精铁所制，最常见的兵器"    need_level="10"    price="1248"    max_smith="20"/>    
+<equipment    id="504"    name="双铁戟"    strength="11"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="寻常镔铁打造而成，典韦手中运使如飞"    need_level="10"    price="1248"    max_smith="20"/>    
+<equipment    id="505"    name="丈八长标"    strength="11"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="南蛮特有的武器，祝融夫人所使"    need_level="10"    price="1248"    max_smith="20"/>    
+<equipment    id="506"    name="短戟"    strength="11"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="比手戟略短，典韦以此作暗器救曹操"    need_level="10"    price="1248"    max_smith="20"/>    
+<equipment    id="507"    name="流星锤"    strength="11"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="浑铁链扣着钢球，可做暗器使用"    need_level="10"    price="1248"    max_smith="20"/>    
+<equipment    id="508"    name="铜挝"    strength="11"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="挝头似斧脑可宕击，马超曾以此投向张飞"    need_level="10"    price="1248"    max_smith="20"/>    
+<equipment    id="509"    name="朴刀"    strength="11"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="木柄上安有钢刀，可劈杀敌人"    need_level="10"    price="1248"    max_smith="20"/>    
+<equipment    id="510"    name="古锭刀"    strength="11"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="又名七星刀，孙权所使，刀身有松纹故名之"    need_level="10"    price="1248"    max_smith="20"/>    
+<equipment    id="511"    name="镇山剑"    strength="15"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="蜀后帝刘禅所造巨剑以镇剑口山"    need_level="20"    price="1888"    max_smith="20"/>    
+<equipment    id="512"    name="钢鞭"    strength="15"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="精铁所制，有节无锋刃"    need_level="20"    price="1888"    max_smith="20"/>    
+<equipment    id="513"    name="四楞铁简"    strength="15"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="蜀将傅佥的兵器，曾以此打得魏将眼珠迸出"    need_level="20"    price="1888"    max_smith="20"/>    
+<equipment    id="515"    name="陨铁双戟"    strength="15"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="陨铁铸造的双戟"    need_level="20"    price="1888"    max_smith="20"/>    
+<equipment    id="516"    name="衠钢槊"    strength="15"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="纯钢所制，周泰在赤壁之战中使用"    need_level="20"    price="1888"    max_smith="20"/>    
+<equipment    id="517"    name="没羽箭"    strength="30"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="锋锐所及，有没羽之力故名之"    need_level="30"    price="7092"    max_smith="20"/>    
+<equipment    id="518"    name="铁脊蛇矛"    strength="30"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="程普所使用的武器，刃脊隆起，两旁微陷"    need_level="40"    price="9252"    max_smith="20"/>    
+<equipment    id="519"    name="百辟匕首"    strength="30"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹丕所制匕首之一，纹似灵龟，名曰灵宝"    need_level="40"    price="9252"    max_smith="20"/>    
+<equipment    id="520"    name="两石力之弓"    strength="30"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="紫檀木所制，坚硬异常"    need_level="40"    price="9252"    max_smith="20"/>    
+<equipment    id="521"    name="文士剑"    strength="30"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="杨修献于曹丕的宝剑"    need_level="40"    price="9252"    max_smith="20"/>    
+<equipment    id="522"    name="蜀八剑"    strength="30"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="刘备采金牛山铁矿铸造的八把宝剑之一"    need_level="40"    price="9252"    max_smith="20"/>    
+<equipment    id="523"    name="龙鳞刀"    strength="30"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹丕所制宝刀之一，状如龙纹，名曰龙鳞"    need_level="40"    price="9252"    max_smith="20"/>    
+<equipment    id="524"    name="飞景三剑"    strength="30"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹丕所制宝剑之一，光似流星，名曰飞景"    need_level="40"    price="9252"    max_smith="20"/>    
+<equipment    id="525"    name="思召剑"    strength="30"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="袁绍在黎阳梦神人所授宝剑"    need_level="40"    price="9252"    max_smith="20"/>    
+<equipment    id="526"    name="截头大刀"    strength="35"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="庞德的兵器，刀头比普通大刀短"    need_level="50"    price="11412"    max_smith="20"/>    
+<equipment    id="527"    name="三尖两刃刀"    strength="35"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="纪灵的兵器，两面开刃，锋利无比"    need_level="50"    price="11412"    max_smith="20"/>    
+<equipment    id="528"    name="蘸金斧"    strength="35"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="斧头上镀金的大斧，为李异所有"    need_level="50"    price="11412"    max_smith="20"/>    
+<equipment    id="529"    name="百辟宝刀"    strength="35"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="能够辟邪的宝刀"    need_level="50"    price="11412"    max_smith="20"/>    
+<equipment    id="530"    name="铁蒺藜骨朵"    strength="35"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="沙摩柯所使兵器，锤头上有锐利的尖刺"    need_level="50"    price="11412"    max_smith="20"/>    
+<equipment    id="533"    name="诸葛枪"    strength="59"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="诸葛亮所造二丈五尺的竹柄枪，枪头铁制"    need_level="70"    price="36456"    max_smith="20"/>    
+<equipment    id="534"    name="虎筋弦弓"    strength="59"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="又名麒麟弓，虎筋做弦，吕布辕门射戟所用"    need_level="70"    price="36456"    max_smith="20"/>    
+<equipment    id="536"    name="鹊画弓"    strength="59"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="因弓身似鹊身而得名"    need_level="70"    price="36456"    max_smith="20"/>    
+<equipment    id="538"    name="马岱宝刀"    strength="59"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="马岱曾以此宝剑击败钟繇"    need_level="70"    price="36456"    max_smith="20"/>    
+<equipment    id="540"    name="开山鏖金斧"    strength="59"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="徐晃所使兵器，斧阔五寸，柄长七尺"    need_level="70"    price="36456"    max_smith="20"/>    
+<equipment    id="541"    name="王双大刀"    strength="59"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="天下第一富贵刀，王双所有"    need_level="70"    price="36456"    max_smith="20"/>    
+<equipment    id="542"    name="孟德剑"    strength="59"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹操于幽谷所得的宝剑"    need_level="70"    price="36456"    max_smith="20"/>    
+<equipment    id="543"    name="双股剑"    strength="59"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="刘备的兵器，又名鸳鸯剑，利可断金"    need_level="70"    price="36456"    max_smith="20"/>    
+<equipment    id="545"    name="松纹厢宝剑"    strength="59"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="孟获对战诸葛亮所使宝剑，剑身由松纹"    need_level="70"    price="36456"    max_smith="20"/>    
+<equipment    id="610"    name="白雪"    strength="0"    intelligence="0"    max_hp="0"    max_mp="9"    speed="0"    description="郭嘉的马名曰白雪"    need_level="10"    price="1248"    max_smith="20"/>    
+<equipment    id="613"    name="黑云"    strength="0"    intelligence="0"    max_hp="0"    max_mp="9"    speed="0"    description="周泰的马名曰黑云"    need_level="10"    price="1248"    max_smith="20"/>    
+<equipment    id="615"    name="白鸽"    strength="0"    intelligence="0"    max_hp="0"    max_mp="9"    speed="0"    description="陆逊火烧连营的坐骑"    need_level="10"    price="1248"    max_smith="20"/>    
+<equipment    id="617"    name="紫骍"    strength="0"    intelligence="0"    max_hp="0"    max_mp="9"    speed="0"    description="曹植所有的一匹大宛良马"    need_level="10"    price="1248"    max_smith="20"/>    
+<equipment    id="619"    name="汗血"    strength="0"    intelligence="0"    max_hp="0"    max_mp="20"    speed="0"    description="马岱砍杀魏延时所骑之马"    need_level="30"    price="7092"    max_smith="20"/>    
+<equipment    id="624"    name="乌骓"    strength="0"    intelligence="0"    max_hp="0"    max_mp="24"    speed="0"    description="魏延的坐骑"    need_level="40"    price="9252"    max_smith="20"/>    
+<equipment    id="630"    name="白鹤"    strength="0"    intelligence="0"    max_hp="0"    max_mp="28"    speed="0"    description="曹洪的名驹"    need_level="50"    price="11412"    max_smith="20"/>    
+<equipment    id="633"    name="灰影"    strength="0"    intelligence="0"    max_hp="0"    max_mp="41"    speed="0"    description="张辽骑此马大战逍遥津"    need_level="60"    price="31336"    max_smith="20"/>    
+<equipment    id="636"    name="乌孙"    strength="0"    intelligence="0"    max_hp="0"    max_mp="41"    speed="0"    description="司马懿的名驹"    need_level="60"    price="31336"    max_smith="20"/>    
+<equipment    id="639"    name="燎原火"    strength="0"    intelligence="0"    max_hp="0"    max_mp="41"    speed="0"    description="老将黄忠的宝马"    need_level="60"    price="31336"    max_smith="20"/>    
+<equipment    id="707"    name="鱼鳞甲"    strength="0"    intelligence="0"    max_hp="9"    max_mp="0"    speed="0"    description="普通护甲，部分由青铜鳞片制成"    need_level="10"    price="1248"    max_smith="20"/>    
+<equipment    id="710"    name="锁子甲"    strength="0"    intelligence="0"    max_hp="9"    max_mp="0"    speed="0"    description="青铜环相扣而成，缺点是过于柔软"    need_level="10"    price="1248"    max_smith="20"/>    
+<equipment    id="713"    name="玄铁甲"    strength="0"    intelligence="0"    max_hp="9"    max_mp="0"    speed="0"    description="由玄铁打造的铠甲，但非常笨重"    need_level="10"    price="1248"    max_smith="20"/>    
+<equipment    id="715"    name="虎皮铠"    strength="0"    intelligence="0"    max_hp="9"    max_mp="0"    speed="0"    description="用韧性极佳的虎皮而制"    need_level="10"    price="1248"    max_smith="20"/>    
+<equipment    id="717"    name="桃花铠"    strength="0"    intelligence="0"    max_hp="9"    max_mp="0"    speed="0"    description="相传是张飞在桃园中用精铁打造"    need_level="10"    price="1248"    max_smith="20"/>    
+<equipment    id="718"    name="乌纱铠"    strength="0"    intelligence="0"    max_hp="20"    max_mp="0"    speed="0"    description="高级将领在室内常穿戴的护具"    need_level="30"    price="7092"    max_smith="20"/>    
+<equipment    id="719"    name="黑金甲"    strength="0"    intelligence="0"    max_hp="20"    max_mp="0"    speed="0"    description="因盔甲周围镀有一层乌金而得名"    need_level="30"    price="7092"    max_smith="20"/>    
+<equipment    id="722"    name="孔明铠"    strength="0"    intelligence="0"    max_hp="20"    max_mp="0"    speed="0"    description="诸葛亮专门为蜀兵所作"    need_level="30"    price="7092"    max_smith="20"/>    
+<equipment    id="724"    name="铁铠甲"    strength="0"    intelligence="0"    max_hp="20"    max_mp="0"    speed="0"    description="浑铁所制铠甲"    need_level="30"    price="7092"    max_smith="20"/>    
+<equipment    id="730"    name="赤铁盔"    strength="0"    intelligence="0"    max_hp="24"    max_mp="0"    speed="0"    description="反复精炼镔铁而得的精铁铠甲"    need_level="40"    price="9252"    max_smith="20"/>    
+<equipment    id="735"    name="金蟒鳞甲"    strength="0"    intelligence="0"    max_hp="40"    max_mp="0"    speed="0"    description="精铁鳞片制成，并在胸前镀有金蟒图案"    need_level="60"    price="31336"    max_smith="20"/>    
+<equipment    id="738"    name="精木兽铠"    strength="0"    intelligence="0"    max_hp="40"    max_mp="0"    speed="0"    description="蛮族精兵用精木兽骨制成"    need_level="60"    price="31336"    max_smith="20"/>    
+<equipment    id="741"    name="麒麟铠甲"    strength="0"    intelligence="0"    max_hp="40"    max_mp="0"    speed="0"    description="相传为麒麟皮精致而成"    need_level="60"    price="31336"    max_smith="20"/>    
+<equipment    id="745"    name="三昧神铠"    strength="0"    intelligence="0"    max_hp="45"    max_mp="0"    speed="0"    description="用陨铁在三道不同火候的烈火中锻造而成"    need_level="70"    price="36456"    max_smith="20"/>    
+<equipment    id="810"    name="礼记"    strength="0"    intelligence="0"    max_hp="0"    max_mp="6"    speed="0"    description="戴圣所著的典章书籍"    need_level="10"    price="1248"    max_smith="20"/>    
+<equipment    id="813"    name="山海经"    strength="0"    intelligence="0"    max_hp="0"    max_mp="6"    speed="0"    description="先秦古籍，记录了古老神话传说"    need_level="10"    price="1248"    max_smith="20"/>    
+<equipment    id="815"    name="史记"    strength="0"    intelligence="0"    max_hp="0"    max_mp="6"    speed="0"    description="司马迁记录的先代历史书籍"    need_level="10"    price="1248"    max_smith="20"/>    
+<equipment    id="817"    name="吕氏春秋"    strength="0"    intelligence="0"    max_hp="0"    max_mp="10"    speed="0"    description="秦国吕不韦所著"    need_level="20"    price="4932"    max_smith="20"/>    
+<equipment    id="819"    name="司马法"    strength="0"    intelligence="13"    max_hp="0"    max_mp="0"    speed="0"    description="司马穰苴所著兵书，战国时期已失传"    need_level="30"    price="7092"    max_smith="20"/>    
+<equipment    id="823"    name="汉书"    strength="0"    intelligence="13"    max_hp="0"    max_mp="0"    speed="0"    description="班固所著史书"    need_level="30"    price="7092"    max_smith="20"/>    
+<equipment    id="827"    name="老子"    strength="0"    intelligence="13"    max_hp="0"    max_mp="0"    speed="0"    description="又名道德经，道祖老子所写"    need_level="30"    price="7092"    max_smith="20"/>    
+<equipment    id="828"    name="尉缭子"    strength="0"    intelligence="0"    max_hp="0"    max_mp="15"    speed="0"    description="秦朝尉缭子所著兵书"    need_level="40"    price="9252"    max_smith="20"/>    
+<equipment    id="831"    name="孟德新书"    strength="0"    intelligence="0"    max_hp="0"    max_mp="15"    speed="0"    description="曹操所著兵法韬略"    need_level="40"    price="9252"    max_smith="20"/>    
+<equipment    id="833"    name="韩非子"    strength="0"    intelligence="25"    max_hp="0"    max_mp="0"    speed="0"    description="战国韩非子的巨著"    need_level="60"    price="31336"    max_smith="20"/>    
+<equipment    id="835"    name="青囊书"    strength="0"    intelligence="25"    max_hp="0"    max_mp="0"    speed="0"    description="华佗毕生精力所著医书"    need_level="60"    price="31336"    max_smith="20"/>    
+<equipment    id="840"    name="春秋左氏传"    strength="0"    intelligence="0"    max_hp="0"    max_mp="29"    speed="0"    description="春秋末年左丘明解释春秋而著"    need_level="70"    price="36456"    max_smith="20"/>    
+<equipment    id="842"    name="商君书"    strength="0"    intelligence="0"    max_hp="0"    max_mp="29"    speed="0"    description="战国商鞅所著变法之书"    need_level="70"    price="36456"    max_smith="20"/>    
+<equipment    id="845"    name="战国策"    strength="0"    intelligence="0"    max_hp="0"    max_mp="29"    speed="0"    description="西汉刘向记载战国策士纵横捭阖之书"    need_level="70"    price="36456"    max_smith="20"/>    
+<equipment    id="1002"    name="白羽扇"    strength="20"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="普通的羽扇，用羽毛做成的扇面"    need_level="20"    price="4932"    max_smith="20"/>    
+<equipment    id="1003"    name="手戟"    strength="20"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="精铁所制，最常见的兵器"    need_level="20"    price="4932"    max_smith="20"/>    
+<equipment    id="1004"    name="双铁戟"    strength="20"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="寻常镔铁打造而成，典韦手中运使如飞"    need_level="20"    price="4932"    max_smith="20"/>    
+<equipment    id="1005"    name="丈八长标"    strength="20"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="南蛮特有的武器，祝融夫人所使"    need_level="20"    price="4932"    max_smith="20"/>    
+<equipment    id="1006"    name="短戟"    strength="25"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="比手戟略短，典韦以此作暗器救曹操"    need_level="30"    price="7092"    max_smith="20"/>    
+<equipment    id="1007"    name="流星锤"    strength="25"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="浑铁链扣着钢球，可做暗器使用"    need_level="30"    price="7092"    max_smith="20"/>    
+<equipment    id="1008"    name="铜挝"    strength="25"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="挝头似斧脑可宕击，马超曾以此投向张飞"    need_level="30"    price="7092"    max_smith="20"/>    
+<equipment    id="1009"    name="朴刀"    strength="25"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="木柄上安有钢刀，可劈杀敌人"    need_level="30"    price="7092"    max_smith="20"/>    
+<equipment    id="1010"    name="古锭刀"    strength="25"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="又名七星刀，孙权所使，刀身有松纹故名之"    need_level="30"    price="7092"    max_smith="20"/>    
+<equipment    id="1011"    name="镇山剑"    strength="25"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="蜀后帝刘禅所造巨剑以镇剑口山"    need_level="30"    price="7092"    max_smith="20"/>    
+<equipment    id="1012"    name="钢鞭"    strength="25"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="精铁所制，有节无锋刃"    need_level="30"    price="7092"    max_smith="20"/>    
+<equipment    id="1013"    name="四楞铁简"    strength="25"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="蜀将傅佥的兵器，曾以此打得魏将眼珠迸出"    need_level="30"    price="7092"    max_smith="20"/>    
+<equipment    id="1015"    name="陨铁双戟"    strength="30"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="陨铁铸造的双戟"    need_level="40"    price="9252"    max_smith="20"/>    
+<equipment    id="1016"    name="衠钢槊"    strength="30"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="纯钢所制，周泰在赤壁之战中使用"    need_level="40"    price="9252"    max_smith="20"/>    
+<equipment    id="1017"    name="没羽箭"    strength="46"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="锋锐所及，有没羽之力故名之"    need_level="50"    price="26216"    max_smith="20"/>    
+<equipment    id="1018"    name="铁脊蛇矛"    strength="46"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="程普所使用的武器，刃脊隆起，两旁微陷"    need_level="50"    price="26216"    max_smith="20"/>    
+<equipment    id="1019"    name="百辟匕首"    strength="46"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹丕所制匕首之一，纹似灵龟，名曰灵宝"    need_level="50"    price="26216"    max_smith="20"/>    
+<equipment    id="1020"    name="两石力之弓"    strength="46"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="紫檀木所制，坚硬异常"    need_level="50"    price="26216"    max_smith="20"/>    
+<equipment    id="1021"    name="文士剑"    strength="52"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="杨修献于曹丕的宝剑"    need_level="60"    price="31336"    max_smith="20"/>    
+<equipment    id="1022"    name="蜀八剑"    strength="52"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="刘备采金牛山铁矿铸造的八把宝剑之一"    need_level="60"    price="31336"    max_smith="20"/>    
+<equipment    id="1023"    name="龙鳞刀"    strength="52"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹丕所制宝刀之一，状如龙纹，名曰龙鳞"    need_level="60"    price="31336"    max_smith="20"/>    
+<equipment    id="1024"    name="飞景三剑"    strength="52"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹丕所制宝剑之一，光似流星，名曰飞景"    need_level="60"    price="31336"    max_smith="20"/>    
+<equipment    id="1025"    name="思召剑"    strength="52"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="袁绍在黎阳梦神人所授宝剑"    need_level="60"    price="31336"    max_smith="20"/>    
+<equipment    id="1026"    name="截头大刀"    strength="52"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="庞德的兵器，刀头比普通大刀短"    need_level="60"    price="31336"    max_smith="20"/>    
+<equipment    id="1027"    name="三尖两刃刀"    strength="52"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="纪灵的兵器，两面开刃，锋利无比"    need_level="60"    price="31336"    max_smith="20"/>    
+<equipment    id="1028"    name="蘸金斧"    strength="52"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="斧头上镀金的大斧，为李异所有"    need_level="60"    price="31336"    max_smith="20"/>    
+<equipment    id="1029"    name="百辟宝刀"    strength="52"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="能够辟邪的宝刀"    need_level="60"    price="31336"    max_smith="20"/>    
+<equipment    id="1030"    name="铁蒺藜骨朵"    strength="52"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="沙摩柯所使兵器，锤头上有锐利的尖刺"    need_level="60"    price="31336"    max_smith="20"/>    
+<equipment    id="1033"    name="诸葛枪"    strength="90"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="诸葛亮所造二丈五尺的竹柄枪，枪头铁制"    need_level="70"    price="70620"    max_smith="20"/>    
+<equipment    id="1034"    name="虎筋弦弓"    strength="90"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="又名麒麟弓，虎筋做弦，吕布辕门射戟所用"    need_level="70"    price="70620"    max_smith="20"/>    
+<equipment    id="1036"    name="鹊画弓"    strength="90"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="因弓身似鹊身而得名"    need_level="70"    price="70620"    max_smith="20"/>    
+<equipment    id="1038"    name="马岱宝刀"    strength="90"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="马岱曾以此宝剑击败钟繇"    need_level="70"    price="70620"    max_smith="20"/>    
+<equipment    id="1040"    name="开山鏖金斧"    strength="100"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="徐晃所使兵器，斧阔五寸，柄长七尺"    need_level="70"    price="80620"    max_smith="20"/>    
+<equipment    id="1041"    name="王双大刀"    strength="100"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="天下第一富贵刀，王双所有"    need_level="70"    price="80620"    max_smith="20"/>    
+<equipment    id="1042"    name="孟德剑"    strength="100"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹操于幽谷所得的宝剑"    need_level="70"    price="80620"    max_smith="20"/>    
+<equipment    id="1043"    name="双股剑"    strength="100"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="刘备的兵器，又名鸳鸯剑，利可断金"    need_level="70"    price="80620"    max_smith="20"/>    
+<equipment    id="1045"    name="松纹厢宝剑"    strength="100"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="孟获对战诸葛亮所使宝剑，剑身由松纹"    need_level="70"    price="80620"    max_smith="20"/>    
+<equipment    id="1110"    name="白雪"    strength="0"    intelligence="0"    max_hp="0"    max_mp="16"    speed="0"    description="郭嘉的马名曰白雪"    need_level="20"    price="4932"    max_smith="20"/>    
+<equipment    id="1113"    name="黑云"    strength="0"    intelligence="0"    max_hp="0"    max_mp="16"    speed="0"    description="周泰的马名曰黑云"    need_level="20"    price="4932"    max_smith="20"/>    
+<equipment    id="1115"    name="白鸽"    strength="0"    intelligence="0"    max_hp="0"    max_mp="16"    speed="0"    description="陆逊火烧连营的坐骑"    need_level="20"    price="4932"    max_smith="20"/>    
+<equipment    id="1117"    name="紫骍"    strength="0"    intelligence="0"    max_hp="0"    max_mp="16"    speed="0"    description="曹植所有的一匹大宛良马"    need_level="20"    price="4932"    max_smith="20"/>    
+<equipment    id="1119"    name="汗血"    strength="0"    intelligence="0"    max_hp="0"    max_mp="36"    speed="0"    description="马岱砍杀魏延时所骑之马"    need_level="50"    price="26216"    max_smith="20"/>    
+<equipment    id="1124"    name="乌骓"    strength="0"    intelligence="0"    max_hp="0"    max_mp="36"    speed="0"    description="魏延的坐骑"    need_level="50"    price="26216"    max_smith="20"/>    
+<equipment    id="1130"    name="白鹤"    strength="0"    intelligence="0"    max_hp="0"    max_mp="41"    speed="0"    description="曹洪的名驹"    need_level="60"    price="31336"    max_smith="20"/>    
+<equipment    id="1133"    name="灰影"    strength="0"    intelligence="0"    max_hp="0"    max_mp="72"    speed="0"    description="张辽骑此马大战逍遥津"    need_level="70"    price="70620"    max_smith="20"/>    
+<equipment    id="1136"    name="乌孙"    strength="0"    intelligence="0"    max_hp="0"    max_mp="80"    speed="0"    description="司马懿的名驹"    need_level="80"    price="80620"    max_smith="20"/>    
+<equipment    id="1139"    name="燎原火"    strength="0"    intelligence="0"    max_hp="0"    max_mp="80"    speed="0"    description="老将黄忠的宝马"    need_level="80"    price="80620"    max_smith="20"/>    
+<equipment    id="1207"    name="鱼鳞甲"    strength="0"    intelligence="0"    max_hp="16"    max_mp="0"    speed="0"    description="普通护甲，部分由青铜鳞片制成"    need_level="20"    price="4932"    max_smith="20"/>    
+<equipment    id="1210"    name="锁子甲"    strength="0"    intelligence="0"    max_hp="16"    max_mp="0"    speed="0"    description="青铜环相扣而成，缺点是过于柔软"    need_level="20"    price="4932"    max_smith="20"/>    
+<equipment    id="1213"    name="玄铁甲"    strength="0"    intelligence="0"    max_hp="16"    max_mp="0"    speed="0"    description="由玄铁打造的铠甲，但非常笨重"    need_level="20"    price="4932"    max_smith="20"/>    
+<equipment    id="1215"    name="虎皮铠"    strength="0"    intelligence="0"    max_hp="16"    max_mp="0"    speed="0"    description="用韧性极佳的虎皮而制"    need_level="20"    price="4932"    max_smith="20"/>    
+<equipment    id="1217"    name="桃花铠"    strength="0"    intelligence="0"    max_hp="16"    max_mp="0"    speed="0"    description="相传是张飞在桃园中用精铁打造"    need_level="20"    price="4932"    max_smith="20"/>    
+<equipment    id="1218"    name="乌纱铠"    strength="0"    intelligence="0"    max_hp="35"    max_mp="0"    speed="0"    description="高级将领在室内常穿戴的护具"    need_level="50"    price="26216"    max_smith="20"/>    
+<equipment    id="1219"    name="黑金甲"    strength="0"    intelligence="0"    max_hp="35"    max_mp="0"    speed="0"    description="因盔甲周围镀有一层乌金而得名"    need_level="50"    price="26216"    max_smith="20"/>    
+<equipment    id="1222"    name="孔明铠"    strength="0"    intelligence="0"    max_hp="35"    max_mp="0"    speed="0"    description="诸葛亮专门为蜀兵所作"    need_level="50"    price="26216"    max_smith="20"/>    
+<equipment    id="1224"    name="铁铠甲"    strength="0"    intelligence="0"    max_hp="35"    max_mp="0"    speed="0"    description="浑铁所制铠甲"    need_level="50"    price="26216"    max_smith="20"/>    
+<equipment    id="1230"    name="赤铁盔"    strength="0"    intelligence="0"    max_hp="40"    max_mp="0"    speed="0"    description="反复精炼镔铁而得的精铁铠甲"    need_level="60"    price="31336"    max_smith="20"/>    
+<equipment    id="1235"    name="金蟒鳞甲"    strength="0"    intelligence="0"    max_hp="63"    max_mp="0"    speed="0"    description="精铁鳞片制成，并在胸前镀有金蟒图案"    need_level="60"    price="70620"    max_smith="20"/>    
+<equipment    id="1238"    name="精木兽铠"    strength="0"    intelligence="0"    max_hp="63"    max_mp="0"    speed="0"    description="蛮族精兵用精木兽骨制成"    need_level="60"    price="70620"    max_smith="20"/>    
+<equipment    id="1241"    name="麒麟铠甲"    strength="0"    intelligence="0"    max_hp="70"    max_mp="0"    speed="0"    description="相传为麒麟皮精致而成"    need_level="80"    price="80620"    max_smith="20"/>    
+<equipment    id="1245"    name="三昧神铠"    strength="0"    intelligence="0"    max_hp="70"    max_mp="0"    speed="0"    description="用陨铁在三道不同火候的烈火中锻造而成"    need_level="70"    price="80620"    max_smith="20"/>    
+<equipment    id="1310"    name="礼记"    strength="0"    intelligence="0"    max_hp="0"    max_mp="10"    speed="0"    description="戴圣所著的典章书籍"    need_level="20"    price="4932"    max_smith="20"/>    
+<equipment    id="1313"    name="山海经"    strength="0"    intelligence="0"    max_hp="0"    max_mp="10"    speed="0"    description="先秦古籍，记录了古老神话传说"    need_level="20"    price="4932"    max_smith="20"/>    
+<equipment    id="1315"    name="史记"    strength="0"    intelligence="0"    max_hp="0"    max_mp="10"    speed="0"    description="司马迁记录的先代历史书籍"    need_level="20"    price="4932"    max_smith="20"/>    
+<equipment    id="1317"    name="吕氏春秋"    strength="0"    intelligence="19"    max_hp="0"    max_mp="0"    speed="0"    description="秦国吕不韦所著"    need_level="35"    price="18536"    max_smith="20"/>    
+<equipment    id="1319"    name="司马法"    strength="0"    intelligence="0"    max_hp="0"    max_mp="22"    speed="0"    description="司马穰苴所著兵书，战国时期已失传"    need_level="50"    price="26216"    max_smith="20"/>    
+<equipment    id="1323"    name="汉书"    strength="0"    intelligence="0"    max_hp="0"    max_mp="22"    speed="0"    description="班固所著史书"    need_level="50"    price="26216"    max_smith="20"/>    
+<equipment    id="1327"    name="老子"    strength="0"    intelligence="0"    max_hp="0"    max_mp="22"    speed="0"    description="又名道德经，道祖老子所写"    need_level="50"    price="26216"    max_smith="20"/>    
+<equipment    id="1328"    name="尉缭子"    strength="0"    intelligence="25"    max_hp="0"    max_mp="0"    speed="0"    description="秦朝尉缭子所著兵书"    need_level="60"    price="31336"    max_smith="20"/>    
+<equipment    id="1331"    name="孟德新书"    strength="0"    intelligence="25"    max_hp="0"    max_mp="0"    speed="0"    description="曹操所著兵法韬略"    need_level="60"    price="31336"    max_smith="20"/>    
+<equipment    id="1333"    name="韩非子"    strength="0"    intelligence="45"    max_hp="0"    max_mp="0"    speed="0"    description="战国韩非子的巨著"    need_level="60"    price="70620"    max_smith="20"/>    
+<equipment    id="1335"    name="青囊书"    strength="0"    intelligence="45"    max_hp="0"    max_mp="0"    speed="0"    description="华佗毕生精力所著医书"    need_level="70"    price="70620"    max_smith="20"/>    
+<equipment    id="1340"    name="春秋左氏传"    strength="0"    intelligence="0"    max_hp="0"    max_mp="50"    speed="0"    description="春秋末年左丘明解释春秋而著"    need_level="70"    price="80620"    max_smith="20"/>    
+<equipment    id="1342"    name="商君书"    strength="0"    intelligence="0"    max_hp="0"    max_mp="50"    speed="0"    description="战国商鞅所著变法之书"    need_level="70"    price="80620"    max_smith="20"/>    
+<equipment    id="1345"    name="战国策"    strength="0"    intelligence="0"    max_hp="0"    max_mp="50"    speed="0"    description="西汉刘向记载战国策士纵横捭阖之书"    need_level="70"    price="80620"    max_smith="20"/>    
+<equipment    id="1502"    name="白羽扇"    strength="39"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="普通的羽扇，用羽毛做成的扇面"    need_level="35"    price="18536"    max_smith="20"/>    
+<equipment    id="1503"    name="手戟"    strength="39"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="精铁所制，最常见的兵器"    need_level="35"    price="18536"    max_smith="20"/>    
+<equipment    id="1504"    name="双铁戟"    strength="39"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="寻常镔铁打造而成，典韦手中运使如飞"    need_level="35"    price="18536"    max_smith="20"/>    
+<equipment    id="1505"    name="丈八长标"    strength="39"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="南蛮特有的武器，祝融夫人所使"    need_level="35"    price="18536"    max_smith="20"/>    
+<equipment    id="1506"    name="短戟"    strength="39"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="比手戟略短，典韦以此作暗器救曹操"    need_level="35"    price="18536"    max_smith="20"/>    
+<equipment    id="1507"    name="流星锤"    strength="39"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="浑铁链扣着钢球，可做暗器使用"    need_level="35"    price="18536"    max_smith="20"/>    
+<equipment    id="1508"    name="铜挝"    strength="39"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="挝头似斧脑可宕击，马超曾以此投向张飞"    need_level="35"    price="18536"    max_smith="20"/>    
+<equipment    id="1509"    name="朴刀"    strength="39"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="木柄上安有钢刀，可劈杀敌人"    need_level="35"    price="18536"    max_smith="20"/>    
+<equipment    id="1510"    name="古锭刀"    strength="39"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="又名七星刀，孙权所使，刀身有松纹故名之"    need_level="35"    price="18536"    max_smith="20"/>    
+<equipment    id="1511"    name="镇山剑"    strength="46"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="蜀后帝刘禅所造巨剑以镇剑口山"    need_level="50"    price="26216"    max_smith="20"/>    
+<equipment    id="1512"    name="钢鞭"    strength="46"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="精铁所制，有节无锋刃"    need_level="50"    price="26216"    max_smith="20"/>    
+<equipment    id="1513"    name="四楞铁简"    strength="46"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="蜀将傅佥的兵器，曾以此打得魏将眼珠迸出"    need_level="50"    price="26216"    max_smith="20"/>    
+<equipment    id="1515"    name="陨铁双戟"    strength="46"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="陨铁铸造的双戟"    need_level="50"    price="26216"    max_smith="20"/>    
+<equipment    id="1516"    name="衠钢槊"    strength="46"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="纯钢所制，周泰在赤壁之战中使用"    need_level="50"    price="26216"    max_smith="20"/>    
+<equipment    id="1517"    name="没羽箭"    strength="70"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="锋锐所及，有没羽之力故名之"    need_level="50"    price="50620"    max_smith="20"/>    
+<equipment    id="1518"    name="铁脊蛇矛"    strength="70"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="程普所使用的武器，刃脊隆起，两旁微陷"    need_level="50"    price="50620"    max_smith="20"/>    
+<equipment    id="1519"    name="百辟匕首"    strength="70"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹丕所制匕首之一，纹似灵龟，名曰灵宝"    need_level="50"    price="50620"    max_smith="20"/>    
+<equipment    id="1520"    name="两石力之弓"    strength="80"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="紫檀木所制，坚硬异常"    need_level="60"    price="60620"    max_smith="20"/>    
+<equipment    id="1521"    name="文士剑"    strength="80"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="杨修献于曹丕的宝剑"    need_level="60"    price="60620"    max_smith="20"/>    
+<equipment    id="1522"    name="蜀八剑"    strength="80"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="刘备采金牛山铁矿铸造的八把宝剑之一"    need_level="60"    price="60620"    max_smith="20"/>    
+<equipment    id="1523"    name="龙鳞刀"    strength="80"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹丕所制宝刀之一，状如龙纹，名曰龙鳞"    need_level="60"    price="60620"    max_smith="20"/>    
+<equipment    id="1524"    name="飞景三剑"    strength="80"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹丕所制宝剑之一，光似流星，名曰飞景"    need_level="60"    price="60620"    max_smith="20"/>    
+<equipment    id="1525"    name="思召剑"    strength="80"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="袁绍在黎阳梦神人所授宝剑"    need_level="60"    price="60620"    max_smith="20"/>    
+<equipment    id="1526"    name="截头大刀"    strength="80"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="庞德的兵器，刀头比普通大刀短"    need_level="60"    price="60620"    max_smith="20"/>    
+<equipment    id="1527"    name="三尖两刃刀"    strength="80"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="纪灵的兵器，两面开刃，锋利无比"    need_level="60"    price="60620"    max_smith="20"/>    
+<equipment    id="1528"    name="蘸金斧"    strength="80"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="斧头上镀金的大斧，为李异所有"    need_level="60"    price="60620"    max_smith="20"/>    
+<equipment    id="1529"    name="百辟宝刀"    strength="80"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="能够辟邪的宝刀"    need_level="60"    price="60620"    max_smith="20"/>    
+<equipment    id="1530"    name="铁蒺藜骨朵"    strength="90"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="沙摩柯所使兵器，锤头上有锐利的尖刺"    need_level="60"    price="70620"    max_smith="20"/>    
+<equipment    id="1610"    name="白雪"    strength="0"    intelligence="0"    max_hp="0"    max_mp="31"    speed="0"    description="郭嘉的马名曰白雪"    need_level="35"    price="18536"    max_smith="20"/>    
+<equipment    id="1613"    name="黑云"    strength="0"    intelligence="0"    max_hp="0"    max_mp="31"    speed="0"    description="周泰的马名曰黑云"    need_level="35"    price="18536"    max_smith="20"/>    
+<equipment    id="1615"    name="白鸽"    strength="0"    intelligence="0"    max_hp="0"    max_mp="31"    speed="0"    description="陆逊火烧连营的坐骑"    need_level="35"    price="18536"    max_smith="20"/>    
+<equipment    id="1617"    name="紫骍"    strength="0"    intelligence="0"    max_hp="0"    max_mp="31"    speed="0"    description="曹植所有的一匹大宛良马"    need_level="35"    price="18536"    max_smith="20"/>    
+<equipment    id="1619"    name="汗血"    strength="0"    intelligence="0"    max_hp="0"    max_mp="56"    speed="0"    description="马岱砍杀魏延时所骑之马"    need_level="35"    price="50620"    max_smith="20"/>    
+<equipment    id="1624"    name="乌骓"    strength="0"    intelligence="0"    max_hp="0"    max_mp="64"    speed="0"    description="魏延的坐骑"    need_level="50"    price="60620"    max_smith="20"/>    
+<equipment    id="1630"    name="白鹤"    strength="0"    intelligence="0"    max_hp="0"    max_mp="64"    speed="0"    description="曹洪的名驹"    need_level="60"    price="60620"    max_smith="20"/>    
+<equipment    id="1707"    name="鱼鳞甲"    strength="0"    intelligence="0"    max_hp="30"    max_mp="0"    speed="0"    description="普通护甲，部分由青铜鳞片制成"    need_level="35"    price="18536"    max_smith="20"/>    
+<equipment    id="1710"    name="锁子甲"    strength="0"    intelligence="0"    max_hp="30"    max_mp="0"    speed="0"    description="青铜环相扣而成，缺点是过于柔软"    need_level="35"    price="18536"    max_smith="20"/>    
+<equipment    id="1713"    name="玄铁甲"    strength="0"    intelligence="0"    max_hp="30"    max_mp="0"    speed="0"    description="由玄铁打造的铠甲，但非常笨重"    need_level="35"    price="18536"    max_smith="20"/>    
+<equipment    id="1715"    name="虎皮铠"    strength="0"    intelligence="0"    max_hp="30"    max_mp="0"    speed="0"    description="用韧性极佳的虎皮而制"    need_level="35"    price="18536"    max_smith="20"/>    
+<equipment    id="1717"    name="桃花铠"    strength="0"    intelligence="0"    max_hp="30"    max_mp="0"    speed="0"    description="相传是张飞在桃园中用精铁打造"    need_level="35"    price="18536"    max_smith="20"/>    
+<equipment    id="1718"    name="乌纱铠"    strength="0"    intelligence="0"    max_hp="49"    max_mp="0"    speed="0"    description="高级将领在室内常穿戴的护具"    need_level="50"    price="50620"    max_smith="20"/>    
+<equipment    id="1719"    name="黑金甲"    strength="0"    intelligence="0"    max_hp="49"    max_mp="0"    speed="0"    description="因盔甲周围镀有一层乌金而得名"    need_level="50"    price="50620"    max_smith="20"/>    
+<equipment    id="1722"    name="孔明铠"    strength="0"    intelligence="0"    max_hp="49"    max_mp="0"    speed="0"    description="诸葛亮专门为蜀兵所作"    need_level="50"    price="50620"    max_smith="20"/>    
+<equipment    id="1724"    name="铁铠甲"    strength="0"    intelligence="0"    max_hp="49"    max_mp="0"    speed="0"    description="浑铁所制铠甲"    need_level="35"    price="50620"    max_smith="20"/>    
+<equipment    id="1730"    name="赤铁盔"    strength="0"    intelligence="0"    max_hp="56"    max_mp="0"    speed="0"    description="反复精炼镔铁而得的精铁铠甲"    need_level="60"    price="60620"    max_smith="20"/>    
+<equipment    id="1810"    name="礼记"    strength="0"    intelligence="19"    max_hp="0"    max_mp="0"    speed="0"    description="戴圣所著的典章书籍"    need_level="35"    price="18536"    max_smith="20"/>    
+<equipment    id="1813"    name="山海经"    strength="0"    intelligence="19"    max_hp="0"    max_mp="0"    speed="0"    description="先秦古籍，记录了古老神话传说"    need_level="35"    price="18536"    max_smith="20"/>    
+<equipment    id="1815"    name="史记"    strength="0"    intelligence="19"    max_hp="0"    max_mp="0"    speed="0"    description="司马迁记录的先代历史书籍"    need_level="35"    price="18536"    max_smith="20"/>    
+<equipment    id="1817"    name="吕氏春秋"    strength="0"    intelligence="35"    max_hp="0"    max_mp="0"    speed="0"    description="秦国吕不韦所著"    need_level="35"    price="50620"    max_smith="20"/>    
+<equipment    id="1819"    name="司马法"    strength="0"    intelligence="35"    max_hp="0"    max_mp="0"    speed="0"    description="司马穰苴所著兵书，战国时期已失传"    need_level="50"    price="50620"    max_smith="20"/>    
+<equipment    id="1823"    name="汉书"    strength="0"    intelligence="0"    max_hp="0"    max_mp="40"    speed="0"    description="班固所著史书"    need_level="50"    price="60620"    max_smith="20"/>    
+<equipment    id="1827"    name="老子"    strength="0"    intelligence="0"    max_hp="0"    max_mp="40"    speed="0"    description="又名道德经，道祖老子所写"    need_level="50"    price="60620"    max_smith="20"/>    
+<equipment    id="1828"    name="尉缭子"    strength="0"    intelligence="0"    max_hp="0"    max_mp="40"    speed="0"    description="秦朝尉缭子所著兵书"    need_level="60"    price="60620"    max_smith="20"/>    
+<equipment    id="1831"    name="孟德新书"    strength="0"    intelligence="45"    max_hp="0"    max_mp="0"    speed="0"    description="曹操所著兵法韬略"    need_level="60"    price="70620"    max_smith="20"/>    
+<equipment    id="2000"    name="孟德剑"    strength="100"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹操于幽谷所得的宝剑"    need_level="1"    price="80620"    max_smith="20"/>    
+<equipment    id="2001"    name="乌孙"    strength="0"    intelligence="0"    max_hp="0"    max_mp="80"    speed="0"    description="司马懿的名驹"    need_level="1"    price="80620"    max_smith="20"/>    
+<equipment    id="2002"    name="三昧神铠"    strength="0"    intelligence="0"    max_hp="70"    max_mp="0"    speed="0"    description="用陨铁在三道不同火候的烈火中锻造而成"    need_level="1"    price="80620"    max_smith="20"/>    
+<equipment    id="2003"    name="战国策"    strength="0"    intelligence="0"    max_hp="0"    max_mp="50"    speed="0"    description="西汉刘向记载战国策士纵横捭阖之书"    need_level="1"    price="80620"    max_smith="20"/>    
+<equipment    id="2903"    name="丈八蛇枪"    strength="65"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="枪头有蛇形环绕"    need_level="90"    price="20052"    max_smith="20"/>    
+<equipment    id="2904"    name="火烈枪"    strength="85"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="烈火之威力，势不可挡"    need_level="90"    price="46696"    max_smith="20"/>    
+<equipment    id="2905"    name="丧律斧"    strength="105"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="有让鬼神闻风丧胆之威"    need_level="90"    price="90620"    max_smith="20"/>    
+<equipment    id="2913"    name="乌金甲"    strength="0"    intelligence="0"    max_hp="70"    max_mp="0"    speed="0"    description="因盔甲周围镀有一层乌金而得名"    need_level="90"    price="20052"    max_smith="20"/>    
+<equipment    id="2914"    name="神火御甲"    strength="0"    intelligence="0"    max_hp="90"    max_mp="0"    speed="0"    description="相传由精火纯炼而成"    need_level="90"    price="46696"    max_smith="20"/>    
+<equipment    id="2915"    name="兽神铠"    strength="0"    intelligence="0"    max_hp="110"    max_mp="0"    speed="0"    description="南蛮异族，崇尚兽神，铠甲中有巫力"    need_level="90"    price="90620"    max_smith="20"/>    
+<equipment    id="2923"    name="钢甲战马"    strength="0"    intelligence="0"    max_hp="0"    max_mp="60"    speed="0"    description="身披钢甲的战马"    need_level="90"    price="20052"    max_smith="20"/>    
+<equipment    id="2924"    name="白神驹"    strength="0"    intelligence="0"    max_hp="0"    max_mp="75"    speed="0"    description="白色神马驹"    need_level="90"    price="46696"    max_smith="20"/>    
+<equipment    id="2925"    name="可汗神驹"    strength="0"    intelligence="0"    max_hp="0"    max_mp="90"    speed="0"    description="相传为古蒙古某位可汗的坐骑"    need_level="90"    price="90620"    max_smith="20"/>    
+<equipment    id="2933"    name="盐铁论"    strength="0"    intelligence="65"    max_hp="0"    max_mp="0"    speed="0"    description="相传为西汉桓宽所著"    need_level="90"    price="20052"    max_smith="20"/>    
+<equipment    id="2934"    name="诡道"    strength="0"    intelligence="85"    max_hp="0"    max_mp="0"    speed="0"    description="兵者诡道也"    need_level="90"    price="46696"    max_smith="20"/>    
+<equipment    id="2935"    name="青囊衣书"    strength="0"    intelligence="105"    max_hp="0"    max_mp="0"    speed="0"    description="华佗毕生精力所著医书之残卷"    need_level="90"    price="90620"    max_smith="20"/>    
+<equipment    id="3003"    name="天龙剑"    strength="75"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="剑身有龙纹，舞动有龙吟"    need_level="100"    price="22212"    max_smith="20"/>    
+<equipment    id="3004"    name="后羿弓"    strength="95"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="相传为后羿射日所用之弓"    need_level="100"    price="51816"    max_smith="20"/>    
+<equipment    id="3005"    name="蚩尤斧"    strength="115"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="相传为蚩尤死后，其手骨化为的战斧"    need_level="100"    price="100620"    max_smith="20"/>    
+<equipment    id="3013"    name="虎神铠"    strength="0"    intelligence="0"    max_hp="80"    max_mp="0"    speed="0"    description="南蛮部族，崇尚虎神，铠甲中有巫力"    need_level="100"    price="22212"    max_smith="20"/>    
+<equipment    id="3014"    name="桃木铠"    strength="0"    intelligence="0"    max_hp="100"    max_mp="0"    speed="0"    description="诸葛亮专门为蜀兵所作，附有神力"    need_level="100"    price="51816"    max_smith="20"/>    
+<equipment    id="3015"    name="战神甲"    strength="0"    intelligence="0"    max_hp="120"    max_mp="0"    speed="0"    description="相传为蚩尤死后，其胸骨化为的铠甲"    need_level="100"    price="100620"    max_smith="20"/>    
+<equipment    id="3023"    name="白云"    strength="0"    intelligence="0"    max_hp="0"    max_mp="70"    speed="0"    description="白驹过隙，快如闪电"    need_level="100"    price="22212"    max_smith="20"/>    
+<equipment    id="3024"    name="骓逝"    strength="0"    intelligence="0"    max_hp="0"    max_mp="85"    speed="0"    description="相传为某位猛将的坐骑"    need_level="100"    price="51816"    max_smith="20"/>    
+<equipment    id="3025"    name="黑目"    strength="0"    intelligence="0"    max_hp="0"    max_mp="100"    speed="0"    description="目黑而有神，曰黑目"    need_level="100"    price="100620"    max_smith="20"/>    
+<equipment    id="3033"    name="太平清领道"    strength="0"    intelligence="75"    max_hp="0"    max_mp="0"    speed="0"    description="张宝遗留名著"    need_level="100"    price="22212"    max_smith="20"/>    
+<equipment    id="3034"    name="魏公子兵法"    strength="0"    intelligence="95"    max_hp="0"    max_mp="0"    speed="0"    description="魏无忌所著兵书"    need_level="100"    price="51816"    max_smith="20"/>    
+<equipment    id="3035"    name="太平要术"    strength="0"    intelligence="115"    max_hp="0"    max_mp="0"    speed="0"    description="张角受南华仙人所传授"    need_level="100"    price="100620"    max_smith="20"/>    
+<equipment    id="3103"    name="金丝刀"    strength="85"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="刀部有金丝，名曰金丝"    need_level="110"    price="24372"    max_smith="20"/>    
+<equipment    id="3104"    name="封神简"    strength="105"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="据说有鞭策神灵之威力"    need_level="110"    price="56936"    max_smith="20"/>    
+<equipment    id="3105"    name="后羿弓"    strength="125"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="相传为后羿射日所用之弓"    need_level="110"    price="110620"    max_smith="20"/>    
+<equipment    id="3113"    name="银色钢甲"    strength="0"    intelligence="0"    max_hp="90"    max_mp="0"    speed="0"    description="浑身银亮之色，后为赵云所得"    need_level="110"    price="24372"    max_smith="20"/>    
+<equipment    id="3114"    name="孔明神铠"    strength="0"    intelligence="0"    max_hp="110"    max_mp="0"    speed="0"    description="诸葛亮日夜观星悟道而作"    need_level="110"    price="56936"    max_smith="20"/>    
+<equipment    id="3115"    name="血精之甲"    strength="0"    intelligence="0"    max_hp="130"    max_mp="0"    speed="0"    description="相传融入了生灵精魄的血炼铠甲"    need_level="110"    price="110620"    max_smith="20"/>    
+<equipment    id="3123"    name="紫电"    strength="0"    intelligence="0"    max_hp="0"    max_mp="80"    speed="0"    description="快如紫色闪电，名曰紫电"    need_level="110"    price="24372"    max_smith="20"/>    
+<equipment    id="3124"    name="快航"    strength="0"    intelligence="0"    max_hp="0"    max_mp="95"    speed="0"    description="名驹，孙权之坐骑"    need_level="110"    price="56936"    max_smith="20"/>    
+<equipment    id="3125"    name="紫电"    strength="0"    intelligence="0"    max_hp="0"    max_mp="110"    speed="0"    description="快如紫色闪电，名曰紫电"    need_level="110"    price="110620"    max_smith="20"/>    
+<equipment    id="3133"    name="仇国论"    strength="0"    intelligence="85"    max_hp="0"    max_mp="0"    speed="0"    description="中散大夫谯周所著"    need_level="110"    price="24372"    max_smith="20"/>    
+<equipment    id="3134"    name="象历注"    strength="0"    intelligence="105"    max_hp="0"    max_mp="0"    speed="0"    description="刘洪所著历法"    need_level="110"    price="56936"    max_smith="20"/>    
+<equipment    id="3135"    name="周书阴符"    strength="0"    intelligence="125"    max_hp="0"    max_mp="0"    speed="0"    description="相传为黄帝所著"    need_level="110"    price="110620"    max_smith="20"/>    
+<equipment    id="4001"    name="方天画戟"    strength="110"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="吕布的专属神兵，有龙纹绕身，霸气十足（不受等级限制）"    need_level="1"    price="2352"    max_smith="30"/>    
+<equipment    id="4002"    name="孟德剑"    strength="130"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹操于幽谷所得的宝剑"    need_level="1"    price="2352"    max_smith="30"/>    
+<equipment    id="4003"    name="诸葛连弩"    strength="100"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="又作元戎弩，诸葛亮所制威力强大的连弩"    need_level="35"    price="61104"    max_smith="30"/>    
+<equipment    id="4004"    name="没羽箭"    strength="100"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="锋锐所及，有没羽之力故名之"    need_level="50"    price="87024"    max_smith="30"/>    
+<equipment    id="4005"    name="铁脊蛇矛"    strength="100"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="程普所使用的武器，刃脊隆起，两旁微陷"    need_level="50"    price="87024"    max_smith="30"/>    
+<equipment    id="4006"    name="百辟匕首"    strength="100"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹丕所制匕首之一，纹似灵龟，名曰灵宝"    need_level="50"    price="87024"    max_smith="30"/>    
+<equipment    id="4007"    name="倚天剑"    strength="110"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹操的佩剑，与青虹并称为绝世双剑"    need_level="60"    price="104304"    max_smith="30"/>    
+<equipment    id="4008"    name="龙泉剑"    strength="110"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="欧冶子和干将联手所铸，俯视剑身有巨龙盘卧"    need_level="60"    price="104304"    max_smith="30"/>    
+<equipment    id="4009"    name="丈八蛇矛"    strength="110"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="张飞的霹雳神兵，矛头镔铁打造，犹如蛇吐信"    need_level="60"    price="104304"    max_smith="30"/>    
+<equipment    id="4010"    name="青龙偃月刀"    strength="110"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="奇名冷艳锯，关羽所使神兵"    need_level="60"    price="104304"    max_smith="30"/>    
+<equipment    id="4011"    name="两石力之弓"    strength="110"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="紫檀木所制，坚硬异常"    need_level="60"    price="104304"    max_smith="30"/>    
+<equipment    id="4012"    name="文士剑"    strength="110"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="杨修献于曹丕的宝剑"    need_level="60"    price="104304"    max_smith="30"/>    
+<equipment    id="4013"    name="蜀八剑"    strength="110"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="刘备采金牛山铁矿铸造的八把宝剑之一"    need_level="60"    price="104304"    max_smith="30"/>    
+<equipment    id="4014"    name="龙鳞刀"    strength="110"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹丕所制宝刀之一，状如龙纹，名曰龙鳞"    need_level="60"    price="104304"    max_smith="30"/>    
+<equipment    id="4015"    name="飞景三剑"    strength="110"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹丕所制宝剑之一，光似流星，名曰飞景"    need_level="60"    price="104304"    max_smith="30"/>    
+<equipment    id="4016"    name="思召剑"    strength="110"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="袁绍在黎阳梦神人所授宝剑"    need_level="60"    price="104304"    max_smith="30"/>    
+<equipment    id="4017"    name="截头大刀"    strength="110"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="庞德的兵器，刀头比普通大刀短"    need_level="60"    price="104304"    max_smith="30"/>    
+<equipment    id="4018"    name="三尖两刃刀"    strength="110"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="纪灵的兵器，两面开刃，锋利无比"    need_level="60"    price="104304"    max_smith="30"/>    
+<equipment    id="4019"    name="蘸金斧"    strength="110"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="斧头上镀金的大斧，为李异所有"    need_level="60"    price="104304"    max_smith="30"/>    
+<equipment    id="4020"    name="百辟宝刀"    strength="110"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="能够辟邪的宝刀"    need_level="60"    price="104304"    max_smith="30"/>    
+<equipment    id="4021"    name="诸葛枪"    strength="120"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="诸葛亮所造二丈五尺的竹柄枪，枪头铁制"    need_level="70"    price="121584"    max_smith="30"/>    
+<equipment    id="4022"    name="虎筋弦弓"    strength="120"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="又名麒麟弓，虎筋做弦，吕布辕门射戟所用"    need_level="70"    price="121584"    max_smith="30"/>    
+<equipment    id="4023"    name="鹊画弓"    strength="120"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="因弓身似鹊身而得名"    need_level="70"    price="121584"    max_smith="30"/>    
+<equipment    id="4024"    name="马岱宝刀"    strength="120"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="马岱曾以此宝剑击败钟繇"    need_level="70"    price="121584"    max_smith="30"/>    
+<equipment    id="4025"    name="铁蒺藜骨朵"    strength="120"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="沙摩柯所使兵器，锤头上有锐利的尖刺"    need_level="60"    price="104304"    max_smith="30"/>    
+<equipment    id="4026"    name="开山鏖金斧"    strength="130"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="徐晃所使兵器，斧阔五寸，柄长七尺"    need_level="70"    price="121584"    max_smith="30"/>    
+<equipment    id="4027"    name="王双大刀"    strength="130"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="天下第一富贵刀，王双所有"    need_level="70"    price="121584"    max_smith="30"/>    
+<equipment    id="4028"    name="孟德剑"    strength="130"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="曹操于幽谷所得的宝剑"    need_level="70"    price="121584"    max_smith="30"/>    
+<equipment    id="4029"    name="双股剑"    strength="130"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="刘备的兵器，又名鸳鸯剑，利可断金"    need_level="70"    price="121584"    max_smith="30"/>    
+<equipment    id="4030"    name="松纹厢宝剑"    strength="130"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="孟获对战诸葛亮所使宝剑，剑身由松纹"    need_level="70"    price="121584"    max_smith="30"/>    
+<equipment    id="4031"    name="丧律斧"    strength="135"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="有让鬼神闻风丧胆之威"    need_level="90"    price="156144"    max_smith="30"/>    
+<equipment    id="4032"    name="蚩尤斧"    strength="145"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="相传为蚩尤死后，其手骨化为的战斧"    need_level="100"    price="173424"    max_smith="30"/>    
+<equipment    id="4033"    name="后羿弓"    strength="155"    intelligence="0"    max_hp="0"    max_mp="0"    speed="0"    description="相传为后羿射日所用之弓"    need_level="110"    price="190704"    max_smith="30"/>    
+<equipment    id="4101"    name="乌孙"    strength="0"    intelligence="0"    max_hp="0"    max_mp="110"    speed="0"    description="司马懿的名驹"    need_level="1"    price="2352"    max_smith="30"/>    
+<equipment    id="4102"    name="汗血"    strength="0"    intelligence="0"    max_hp="0"    max_mp="86"    speed="0"    description="马岱砍杀魏延时所骑之马"    need_level="35"    price="61104"    max_smith="30"/>    
+<equipment    id="4103"    name="的卢"    strength="0"    intelligence="0"    max_hp="0"    max_mp="94"    speed="0"    description="刘备的坐骑，曾在其危难之时救其性命"    need_level="60"    price="104304"    max_smith="30"/>    
+<equipment    id="4104"    name="绝影无影"    strength="0"    intelligence="0"    max_hp="0"    max_mp="94"    speed="0"    description="曹操的坐骑之一"    need_level="60"    price="104304"    max_smith="30"/>    
+<equipment    id="4105"    name="乌骓"    strength="0"    intelligence="0"    max_hp="0"    max_mp="94"    speed="0"    description="魏延的坐骑"    need_level="50"    price="87024"    max_smith="30"/>    
+<equipment    id="4106"    name="白鹤"    strength="0"    intelligence="0"    max_hp="0"    max_mp="94"    speed="0"    description="曹洪的名驹"    need_level="60"    price="104304"    max_smith="30"/>    
+<equipment    id="4107"    name="赤兔"    strength="0"    intelligence="0"    max_hp="0"    max_mp="102"    speed="0"    description="赤兔胭脂兽，吕布坐骑，后为关羽所得"    need_level="70"    price="121584"    max_smith="30"/>    
+<equipment    id="4108"    name="灰影"    strength="0"    intelligence="0"    max_hp="0"    max_mp="102"    speed="0"    description="张辽骑此马大战逍遥津"    need_level="70"    price="121584"    max_smith="30"/>    
+<equipment    id="4109"    name="乌孙"    strength="0"    intelligence="0"    max_hp="0"    max_mp="110"    speed="0"    description="司马懿的名驹"    need_level="80"    price="138864"    max_smith="30"/>    
+<equipment    id="4110"    name="燎原火"    strength="0"    intelligence="0"    max_hp="0"    max_mp="110"    speed="0"    description="老将黄忠的宝马"    need_level="80"    price="138864"    max_smith="30"/>    
+<equipment    id="4111"    name="可汗神驹"    strength="0"    intelligence="0"    max_hp="0"    max_mp="120"    speed="0"    description="相传为古蒙古某位可汗的坐骑"    need_level="90"    price="156144"    max_smith="30"/>    
+<equipment    id="4112"    name="黑目"    strength="0"    intelligence="0"    max_hp="0"    max_mp="130"    speed="0"    description="目黑而有神，曰黑目"    need_level="100"    price="173424"    max_smith="30"/>    
+<equipment    id="4113"    name="紫电"    strength="0"    intelligence="0"    max_hp="0"    max_mp="140"    speed="0"    description="快如紫色闪电，名曰紫电"    need_level="110"    price="190704"    max_smith="30"/>    
+<equipment    id="4201"    name="神嚎狱铠"    strength="0"    intelligence="0"    max_hp="86"    max_mp="0"    speed="0"    description="穿戴者犹如神助，让敌人置身炼狱之中（不受等级限制）"    need_level="1"    price="2352"    max_smith="30"/>    
+<equipment    id="4202"    name="三昧神铠"    strength="0"    intelligence="0"    max_hp="100"    max_mp="0"    speed="0"    description="用陨铁在三道不同火候的烈火中锻造而成"    need_level="1"    price="2352"    max_smith="30"/>    
+<equipment    id="4203"    name="铁铠甲"    strength="0"    intelligence="0"    max_hp="79"    max_mp="0"    speed="0"    description="浑铁所制铠甲"    need_level="35"    price="61104"    max_smith="30"/>    
+<equipment    id="4204"    name="鬼哭神铠"    strength="0"    intelligence="0"    max_hp="79"    max_mp="0"    speed="0"    description="吕布专属护甲，冲杀敌阵中，鬼哭神泣不绝于耳"    need_level="50"    price="87024"    max_smith="30"/>    
+<equipment    id="4205"    name="乌纱铠"    strength="0"    intelligence="0"    max_hp="79"    max_mp="0"    speed="0"    description="高级将领在室内常穿戴的护具"    need_level="50"    price="87024"    max_smith="30"/>    
+<equipment    id="4206"    name="黑金甲"    strength="0"    intelligence="0"    max_hp="79"    max_mp="0"    speed="0"    description="因盔甲周围镀有一层乌金而得名"    need_level="50"    price="87024"    max_smith="30"/>    
+<equipment    id="4207"    name="孔明铠"    strength="0"    intelligence="0"    max_hp="79"    max_mp="0"    speed="0"    description="诸葛亮专门为蜀兵所作"    need_level="50"    price="87024"    max_smith="30"/>    
+<equipment    id="4208"    name="赤铁盔"    strength="0"    intelligence="0"    max_hp="86"    max_mp="0"    speed="0"    description="反复精炼镔铁而得的精铁铠甲"    need_level="60"    price="104304"    max_smith="30"/>    
+<equipment    id="4209"    name="金蟒鳞甲"    strength="0"    intelligence="0"    max_hp="93"    max_mp="0"    speed="0"    description="精铁鳞片制成，并在胸前镀有金蟒图案"    need_level="60"    price="104304"    max_smith="30"/>    
+<equipment    id="4210"    name="精木兽铠"    strength="0"    intelligence="0"    max_hp="93"    max_mp="0"    speed="0"    description="蛮族精兵用精木兽骨制成"    need_level="60"    price="104304"    max_smith="30"/>    
+<equipment    id="4211"    name="三昧神铠"    strength="0"    intelligence="0"    max_hp="100"    max_mp="0"    speed="0"    description="用陨铁在三道不同火候的烈火中锻造而成"    need_level="70"    price="121584"    max_smith="30"/>    
+<equipment    id="4212"    name="麒麟铠甲"    strength="0"    intelligence="0"    max_hp="100"    max_mp="0"    speed="0"    description="相传为麒麟皮精致而成"    need_level="80"    price="138864"    max_smith="30"/>    
+<equipment    id="4213"    name="兽神铠"    strength="0"    intelligence="0"    max_hp="140"    max_mp="0"    speed="0"    description="南蛮异族，崇尚兽神，铠甲中有巫力"    need_level="90"    price="156144"    max_smith="30"/>    
+<equipment    id="4214"    name="战神甲"    strength="0"    intelligence="0"    max_hp="150"    max_mp="0"    speed="0"    description="相传为蚩尤死后，其胸骨化为的铠甲"    need_level="100"    price="173424"    max_smith="30"/>    
+<equipment    id="4215"    name="血精之甲"    strength="0"    intelligence="0"    max_hp="160"    max_mp="0"    speed="0"    description="相传融入了生灵精魄的血炼铠甲"    need_level="110"    price="190704"    max_smith="30"/>    
+<equipment    id="4301"    name="战国策"    strength="0"    intelligence="0"    max_hp="0"    max_mp="80"    speed="0"    description="西汉刘向记载战国策士纵横捭阖之书"    need_level="1"    price="2352"    max_smith="30"/>    
+<equipment    id="4302"    name="吕氏春秋"    strength="0"    intelligence="65"    max_hp="0"    max_mp="0"    speed="0"    description="秦国吕不韦所著"    need_level="35"    price="61104"    max_smith="30"/>    
+<equipment    id="4303"    name="司马法"    strength="0"    intelligence="65"    max_hp="0"    max_mp="0"    speed="0"    description="司马穰苴所著兵书，战国时期已失传"    need_level="50"    price="87024"    max_smith="30"/>    
+<equipment    id="4304"    name="遁甲天书"    strength="0"    intelligence="0"    max_hp="0"    max_mp="70"    speed="0"    description="神人左慈修行的天书"    need_level="60"    price="104304"    max_smith="30"/>    
+<equipment    id="4305"    name="汉书"    strength="0"    intelligence="0"    max_hp="0"    max_mp="70"    speed="0"    description="班固所著史书"    need_level="50"    price="87024"    max_smith="30"/>    
+<equipment    id="4306"    name="老子"    strength="0"    intelligence="0"    max_hp="0"    max_mp="70"    speed="0"    description="又名道德经，道祖老子所写"    need_level="50"    price="87024"    max_smith="30"/>    
+<equipment    id="4307"    name="尉缭子"    strength="0"    intelligence="0"    max_hp="0"    max_mp="70"    speed="0"    description="秦朝尉缭子所著兵书"    need_level="60"    price="104304"    max_smith="30"/>    
+<equipment    id="4308"    name="孙子兵法"    strength="0"    intelligence="75"    max_hp="0"    max_mp="0"    speed="0"    description="春秋孙武所著的神级兵书"    need_level="70"    price="121584"    max_smith="30"/>    
+<equipment    id="4309"    name="韩非子"    strength="0"    intelligence="75"    max_hp="0"    max_mp="0"    speed="0"    description="战国韩非子的巨著"    need_level="60"    price="104304"    max_smith="30"/>    
+<equipment    id="4310"    name="青囊书"    strength="0"    intelligence="75"    max_hp="0"    max_mp="0"    speed="0"    description="华佗毕生精力所著医书"    need_level="70"    price="121584"    max_smith="30"/>    
+<equipment    id="4311"    name="孟德新书"    strength="0"    intelligence="75"    max_hp="0"    max_mp="0"    speed="0"    description="曹操所著兵法韬略"    need_level="60"    price="104304"    max_smith="30"/>    
+<equipment    id="4312"    name="春秋左氏传"    strength="0"    intelligence="0"    max_hp="0"    max_mp="80"    speed="0"    description="春秋末年左丘明解释春秋而著"    need_level="70"    price="121584"    max_smith="30"/>    
+<equipment    id="4313"    name="商君书"    strength="0"    intelligence="0"    max_hp="0"    max_mp="80"    speed="0"    description="战国商鞅所著变法之书"    need_level="70"    price="121584"    max_smith="30"/>    
+<equipment    id="4314"    name="战国策"    strength="0"    intelligence="0"    max_hp="0"    max_mp="80"    speed="0"    description="西汉刘向记载战国策士纵横捭阖之书"    need_level="70"    price="121584"    max_smith="30"/>    
+<equipment    id="4315"    name="青囊衣书"    strength="0"    intelligence="135"    max_hp="0"    max_mp="0"    speed="0"    description="华佗毕生精力所著医书之残卷"    need_level="90"    price="156144"    max_smith="30"/>    
+<equipment    id="4316"    name="太平要术"    strength="0"    intelligence="145"    max_hp="0"    max_mp="0"    speed="0"    description="张角受南华仙人所传授"    need_level="100"    price="173424"    max_smith="30"/>    
+<equipment    id="4317"    name="周书阴符"    strength="0"    intelligence="155"    max_hp="0"    max_mp="0"    speed="0"    description="相传为黄帝所著"    need_level="110"    price="190704"    max_smith="30"/>    
+
 	</equipments>
 	<heros>
 		<hero id="1"    name="丁奉"    default_warriors="1"    skill1_type="1"    skill1_level="1"    skill1_id="48"    skill2_type="1"    skill2_level="11"    skill2_id="59"    skill3_type="1"    skill3_level="22"    skill3_id="69"    skill4_type="1"    skill4_level="36"    skill4_id="70"    skill5_type="1"    skill5_level="45"    skill5_id="81"    skill6_type="1"    skill6_level="59"    skill6_id="93"    skill7_type="2"    skill7_level="1"    skill7_id="6"    skill8_type="2"    skill8_level="16"    skill8_id="12"    skill9_type="2"    skill9_level="32"    skill9_id="18"    skill10_type="2"    skill10_level="50"    skill10_id="32"    skill11_type="0"    skill11_level="0"    skill11_id="0"    skill12_type="0"    skill12_level="0"    skill12_id="0"    skill13_type="0"    skill13_level="0"    skill13_id="0"    skill14_type="0"    skill14_level="0"    skill14_id="0"    skill15_type="0"    skill15_level="0"    skill15_id="0"    skill16_type="0"    skill16_level="0"    skill16_id="0"    skill17_type="0"    skill17_level="0"    skill17_id="0"    skill18_type="0"    skill18_level="0"    skill18_id="0" />

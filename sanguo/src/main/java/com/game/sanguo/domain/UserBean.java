@@ -31,7 +31,6 @@ public class UserBean {
 	private Map<Long,Long> itemIdToSrcIdMap = new HashMap<Long,Long>();
 	private Map<Long,Long> heroIdToSrcIdMap = new HashMap<Long,Long>();
 	
-	
 	public Map<Long, Long> getItemIdToSrcIdMap() {
 		return itemIdToSrcIdMap;
 	}

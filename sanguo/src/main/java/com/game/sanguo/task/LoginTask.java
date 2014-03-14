@@ -7,15 +7,16 @@ import java.io.InputStreamReader;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import org.apache.commons.httpclient.NameValuePair;
 import org.apache.commons.httpclient.methods.PostMethod;
 
+import com.game.sanguo.domain.CityItem;
 import com.game.sanguo.domain.ClientUpdateInfo;
+import com.game.sanguo.domain.EquipmentItem;
 import com.game.sanguo.domain.GameAreaInfo;
+import com.game.sanguo.domain.HeroItem;
 import com.game.sanguo.domain.LoginByEmailInfo;
 import com.game.sanguo.domain.PlayerCitysInfo;
 import com.game.sanguo.domain.PlayerHerosInfo;
@@ -144,7 +145,6 @@ public class LoginTask extends GameTask {
 			// LoginGameInfo beanInfo = initBeanInfo(LoginGameInfo.class,
 			// postMethod.getResponseBodyAsStream(), "dwr");
 			LoginGameInfo beanInfo = decoeLoginGameInfo(postMethod.getResponseBodyAsStream());
-			logger.info(beanInfo.toString());
 			userBean.setLoginGameInfo(beanInfo);
 			userBean.setSessionId(beanInfo.getSessionId());
 		} catch (Throwable e) {
@@ -212,22 +212,34 @@ public class LoginTask extends GameTask {
 
 	private void addOtherInfo(List<PlayerCitysInfo> playerCitysInfoList, List<PlayerHerosInfo> playerHerosInfoList, List<PlayerItemsInfo> playerItemsInfoList) {
 		for (PlayerCitysInfo playerCitysInfo : playerCitysInfoList) {
-			playerCitysInfo.setCityName(userBean.getItemConfig().decodeCity(playerCitysInfo.getSourceId()));
+			CityItem cityItem = userBean.getItemConfig().decodeCity(playerCitysInfo.getSourceId());
+			if (null != cityItem) {
+				playerCitysInfo.setCityName(cityItem.getCity_name());
+			}
 		}
 		for (PlayerHerosInfo playerHerosInfo : playerHerosInfoList) {
 			userBean.putHeroIdToSrcId(playerHerosInfo.getId(), playerHerosInfo.getSourceId());
-			playerHerosInfo.setCityName(userBean.getItemConfig().decodeCity(playerHerosInfo.getCityId()));
-			playerHerosInfo.setHeroName(userBean.getItemConfig().decodeHero(playerHerosInfo.getSourceId()));
+			CityItem cityItem = userBean.getItemConfig().decodeCity(playerHerosInfo.getCityId());
+			HeroItem heroItem = userBean.getItemConfig().decodeHero(playerHerosInfo.getSourceId());
+			if (cityItem != null) {
+				playerHerosInfo.setCityName(cityItem.getCity_name());
+			}
+			if (heroItem != null) {
+				playerHerosInfo.setHeroName(heroItem.getName());
+			}
 		}
 		for (PlayerItemsInfo playerItemsInfo : playerItemsInfoList) {
 			userBean.putItemIdToSrcId(playerItemsInfo.getId(), playerItemsInfo.getSourceId());
-			playerItemsInfo.setItemName(userBean.getItemConfig().decodeEquipment(playerItemsInfo.getSourceId()));
-			playerItemsInfo.setHeroName(userBean.getItemConfig().decodeHero(userBean.decodeHeroSrcIdByUseId(playerItemsInfo.getHeroUseId())));
+			EquipmentItem equipmentItem = userBean.getItemConfig().decodeEquipment(playerItemsInfo.getSourceId());
+			HeroItem heroItem = userBean.getItemConfig().decodeHero(userBean.decodeHeroSrcIdByUseId(playerItemsInfo.getHeroUseId()));
+			if (equipmentItem != null) {
+				playerItemsInfo.setItemName(equipmentItem.getName());
+			}
+			if (heroItem != null) {
+				playerItemsInfo.setHeroName(heroItem.getName());
+			}
 		}
-		logger.info(userBean.getItemIdToSrcIdMap()+"");
-		logger.info(userBean.getHeroIdToSrcIdMap()+"");
 	}
-	
 
 	private void decodeArrayPrex(List<String> sArrayList, String s) {
 		String[] sArray = s.split(";");

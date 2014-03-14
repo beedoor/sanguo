@@ -28,7 +28,7 @@ public class GetMsgTask extends GameTask {
 	}
 
 	private void msgIdGetNotify() {
-		PostMethod postMethod = new PostMethod("http://g8.ol.ko.cn:8080/ChatServer/dwr/call/plaincall/DwrChat.getChat.dwr;jsessionid=" + userBean.getSessionId() + ";mid=" + userBean.getSessionId());
+		PostMethod postMethod = new PostMethod(String.format("%s/ChatServer/dwr/call/plaincall/DwrChat.getChat.dwr;jsessionid%s;mid=%s",userBean.getUrlPrx(),userBean.getSessionId(),userBean.getSessionId()));
 		postMethod.addRequestHeader("Content-type", "application/octet-stream");
 		postMethod.addRequestHeader("Cache-Control", "no-cache");
 		postMethod.addRequestHeader("Pragma", "no-cache");
