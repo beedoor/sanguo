@@ -50,6 +50,6 @@ public class Main {
 		// 卖东西定时任务
 		GameHelper.scheduleAtFixedRate(new MsgItemSellTask(userBean, itemConfig), 24, TimeUnit.HOURS);
 		// 领取资源，宝箱等定时搜索任务
-		GameHelper.scheduleAtFixedRate(new CitySearchAndGoldTask(userBean), 10, TimeUnit.MINUTES);
+		GameHelper.scheduleAtFixedRate(new CitySearchAndGoldTask(userBean,itemConfig), 10, TimeUnit.MINUTES);
 	}
 }

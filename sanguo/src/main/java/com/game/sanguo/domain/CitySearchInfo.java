@@ -2,6 +2,8 @@ package com.game.sanguo.domain;
 
 import java.util.Date;
 
+import com.game.sanguo.util.GameUtil;
+
 public class CitySearchInfo {
 	String cityIdList;
 	Long errCode = 0L;
@@ -57,24 +59,24 @@ public class CitySearchInfo {
 		return gold;
 	}
 
-	public void setGold(Long gold) {
-		this.gold = gold;
+	public void setGold(String gold) {
+		this.gold = Long.parseLong(gold);
 	}
 
 	public Long getSearchGold() {
 		return searchGold;
 	}
 
-	public void setSearchGold(Long searchGold) {
-		this.searchGold = searchGold;
+	public void setSearchGold(String searchGold) {
+		this.searchGold =  Long.parseLong(searchGold);
 	}
 
 	public Date getSearchTime() {
 		return searchTime;
 	}
 
-	public void setSearchTime(Date searchTime) {
-		this.searchTime = searchTime;
+	public void setSearchTime(String searchTime) {
+		this.searchTime = GameUtil.parseDate(searchTime);
 	}
 
 	public String getSearched() {
