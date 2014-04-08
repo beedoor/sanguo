@@ -3,6 +3,7 @@ import java.util.concurrent.TimeUnit;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.game.sanguo.domain.SearchResult;
 import com.game.sanguo.domain.UserBean;
 import com.game.sanguo.task.CitySearchAndGoldTask;
 import com.game.sanguo.task.ContinuousLoginDaysRewardTask;
@@ -46,7 +47,7 @@ public class Main {
 		GameHelper.scheduleAtFixedRate(new ContinuousLoginDaysRewardTask(userBean), 24, TimeUnit.HOURS);
 
 		// 扫描宝山，黑市，兵营，金矿资源定时任务
-		GameHelper.submit(new GetWordCityInfoTask(userBean, resourceConfig));
+		GameHelper.submit(new GetWordCityInfoTask(userBean, resourceConfig,new SearchResult(userBean.getConfigure().getScanResource().getSortType())));
 		// 卖东西定时任务
 		GameHelper.scheduleAtFixedRate(new MsgItemSellTask(userBean, itemConfig), 24, TimeUnit.HOURS);
 		// 领取资源，宝箱等定时搜索任务

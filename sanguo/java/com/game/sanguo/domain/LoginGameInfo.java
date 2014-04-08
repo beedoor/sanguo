@@ -1,12 +1,11 @@
-package com.game.sanguo.util;
+package com.game.sanguo.domain;
 
+import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeSupport;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
-
-import com.game.sanguo.domain.PlayerCitysInfo;
-import com.game.sanguo.domain.PlayerHerosInfo;
-import com.game.sanguo.domain.PlayerItemsInfo;
 
 public class LoginGameInfo {
 	private Boolean autoFlag;
@@ -31,7 +30,7 @@ public class LoginGameInfo {
 	private Long maxMedicalCampStorage = 0L;
 	private Long medicalCampStorage = 0L;
 	private Long monthCardRewardYB = 0L;
-	private String name;
+	private String name="";
 	private Long occupyPvpMainCityId = 0L;
 	private String option;
 	private Date permitLoginTime;
@@ -59,10 +58,32 @@ public class LoginGameInfo {
 
 	private String guideProgress;
 
-	List<PlayerCitysInfo> playerCitysInfoList = null;
-	List<PlayerHerosInfo> playerHerosInfoList = null;
-	List<PlayerItemsInfo> playerItemsInfoList = null;
+	List<PlayerCitysInfo> playerCitysInfoList = new ArrayList<PlayerCitysInfo>();
+	List<PlayerHerosInfo> playerHerosInfoList = new ArrayList<PlayerHerosInfo>();
+	List<PlayerItemsInfo> playerItemsInfoList = new ArrayList<PlayerItemsInfo>();
 
+	private PropertyChangeSupport propertyChangeSupport = new PropertyChangeSupport(
+			this);
+	public void addPropertyChangeListener(String propertyName,
+			PropertyChangeListener listener) {
+		propertyChangeSupport.addPropertyChangeListener(propertyName,
+				listener);
+	}
+ 
+ 
+	public void removePropertyChangeListener(String propertyName,
+			PropertyChangeListener listener) {
+		propertyChangeSupport.removePropertyChangeListener(propertyName,
+				listener);
+	}
+ 
+	protected void firePropertyChange(String propertyName, Object oldValue,
+			Object newValue) {
+		propertyChangeSupport.firePropertyChange(propertyName, oldValue,
+				newValue);
+	}
+	
+	
 	public boolean isAutoFlag() {
 		return autoFlag;
 	}

@@ -9,10 +9,10 @@ import org.apache.commons.httpclient.methods.PostMethod;
 
 import com.game.sanguo.domain.EquipmentItem;
 import com.game.sanguo.domain.EquipmentItemSellInfo;
+import com.game.sanguo.domain.LoginGameInfo;
 import com.game.sanguo.domain.PlayerItemsInfo;
 import com.game.sanguo.domain.UserBean;
 import com.game.sanguo.util.ItemConfig;
-import com.game.sanguo.util.LoginGameInfo;
 
 public class MsgItemSellTask extends GameTask {
 	ItemConfig itemConfig;

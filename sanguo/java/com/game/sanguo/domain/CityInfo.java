@@ -24,6 +24,15 @@ public class CityInfo {
 	Long typeAsInt = 0L;
 	String unionName;
 	Long zoneId = 0L;
+	Date endTime;
+
+	public Date getEndTime() {
+		return endTime;
+	}
+
+	public void setEndTime(Date endTime) {
+		this.endTime = endTime;
+	}
 
 	public Long getAreaId() {
 		return areaId;

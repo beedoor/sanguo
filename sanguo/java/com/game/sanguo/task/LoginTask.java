@@ -18,12 +18,12 @@ import com.game.sanguo.domain.EquipmentItem;
 import com.game.sanguo.domain.GameAreaInfo;
 import com.game.sanguo.domain.HeroItem;
 import com.game.sanguo.domain.LoginByEmailInfo;
+import com.game.sanguo.domain.LoginGameInfo;
 import com.game.sanguo.domain.PlayerCitysInfo;
 import com.game.sanguo.domain.PlayerHerosInfo;
 import com.game.sanguo.domain.PlayerItemsInfo;
 import com.game.sanguo.domain.StartChatInfo;
 import com.game.sanguo.domain.UserBean;
-import com.game.sanguo.util.LoginGameInfo;
 
 public class LoginTask extends GameTask {
 

@@ -1,10 +1,11 @@
 package com.game.sanguo.domain;
+import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeSupport;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import com.game.sanguo.util.ItemConfig;
-import com.game.sanguo.util.LoginGameInfo;
 
 public class UserBean {
 
@@ -20,7 +21,7 @@ public class UserBean {
 	private Long reLoginTime=0L;
 	private ClientUpdateInfo clientInfo;
 
-	private LoginGameInfo loginGameInfo;
+	private LoginGameInfo loginGameInfo = new LoginGameInfo();
 	
 	private Boolean isSuspend=false;
 	private Map<Long,GameAreaInfo> gameAreaInfoMap = new HashMap<Long,GameAreaInfo>();
@@ -30,6 +31,28 @@ public class UserBean {
 	
 	private Map<Long,Long> itemIdToSrcIdMap = new HashMap<Long,Long>();
 	private Map<Long,Long> heroIdToSrcIdMap = new HashMap<Long,Long>();
+	
+	
+	private PropertyChangeSupport propertyChangeSupport = new PropertyChangeSupport(
+			this);
+	public void addPropertyChangeListener(String propertyName,
+			PropertyChangeListener listener) {
+		propertyChangeSupport.addPropertyChangeListener(propertyName,
+				listener);
+	}
+ 
+ 
+	public void removePropertyChangeListener(String propertyName,
+			PropertyChangeListener listener) {
+		propertyChangeSupport.removePropertyChangeListener(propertyName,
+				listener);
+	}
+ 
+	protected void firePropertyChange(String propertyName, Object oldValue,
+			Object newValue) {
+		propertyChangeSupport.firePropertyChange(propertyName, oldValue,
+				newValue);
+	}
 	
 	public Map<Long, Long> getItemIdToSrcIdMap() {
 		return itemIdToSrcIdMap;
@@ -82,7 +105,10 @@ public class UserBean {
 	}
 
 	public void setLoginGameInfo(LoginGameInfo loginGameInfo) {
+		Object oldValue = this.loginGameInfo;
+		Object newValue = loginGameInfo;
 		this.loginGameInfo = loginGameInfo;
+		firePropertyChange("loginGameInfo", oldValue, newValue);
 	}
 
 	public void reSetNumberIdAndBatchId()
@@ -213,4 +239,5 @@ public class UserBean {
 				+ ", isSuspend=" + isSuspend + ", gameAreaInfoMap=" + gameAreaInfoMap + ", configure=" + configure + "]";
 	}
 
+	
 }

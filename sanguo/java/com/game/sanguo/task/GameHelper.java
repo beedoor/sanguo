@@ -17,5 +17,9 @@ public class GameHelper {
 		exec.scheduleAtFixedRate(gameTask, 0, interval, tim);
 	}
 	
+	public static void terminal()
+	{
+		exec.shutdownNow();
+	}
 }
 
