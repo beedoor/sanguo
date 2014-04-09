@@ -23,7 +23,16 @@ public class PlayerItemsInfo {
 
 	private String itemName;
 	private String heroName;
+	private Long playerId=0L;
 	
+	public Long getPlayerId() {
+		return playerId;
+	}
+
+	public void setPlayerId(String playerId) {
+		this.playerId = Long.parseLong(playerId);
+	}
+
 	public String getItemName() {
 		return itemName;
 	}

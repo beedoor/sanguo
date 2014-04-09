@@ -25,6 +25,16 @@ public class PlayerCitysInfo {
 	private Long type;
 	private Date updateDate;
 
+	private Long playerId=0L;
+	
+	public Long getPlayerId() {
+		return playerId;
+	}
+
+	public void setPlayerId(String playerId) {
+		this.playerId = Long.parseLong(playerId);
+	}
+
 	public String getCityName() {
 		return cityName;
 	}
